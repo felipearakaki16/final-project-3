@@ -1,7 +1,7 @@
 <div class="navbar-lewagon">
   <div class="domain">
     <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "flexbox-css.png", class:"perfil mr-2 ml-4" %>
+      <%= image_tag "flexbox-css.png", heidth:150, class:"perfil mr-2 ml-4" %>
       <%#= image_tag "pepeket.png", width:250 %>
     <% end %>
   </div>
@@ -25,9 +25,9 @@
            <%= cl_image_tag("wcvhztmdjhwkhnelufkp.png", width: 80, height: 80, crop: :thumb, gravity: :face, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false) %>
           <% end %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "New product", "/products/new", class: "dropdown-item" %>
-            <%= link_to "Your orders", user_purchased_path, class: "dropdown-item" %>
-            <%= link_to "Your sales", user_announced_path, class: "dropdown-item" %>
+            <%= link_to "New product", "#", class: "dropdown-item" %>
+            <%= link_to "Your orders", "#", class: "dropdown-item" %>
+            <%= link_to "Your sales", "#", class: "dropdown-item" %>
             <%= link_to "Edit account", edit_user_registration_path, class: "dropdown-item" %>
             <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
           </div>
