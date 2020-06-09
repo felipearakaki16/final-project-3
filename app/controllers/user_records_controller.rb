@@ -3,7 +3,7 @@ class UserRecordsController < ApplicationController
 
   def index
     @user_records = UserRecord.where(user: current_user)
-
+    
   end
 
   def show

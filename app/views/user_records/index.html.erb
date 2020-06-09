@@ -1,6 +1,8 @@
+<% @user_records.all %>
 <% @user_records.each do |user_record| %>
+<% raise %>
 <%= user_record.user.username %>
-  <% user_record.levels.each do |level| %>
+  <% user_record.level.each do |level| %>
     <%= level.name %>
     <%= level.dificulty %>
     <%= level.created_at %>
