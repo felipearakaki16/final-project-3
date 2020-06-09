@@ -3,4 +3,9 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def user_page
+    @user_records = UserRecord.where(user: current_user)
+  end
+  
 end

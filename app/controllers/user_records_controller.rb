@@ -34,6 +34,6 @@ class UserRecordsController < ApplicationController
   private
 
   def set_user_record
-    @user_record = user_record.find(params[:id])
+    @user_record = UserRecord.find(params[:id])
   end
 end
