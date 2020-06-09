@@ -1,6 +1,8 @@
+<h1>Essa é a página do user records</h1>
+<p>Username: <%= @user.username %></p>
 <% @user_records.all %>
 <% @user_records.each do |user_record| %>
-<% raise %>
+<p>Dentro do primeiro each</p>
 <%= user_record.user.username %>
   <% user_record.level.each do |level| %>
     <%= level.name %>
