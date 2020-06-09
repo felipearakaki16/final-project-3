@@ -25,9 +25,8 @@
            <%= cl_image_tag("wcvhztmdjhwkhnelufkp.png", width: 80, height: 80, crop: :thumb, gravity: :face, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false) %>
           <% end %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "New product", "#", class: "dropdown-item" %>
-            <%= link_to "Your orders", "#", class: "dropdown-item" %>
-            <%= link_to "Your sales", "#", class: "dropdown-item" %>
+            <%= link_to "Levels", levels_path, class: "dropdown-item" %>
+            <%= link_to "My record", user_record_path, class: "dropdown-item" %>
             <%= link_to "Edit account", edit_user_registration_path, class: "dropdown-item" %>
             <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
           </div>
@@ -52,3 +51,13 @@
     </li>
   </ul>
 </div> %>
+
+
+<%#root GET    /                                                         #                               pages#home
+                    user_record_level GET    /user_records/:user_record_id/l#evels/:id(.:format)        levels#show
+                         user_records POST   /user_records(.:format)        #                           user_records#create
+                          user_record GET    /user_records/:id(.:format)    #                           user_records#show
+                                      PATCH  /user_records/:id(.:format)    #                           user_records#update
+                                      PUT    /user_records/:id(.:f#ormat)                               user_records#update
+                                      DELETE /user_records/:id(.:format)                               user_records#destroy
+                               levels GET    /levels(.:format)                                         levels#index

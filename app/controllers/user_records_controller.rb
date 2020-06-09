@@ -1,6 +1,11 @@
 class UserRecordsController < ApplicationController
   before_action :set_user_record, only: %i(show update)
 
+  def index
+    @user_records = UserRecord.where(user: current_user)
+
+  end
+
   def show
   end
 
