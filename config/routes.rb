@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   get '/level/1', to: 'levels#level1'
   get '/level/2', to: 'levels#level2'
-  get '/level/3', to: 'levels#level2'
+  get '/level/3', to: 'levels#level3'
 end
 
 

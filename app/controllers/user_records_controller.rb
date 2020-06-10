@@ -41,4 +41,5 @@ class UserRecordsController < ApplicationController
   def set_user_record
     @user_record = UserRecord.find(params[:id])
   end
+
 end

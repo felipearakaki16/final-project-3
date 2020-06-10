@@ -9,7 +9,7 @@ class LevelsController < ApplicationController
   end
 
   def level1
-    
+    #@user_records = UserRecord.where(user: current_user)
   end
 
   def level2
