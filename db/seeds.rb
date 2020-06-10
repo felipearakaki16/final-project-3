@@ -32,17 +32,17 @@
 UserRecord.destroy_all
 
 puts 'Creating 6 users records'
-user_record1 = UserRecord.new("created_at": "Tuesday, 09 of June in 2019, 19:54 h", "completed_at": "Tuesday, 10 of June in 2019, 19:54 h", "level_id": 1, "user_id": 1)
+user_record1 = UserRecord.new("created_at": "2019-06-09 21:19:00", "completed_at": "2019-06-10 21:19:00", "level_id": 1, "user_id": 1)
 user_record1.save!
-user_record2 = UserRecord.new("created_at": "Wednesday, 10 of June in 2019, 13:54 h", "completed_at": "Wednesday, 11 of June in 2019, 13:54 h", "level_id": 2, "user_id": 2)
+user_record2 = UserRecord.new("created_at": "2019-07-09 21:19:00", "completed_at": "2019-07-10 21:19:00", "level_id": 2, "user_id": 1)
 user_record2.save!
-user_record3 = UserRecord.new("created_at": "Thursday, 11 of June in 2019, 10:54 h", "completed_at": "Thursday, 12 of June in 2019, 10:54 h", "level_id": 3, "user_id": 2)
+user_record3 = UserRecord.new("created_at": "2019-08-09 21:19:00", "completed_at": nil, "level_id": 3, "user_id": 1)
 user_record3.save!
-user_record4 = UserRecord.new("created_at": "Friday, 12 of June in 2019, 3:54 h", "completed_at": "Friday, 13 of June in 2019, 3:54 h", "level_id": 4, "user_id": 5)
+user_record4 = UserRecord.new("created_at": "2019-01-09 21:19:00", "completed_at": "2019-01-10 21:19:00", "level_id": 1, "user_id": 2)
 user_record4.save!
-user_record5 = UserRecord.new("created_at": "Saturday, 13 of June in 2019, 19:54 h", "completed_at": "Saturday, 14 of June in 2019, 19:54 h", "level_id": 5, "user_id": 4)
+user_record5 = UserRecord.new("created_at": "2019-02-09 21:19:00", "completed_at": "2019-02-10 21:19:00", "level_id": 2, "user_id": 2)
 user_record5.save!
-user_record6 = UserRecord.new("created_at": "Sunday, 14 of June in 2019, 19:54 h", "completed_at": "Sunday, 15 of June in 2019, 19:54 h", "level_id": 6, "user_id": 1)
+user_record6 = UserRecord.new("created_at": "2019-03-09 21:19:00", "completed_at": "2019-03-10 21:19:00", "level_id": 3, "user_id": 2)
 user_record6.save!
 puts 'Six users records created'
 

@@ -1,5 +1,7 @@
 <h1>Essa é a página do user records</h1>
 <p>Username: <%= @user.username %></p>
+<p>User_id: <%= @user.id %></p>
+<p>Date: <%= @user.created_at %></p>
 <% @user_records.all %>
 <% @user_records.each do |user_record| %>
 <p>Dentro do primeiro each</p>
