@@ -5,14 +5,18 @@
 <% @user_records.all %>
 <% @user_records.each do |user_record| %>
   <br>
-  <%#= link_to user_record.level.name, "level/#{user_record.level.id}" %></p>
-  <p>Play: <%= link_to user_record.level.name, "level/#{user_record.level.id}" %></p>
-  
+    <%# raise %>
+  <%# if user_record.level_id = 1 %>
+    <p>Play: <%= link_to user_record.level.name, "level/#{user_record.level.id}" %></p>
+  <%# raise %>
+
+  <%# elsif user_record."#{user_record.level_id - 1}".completed_at.nil? %>
+  <%#  <p>Play: level <%= user_record.level_id xxxxxxxxxxxxxx</p> %>
+  <%# end %>
   <p>Difficulty: <%= user_record.level.dificulty %></p>
   <p>Started on: <%= user_record.created_at %></p>
   <p>Last updated on: <%= user_record.updated_at %></p>
   <p>Completed on: <%= user_record.completed_at %></p>
-  <%# raise %>
   <%= link_to "Reset level", user_record, method: :delete, data: { confirm: "Are you sure? This will disable next levels." } %>
   <br>
 <% end %>
