@@ -1,15 +1,14 @@
 <h1>Essa é a página do user records</h1>
 <p>Username: <%= @user.username %></p>
 <p>User_id: <%= @user.id %></p>
-<p>Date: <%= @user.created_at %></p>
+<p>Subriscribed on: <%= @user.created_at %></p>
 <% @user_records.all %>
 <% @user_records.each do |user_record| %>
-<p>Dentro do primeiro each</p>
-<%= user_record.user.username %>
-  <% user_record.level.each do |level| %>
-    <%= level.name %>
-    <%= level.dificulty %>
-    <%= level.created_at %>
-    <%= level.completed_at %>
-  <% end %>
+  <br>
+  <p>Stage: <%= user_record.level.name %></p>
+  <p>Dificulty: <%= user_record.level.dificulty %></p>
+  <p>Started on: <%= user_record.level.created_at %></p>
+  <p>Last updated on: <%= user_record.level.updated_at %></p>
+  <p>Completed on: <%= user_record.completed_at %></p>
+  <br>
 <% end %>
