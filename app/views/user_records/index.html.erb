@@ -10,5 +10,6 @@
   <p>Started on: <%= user_record.level.created_at %></p>
   <p>Last updated on: <%= user_record.level.updated_at %></p>
   <p>Completed on: <%= user_record.completed_at %></p>
+  <%= link_to "Reset level", user_record, method: :patch, data: { confirm: "Are you sure? This will disable next levels." } %>
   <br>
 <% end %>

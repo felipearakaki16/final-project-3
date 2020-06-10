@@ -1,12 +1,9 @@
 class UserRecordsController < ApplicationController
-  before_action :set_user_record, only: %i(show update)
+  before_action :set_user_record, only: %i(update)
 
   def index
     @user_records = UserRecord.where(user: current_user)
     @user = User.find(current_user.id)
-  end
-
-  def show
   end
 
   def create
@@ -20,19 +17,26 @@ class UserRecordsController < ApplicationController
   end
 
   def update
-    @level = @user_record.level
-    @level.user = @user_record.user
-    @level.unavaiable!
-    if @level.save
-      @user_record.finished!
-      @user_record.save
+    # @level = @user_record.level
+    # @level.user = @user_record.user
+    # @level.unavaiable!
+    # if @level.save
+    #   @user_record.finished!
+    #   @user_record.save
 
-      redirect_to root_path
+    #   redirect_to root_path
+    # end
+    @user_record.completed_at = nil
+    if @user_record.save
+      redirect_to user_records_path
+    else
+      redirect_to user_records_path
     end
+
   end
 
   def destroy
-    
+ 
   end
   
 
