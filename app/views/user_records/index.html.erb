@@ -5,11 +5,14 @@
 <% @user_records.all %>
 <% @user_records.each do |user_record| %>
   <br>
+  <%#= link_to user_record.level.name, "level/#{user_record.level.id}" %></p>
   <p>Play: <%= link_to user_record.level.name, "level/#{user_record.level.id}" %></p>
-  <p>Dificulty: <%= user_record.level.dificulty %></p>
-  <p>Started on: <%= user_record.level.created_at %></p>
-  <p>Last updated on: <%= user_record.level.updated_at %></p>
+  
+  <p>Difficulty: <%= user_record.level.dificulty %></p>
+  <p>Started on: <%= user_record.created_at %></p>
+  <p>Last updated on: <%= user_record.updated_at %></p>
   <p>Completed on: <%= user_record.completed_at %></p>
-  <%= link_to "Reset level", user_record, method: :patch, data: { confirm: "Are you sure? This will disable next levels." } %>
+  <%# raise %>
+  <%= link_to "Reset level", user_record, method: :delete, data: { confirm: "Are you sure? This will disable next levels." } %>
   <br>
 <% end %>

@@ -1,5 +1,5 @@
 class UserRecordsController < ApplicationController
-  before_action :set_user_record, only: %i(update)
+  before_action :set_user_record, only: %i(update destroy)
 
   def index
     @user_records = UserRecord.where(user: current_user)
@@ -36,7 +36,8 @@ class UserRecordsController < ApplicationController
   end
 
   def destroy
- 
+    # @user_record.destroy
+    # redirect_to user_records_path
   end
   
 
