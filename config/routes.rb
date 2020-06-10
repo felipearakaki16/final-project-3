@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   
-  resources :user_records, only: %i(index create update destroy) do
+  resources :user_records, only: %i(index update) do
     resources :levels, only: %i(show)
   end
   resources :levels, only: %i(index)
