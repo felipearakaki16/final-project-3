@@ -1,22 +1,31 @@
 <h1>Essa é a página do user records</h1>
+  <br>
 <p>Username: <%= @user.username %></p>
 <p>User_id: <%= @user.id %></p>
 <p>Subriscribed on: <%= @user.created_at %></p>
-<% @user_records.all %>
-<% @user_records.each do |user_record| %>
   <br>
-    <%# raise %>
-  <%# if user_record.level_id = 1 %>
-    <p>Play: <%= link_to user_record.level.name, "level/#{user_record.level.id}" %></p>
-  <%# raise %>
-
-  <%# elsif user_record."#{user_record.level_id - 1}".completed_at.nil? %>
-  <%#  <p>Play: level <%= user_record.level_id xxxxxxxxxxxxxx</p> %>
-  <%# end %>
-  <p>Difficulty: <%= user_record.level.dificulty %></p>
-  <p>Started on: <%= user_record.created_at %></p>
-  <p>Last updated on: <%= user_record.updated_at %></p>
-  <p>Completed on: <%= user_record.completed_at %></p>
-  <%= link_to "Reset level", user_record, method: :delete, data: { confirm: "Are you sure? This will disable next levels." } %>
   <br>
-<% end %>
+  <br>
+<h2>Level 1</h2>
+<p><%= link_to "Play", "level/1" %></p>
+<p>Started: <%= !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.created_at : "" %></p>
+<p>Updated: <%= !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.updated_at : "" %></p>
+<p>Completed: <%= !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.completed_at : "" %></p>
+<br>
+<br>
+<h2>Level 2</h2>
+<p><%= link_to "Play", "level/2" %></p>
+<p>Started: <%= !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.created_at : "" %></p>
+<p>Updated: <%= !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.updated_at : "" %></p>
+<p>Completed: <%= !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.completed_at : "" %></p>
+<br>
+<br>
+<h2>Level 3</h2>
+<p><%= link_to "Play", "level/3" %></p>
+<p>Started: <%= !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.created_at : "" %></p>
+<p>Updated: <%= !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.updated_at : "" %></p>
+<p>Completed: <%= !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.completed_at : "" %></p>
+<br>
+<br>
+<br>
+<br>

@@ -1,17 +1,9 @@
 class UserRecordsController < ApplicationController
-  before_action :set_user_record, only: %i(update)
+  before_action :set_user_record, only: %i(create update)
 
   def index
     @user_records = UserRecord.where(user: current_user)
     @user = User.find(current_user.id)
-    # @go = false
-    # @user_records.each do |record|
-    #   @go#{_record.level_id}
-    #   if record.completed_at.nil?
-
-    #   end
-    # end
-
   end
 
   def update
@@ -22,6 +14,9 @@ class UserRecordsController < ApplicationController
       redirect_to user_records_path
     end
 
+  end
+
+  def create
   end
 
   private

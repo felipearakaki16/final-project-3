@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  after_create :create_user_records
+  # after_create :create_user_records
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -11,12 +11,12 @@ class User < ApplicationRecord
 
   validates :username, presence: true
 
-  private
+  # private
 
-  def create_user_records
-    UserRecord.create(user: self, level_id: 1)
-    UserRecord.create(user: self, level_id: 2)
-    UserRecord.create(user: self, level_id: 3)
-  end
+  # def create_user_records
+  #   UserRecord.create(user: self, level_id: 1)
+  #   UserRecord.create(user: self, level_id: 2)
+  #   UserRecord.create(user: self, level_id: 3)
+  # end
 end
 
