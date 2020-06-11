@@ -1,30 +1,30 @@
 <h1>Essa é a página do user records</h1>
   <br>
-<p>Username: <%= @user.username %></p>
-<p>User_id: <%= @user.id %></p>
-<p>Subriscribed on: <%= @user.created_at %></p>
+<p><strong>Username: </strong><%= @user.username %></p>
+<p><strong>User id: </strong><%= @user.id %></p>
+<p><strong>Subriscribed: </strong><%= @user.created_at %></p>
   <br>
   <br>
   <br>
-<h2>Level 1</h2>
-<p><%= link_to "Play", "level/1" %></p>
-<p>Started: <%= !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.created_at : "" %></p>
-<p>Updated: <%= !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.updated_at : "" %></p>
-<p>Completed: <%= !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.completed_at : "" %></p>
+<h2><strong>Level 1</strong></h2>
+<p><%= link_to "Play", "level/1", class: "btn btn-green" %></p>
+<p><strong>Started: </strong><%= !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.created_at : "" %></p>
+<p><strong>Updated: </strong><%= !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.updated_at : "" %></p>
+<p><strong>Completed: </strong><%= !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.completed_at : "" %></p>
 <br>
 <br>
-<h2>Level 2</h2>
-<p><%= link_to "Play", "level/2" %></p>
-<p>Started: <%= !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.created_at : "" %></p>
-<p>Updated: <%= !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.updated_at : "" %></p>
-<p>Completed: <%= !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.completed_at : "" %></p>
+<h2><strong>Level 2</strong></h2>
+<p><%= link_to "Play", "level/2", class: "btn btn-green" %></p>
+<p><strong>Started: </strong><%= !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.created_at : "" %></p>
+<p><strong>Updated: </strong><%= !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.updated_at : "" %></p>
+<p><strong>Completed: </strong><%= !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.completed_at : "" %></p>
 <br>
 <br>
-<h2>Level 3</h2>
-<p><%= link_to "Play", "level/3" %></p>
-<p>Started: <%= !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.created_at : "" %></p>
-<p>Updated: <%= !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.updated_at : "" %></p>
-<p>Completed: <%= !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.completed_at : "" %></p>
+<h2><strong>Level 3</strong></h2>
+<p><%= link_to "Play", "level/3", class: "btn btn-green" %></p>
+<p><strong>Started: </strong><%= !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.created_at : "" %></p>
+<p><strong>Updated: </strong><%= !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.updated_at : "" %></p>
+<p><strong>Completed: </strong><%= !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.completed_at : "" %></p>
 <br>
 <br>
 <br>
