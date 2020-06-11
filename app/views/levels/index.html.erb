@@ -1,0 +1,15 @@
+<p><strong>Username: </strong><%= current_user.username %></p>
+<p><strong>User id: </strong><%= current_user.id %></p>
+<p><strong>Subriscribed: </strong><%= current_user.created_at.strftime("%d/%b/%Y") %></p>
+  <br>
+  <br>
+  <br>
+  <% @levels.each do |level| %>
+    <h2><%= level[:level].name.capitalize %></h2>
+    <p><%= link_to "Play", level_path(level[:level]), class: "btn btn-green" %></p>
+    <p><strong>Started: </strong><%= level[:record]&.created_at&.strftime("%d/%b/%Y  -  %Hh%Mm") %></p>
+    <p><strong>Updated: </strong><%= level[:record]&.updated_at&.strftime("%d/%b/%Y  -  %Hh%Mm") %></p>
+    <p><strong>Completed: </strong><%= level[:record]&.completed_at&.strftime("%d/%b/%Y  -  %Hh%Mm") %></p>
+    <br>
+    <br>
+  <% end %>
