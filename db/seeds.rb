@@ -32,17 +32,27 @@
 UserRecord.destroy_all
 
 puts 'Creating 6 users records'
-user_record1 = UserRecord.new("created_at": "Tuesday, 09 of June in 2019, 19:54 h", "completed_at": "Tuesday, 10 of June in 2019, 19:54 h", "level_id": 1, "user_id": 1)
+user_record1 = UserRecord.new("created_at": "2019-06-09 21:19:00", "completed_at": "2019-06-10 21:19:00", "level_id": 1, "user_id": 1)
 user_record1.save!
-user_record2 = UserRecord.new("created_at": "Wednesday, 10 of June in 2019, 13:54 h", "completed_at": "Wednesday, 11 of June in 2019, 13:54 h", "level_id": 2, "user_id": 2)
+user_record2 = UserRecord.new("created_at": "2019-07-09 21:19:00", "completed_at": "2019-07-10 21:19:00", "level_id": 2, "user_id": 1)
 user_record2.save!
-user_record3 = UserRecord.new("created_at": "Thursday, 11 of June in 2019, 10:54 h", "completed_at": "Thursday, 12 of June in 2019, 10:54 h", "level_id": 3, "user_id": 2)
+user_record3 = UserRecord.new("created_at": "2019-08-09 21:19:00", "completed_at": nil, "level_id": 3, "user_id": 1)
 user_record3.save!
-user_record4 = UserRecord.new("created_at": "Friday, 12 of June in 2019, 3:54 h", "completed_at": "Friday, 13 of June in 2019, 3:54 h", "level_id": 4, "user_id": 5)
+user_record4 = UserRecord.new("created_at": "2019-01-09 21:19:00", "completed_at": "2019-01-10 21:19:00", "level_id": 1, "user_id": 2)
 user_record4.save!
-user_record5 = UserRecord.new("created_at": "Saturday, 13 of June in 2019, 19:54 h", "completed_at": "Saturday, 14 of June in 2019, 19:54 h", "level_id": 5, "user_id": 4)
+user_record5 = UserRecord.new("created_at": "2019-02-09 21:19:00", "completed_at": "2019-02-10 21:19:00", "level_id": 2, "user_id": 2)
 user_record5.save!
-user_record6 = UserRecord.new("created_at": "Sunday, 14 of June in 2019, 19:54 h", "completed_at": "Sunday, 15 of June in 2019, 19:54 h", "level_id": 6, "user_id": 1)
+user_record6 = UserRecord.new("created_at": "2019-03-09 21:19:00", "completed_at": "2019-03-10 21:19:00", "level_id": 3, "user_id": 2)
 user_record6.save!
 puts 'Six users records created'
 
+#<User id: 2, email: "1234445@test.com", created_at: "2020-06-09 19:18:47", updated_at: "2020-06-09 19:18:47", username: "1234">,
+ #<User id: 3, email: "player1@test.com", created_at: "2020-06-09 20:07:39", updated_at: "2020-06-09 20:07:39", username: "player1">,
+ #<User id: 4, email: "player2@test.com", created_at: "2020-06-09 20:07:40", updated_at: "2020-06-09 20:07:40", username: "player2">,
+ #<User id: 5, email: "player3@test.com", created_at: "2020-06-09 20:07:40", updated_at: "2020-06-09 20:07:40", username: "player3">,
+ #<User id: 6, email: "player4@test.com", created_at: "2020-06-09 20:07:40", updated_at: "2020-06-09 20:07:40", username: "player4">,
+ #<User id: 7, email: "player5@test.com", created_at: "2020-06-09 20:07:40", updated_at: "2020-06-09 20:07:40", username: "player5">,
+ #<User id: 8, email: "player6@test.com", created_at: "2020-06-09 20:07:41", updated_at: "2020-06-09 20:07:41", username: "player6">,
+ #<User id: 9, email: "eueueueueu@tester.com", created_at: "2020-06-09 21:17:09", updated_at: "2020-06-09 21:17:18", username: "eueueueueu">,
+ #<User id: 10, email: "testetesteteste@email.com", created_at: "2020-06-09 21:19:00", updated_at: "2020-06-09 21:27:53", username: "eumesmo">,
+ #<User id: 1, email: "tester1@tester.com", created_at: "2020-06-08 21:27:04", updated_at: "2020-06-10 14:08:01", username: "first player">]

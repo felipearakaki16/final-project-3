@@ -3,14 +3,14 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   
-  resources :user_records, only: %i(index show create update destroy) do
+  resources :user_records, only: %i(index create update) do
     resources :levels, only: %i(show)
   end
   resources :levels, only: %i(index)
 
   get '/level/1', to: 'levels#level1'
   get '/level/2', to: 'levels#level2'
-  get '/level/3', to: 'levels#level2'
+  get '/level/3', to: 'levels#level3'
 end
 
 
