@@ -6,7 +6,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :user_records, dependent: :destroy
-  # has_many :levels, through: :user_records
+  has_many :levels, through: :user_records
   has_one_attached :photo
 
   validates :username, presence: true
