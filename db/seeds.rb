@@ -1,3 +1,4 @@
+# destroy_all
 # puts 'Creating 6 levels'
 # level1 = Level.new("name": "level 1", "dificulty": "easy")
 # level1.save!
