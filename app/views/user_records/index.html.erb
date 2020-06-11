@@ -2,29 +2,29 @@
   <br>
 <p><strong>Username: </strong><%= @user.username %></p>
 <p><strong>User id: </strong><%= @user.id %></p>
-<p><strong>Subriscribed: </strong><%= @user.created_at %></p>
+<p><strong>Subriscribed: </strong><%= @user.created_at.strftime("%d/%b/%Y") %></p>
   <br>
   <br>
   <br>
 <h2><strong>Level 1</strong></h2>
 <p><%= link_to "Play", "level/1", class: "btn btn-green" %></p>
-<p><strong>Started: </strong><%= !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.created_at : "" %></p>
-<p><strong>Updated: </strong><%= !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.updated_at : "" %></p>
-<p><strong>Completed: </strong><%= !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.completed_at : "" %></p>
+<p><strong>Started: </strong><%= !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.created_at.strftime("%d/%b/%Y - %Hh%Mm") : "" %></p>
+<p><strong>Updated: </strong><%= !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.updated_at.strftime("%d/%b/%Y - %Hh%Mm") : "" %></p>
+<p><strong>Completed: </strong><%= !@user_records.where(level_id: 1).first.completed_at.nil? ? @user_records.where(level_id: 1).first.completed_at.strftime("%d/%b/%Y - %Hh%Mm") : "" %></p>
 <br>
 <br>
 <h2><strong>Level 2</strong></h2>
 <p><%= link_to "Play", "level/2", class: "btn btn-green" %></p>
-<p><strong>Started: </strong><%= !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.created_at : "" %></p>
-<p><strong>Updated: </strong><%= !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.updated_at : "" %></p>
-<p><strong>Completed: </strong><%= !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.completed_at : "" %></p>
+<p><strong>Started: </strong><%= !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.created_at.strftime("%d/%b/%Y - %Hh%Mm") : "" %></p>
+<p><strong>Updated: </strong><%= !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.updated_at.strftime("%d/%b/%Y - %Hh%Mm") : "" %></p>
+<p><strong>Completed: </strong><%= !@user_records.where(level_id: 2).first.completed_at.nil? ? @user_records.where(level_id: 2).first.completed_at.strftime("%d/%b/%Y - %Hh%Mm") : "" %></p>
 <br>
 <br>
 <h2><strong>Level 3</strong></h2>
 <p><%= link_to "Play", "level/3", class: "btn btn-green" %></p>
-<p><strong>Started: </strong><%= !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.created_at : "" %></p>
-<p><strong>Updated: </strong><%= !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.updated_at : "" %></p>
-<p><strong>Completed: </strong><%= !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.completed_at : "" %></p>
+<p><strong>Started: </strong><%= !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.created_at.strftime("%d/%b/%Y - %Hh%Mm") : "" %></p>
+<p><strong>Updated: </strong><%= !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.updated_at.strftime("%d/%b/%Y - %Hh%Mm") : "" %></p>
+<p><strong>Completed: </strong><%= !@user_records.where(level_id: 3).first.completed_at.nil? ? @user_records.where(level_id: 3).first.completed_at.strftime("%d/%b/%Y - %Hh%Mm") : "" %></p>
 <br>
 <br>
 <br>
