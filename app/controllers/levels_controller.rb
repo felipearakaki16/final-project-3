@@ -11,6 +11,7 @@ class LevelsController < ApplicationController
   def level1
     @record_level_1 = UserRecord.where(user: current_user, level_id: 1)
     if @record_level_1.first.nil?
+      # user_level_1 = Level.new()
       @record_level_1 = UserRecord.new(
                                     user_id: current_user.id,
                                     level_id: 1,
