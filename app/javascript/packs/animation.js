@@ -1,6 +1,9 @@
+import { btnCodeBox } from './btn';
+
 const { levelOne } = require('./parts_level');
 let boxElement = document.getElementById('typewriter');
-let sampleString = levelOne[0].text;
+let part = 0;
+let sampleString = levelOne[part].text;
 let stringArray = sampleString.split('');
 
 const typing = () => {
@@ -16,20 +19,45 @@ const typing = () => {
   setTimeout(typing, 50);
 };
 
+
+// Next and Prev Buttons
 const lvlHeader = document.getElementById('level-header');
+const exampleBox = document.getElementById('examples');
 const nextBtn = document.getElementById('next-btn');
+const prevBtn = document.getElementById('prev-btn');
 
 nextBtn.addEventListener('click', (event) => {
   event.preventDefault();
-  lvlHeader.insertAdjacentHTML('beforeend', "<h3>How it works</h3>")
-  boxElement.innerHTML = "";
-  sampleString = "All you have to do it's write the right commands that we are gonna ask you. In this module we are learning flexbox, if you try to use another commands will not pass that stage. Even if the position of the element is correct.";
-  stringArray = sampleString.split('');
-  // if (next === 2) {
-  //   lvlHeader.innerHTML = "<h1>Level 1</h1><h3>First of all</h3>";
-  //   boxElement.innerHTML = "";
-  //   sampleString = "Primeiro de tudo, o porquê do flexbox ser tão utilizado! \nDentro da propriedade display do CSS existem alguns valores que já influenciam na posição dos elementos, que é o Block ( pré-selecionado ao criar uma div), Inline (pré-selecionado em img, a, strong tags, dentre outros), dentre outros."
-  // }
+  if (part === levelOne.length - 1) {
+    return;
+  } else {
+    part+=1
+    lvlHeader.innerHTML = levelOne[part].header;
+    exampleBox.innerHTML = levelOne[part].example;
+    boxElement.innerHTML = "";
+    sampleString = levelOne[part].text;
+    stringArray = sampleString.split('');
+  };
+  btnCodeBox();
 });
+
+prevBtn.addEventListener('click', (event) => {
+  event.preventDefault()
+  if (part === 0) {
+    return;
+  } else {
+    part-=1
+    lvlHeader.innerHTML = levelOne[part].header;
+    exampleBox.innerHTML = levelOne[part].example;
+    boxElement.innerHTML = "";
+    sampleString = levelOne[part].text;
+    stringArray = sampleString.split('');
+  }
+  btnCodeBox();
+});
+
+// Box with code examples
+
+
 
 export { typing };

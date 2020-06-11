@@ -1,0 +1,212 @@
+.block {
+  border: 1px solid;
+}
+.i {
+  border: 1px solid;
+}
+
+// Card example using CSS property position
+.card-example-position {
+  overflow: hidden;
+  height: 120px;
+  min-width: 500px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.card-example-position img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-example-position h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-example-position p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-example-position .card-example-position-infos {
+  padding: 16px;
+  position: absolute;
+  text-align: left;
+  left: 120px;
+  top: 20px;
+}
+
+// Card example using display flex
+.card-example-flex {
+  overflow: hidden;
+  height: 120px;
+  min-width: 500px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.card-example-flex img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-example-flex h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-example-flex p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-example-flex .card-example-flex-infos {
+  padding: 16px;
+}
+
+// Style of Code example boxes
+
+.showVsCode {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.box-codes {
+  width: 500px;
+  height: 400px;
+  position: relative;
+}
+.html-code {
+  text-align: left;
+  position: absolute;
+  overflow: scroll;
+  width: 100%;
+  height: 90%;
+}
+.css-code {
+  text-align: left;
+  position: absolute;
+  overflow: scroll;
+  width: 100%;
+  height: 90%;
+}
+.html-code-flex {
+  text-align: left;
+  position: absolute;
+  overflow: scroll;
+  width: 100%;
+  height: 90%;
+}
+.css-code-flex {
+  text-align: left;
+  position: absolute;
+  overflow: scroll;
+  width: 100%;
+  height: 90%;
+}
+
+.disable {
+  display: none;
+}
+
+pre {
+  overflow: initial;
+}
+
+// Example of grid vs flex
+.grid-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.cards-example {
+  display: flex;
+  justify-content: space-around;
+}
+.another-cards-example {
+  display: flex;
+  flex-direction: column;
+}
+.card-box {
+  padding: 30px 20px;
+  display: flex;
+  background-color: #989898;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  font-size: 40px;
+}
+
+.grid-example {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 3fr 2fr;
+}
+.card {
+  display: flex;
+  background-color: #989898;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin: 10px;
+  padding: 20px;
+}
+.row-example {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-area: 2/1/2/3;
+}
+.ex-flex-grid {
+  border: 1px solid;
+}
+
+// Example parents divs
+.grandpa {
+  border: 5px solid red;
+  border-radius: 5px;
+  padding: 15px;
+}
+.father {
+  border: 5px solid blue;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+.sons {
+  border: 5px solid green;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 5px;
+}
+
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.green {
+  color: green;
+}
