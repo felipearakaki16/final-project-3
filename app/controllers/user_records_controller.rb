@@ -5,17 +5,18 @@ class UserRecordsController < ApplicationController
     @user_records = UserRecord.where(user: current_user)
     @user = User.find(current_user.id)
 
-    @level_1_created_at = !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.created_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
-    @level_1_updated_at = !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.updated_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
-    @level_1_completed_at = @user_records.where(level_id: 1).count > 0 && !@user_records.where(level_id: 1).first.completed_at.nil? ? @user_records.where(level_id: 1).first.completed_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
+    @level_1_created = !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.created_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
+    @level_1_updated = !@user_records.where(level_id: 1).first.nil? ? @user_records.where(level_id: 1).first.updated_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
+    @level_1_completed = !@user_records.where(level_id: 1).first.completed_at.nil? ? @user_records.where(level_id: 1).first.completed_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
 
-    @level_2_created_at = !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.created_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
-    @level_2_updated_at = !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.updated_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
-    @level_2_completed_at = @user_records.where(level_id: 2).count > 0 && !@user_records.where(level_id: 2).first.completed_at.nil? ? @user_records.where(level_id: 2).first.completed_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
+    @level_2_created = !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.created_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
+    @level_2_updated = !@user_records.where(level_id: 2).first.nil? ? @user_records.where(level_id: 2).first.updated_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
+    @level_2_completed = !@user_records.where(level_id: 2).first.completed_at.nil? ? @user_records.where(level_id: 2).first.completed_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
 
-    @level_3_created_at = !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.created_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
-    @level_3_updated_at = !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.updated_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
-    @level_3_completed_at = @user_records.where(level_id: 3).count > 0 && !@user_records.where(level_id: 3).first.completed_at.nil? ? @user_records.where(level_id: 3).first.completed_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
+
+    @level_3_created = !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.created_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
+    @level_3_updated = !@user_records.where(level_id: 3).first.nil? ? @user_records.where(level_id: 3).first.updated_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
+    @level_3_completed = !@user_records.where(level_id: 3).first.completed_at.nil? ? @user_records.where(level_id: 3).first.completed_at.strftime("%d/%b/%Y - %Hh%Mm") : ""
   end
 
   def update
