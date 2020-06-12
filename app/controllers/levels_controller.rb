@@ -12,6 +12,7 @@ class LevelsController < ApplicationController
   
   def show
     @level = Level.find(params[:id])
+    @file = File.join(Rails.root, "public/landing.html")
   end
 end
 
