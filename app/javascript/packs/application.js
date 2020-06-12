@@ -39,6 +39,5 @@ document.addEventListener('turbolinks:load', () => {
     const ln = typewriter.dataset.levelName;
     init_animation(ln);
   };
-  typing();
   modalMenu();
 });
