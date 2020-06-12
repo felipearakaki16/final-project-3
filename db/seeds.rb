@@ -1,17 +1,18 @@
-# puts 'Creating 6 levels'
-# level1 = Level.new("name": "level 1", "dificulty": "easy")
-# level1.save!
-# level2 = Level.new("name": "level 2", "dificulty": "easy")
-# level2.save!
-# level3 = Level.new("name": "level 3", "dificulty": "medium")
-# level3.save!
-# level4 = Level.new("name": "level 4", "dificulty": "medium")
-# level4.save!
-# level5 = Level.new("name": "level 5", "dificulty": "hard")
-# level5.save!
-# level6 = Level.new("name": "level 6", "dificulty": "hard")
-# level6.save!
-# puts 'Finished creating 6 levels'
+Level.destroy_all
+puts 'Creating 6 levels'
+level1 = Level.new("name": "level 1", "dificulty": "easy")
+level1.save!
+level2 = Level.new("name": "level 2", "dificulty": "medium")
+level2.save!
+level3 = Level.new("name": "level 3", "dificulty": "medium")
+level3.save!
+level4 = Level.new("name": "level 4 - Under construction...", "dificulty": "medium")
+level4.save!
+level5 = Level.new("name": "level 5 - Under construction...", "dificulty": "hard")
+level5.save!
+level6 = Level.new("name": "level 6 - Under construction...", "dificulty": "hard")
+level6.save!
+puts 'Finished creating 6 levels'
 
 
 # puts 'Creating 6 users'
@@ -28,23 +29,23 @@
 # user6 = User.new("username": "player6", "email": "player6@test.com", "password": "123456")
 # user6.save!
 # puts 'Six users created'
-
+User.destroy_all
 UserRecord.destroy_all
 
-puts 'Creating 6 users records'
-user_record1 = UserRecord.new("created_at": "2019-06-09 21:19:00", "completed_at": "2019-06-10 21:19:00", "level_id": 1, "user_id": 1)
-user_record1.save!
-user_record2 = UserRecord.new("created_at": "2019-07-09 21:19:00", "completed_at": "2019-07-10 21:19:00", "level_id": 2, "user_id": 1)
-user_record2.save!
-user_record3 = UserRecord.new("created_at": "2019-08-09 21:19:00", "completed_at": nil, "level_id": 3, "user_id": 1)
-user_record3.save!
-user_record4 = UserRecord.new("created_at": "2019-01-09 21:19:00", "completed_at": "2019-01-10 21:19:00", "level_id": 1, "user_id": 2)
-user_record4.save!
-user_record5 = UserRecord.new("created_at": "2019-02-09 21:19:00", "completed_at": "2019-02-10 21:19:00", "level_id": 2, "user_id": 2)
-user_record5.save!
-user_record6 = UserRecord.new("created_at": "2019-03-09 21:19:00", "completed_at": "2019-03-10 21:19:00", "level_id": 3, "user_id": 2)
-user_record6.save!
-puts 'Six users records created'
+# puts 'Creating 6 users records'
+# user_record1 = UserRecord.new("created_at": "2019-06-09 21:19:00", "completed_at": "2019-06-10 21:19:00", "level_id": 1, "user_id": 1)
+# user_record1.save!
+# user_record2 = UserRecord.new("created_at": "2019-07-09 21:19:00", "completed_at": "2019-07-10 21:19:00", "level_id": 2, "user_id": 1)
+# user_record2.save!
+# user_record3 = UserRecord.new("created_at": "2019-08-09 21:19:00", "completed_at": nil, "level_id": 3, "user_id": 1)
+# user_record3.save!
+# user_record4 = UserRecord.new("created_at": "2019-01-09 21:19:00", "completed_at": "2019-01-10 21:19:00", "level_id": 1, "user_id": 2)
+# user_record4.save!
+# user_record5 = UserRecord.new("created_at": "2019-02-09 21:19:00", "completed_at": "2019-02-10 21:19:00", "level_id": 2, "user_id": 2)
+# user_record5.save!
+# user_record6 = UserRecord.new("created_at": "2019-03-09 21:19:00", "completed_at": "2019-03-10 21:19:00", "level_id": 3, "user_id": 2)
+# user_record6.save!
+# puts 'Six users records created'
 
 #<User id: 2, email: "1234445@test.com", created_at: "2020-06-09 19:18:47", updated_at: "2020-06-09 19:18:47", username: "1234">,
  #<User id: 3, email: "player1@test.com", created_at: "2020-06-09 20:07:39", updated_at: "2020-06-09 20:07:39", username: "player1">,

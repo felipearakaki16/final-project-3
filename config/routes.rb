@@ -6,11 +6,7 @@ Rails.application.routes.draw do
   resources :user_records, only: %i(index create update) do
     resources :levels, only: %i(show)
   end
-  resources :levels, only: %i(index)
-
-  get '/level/1', to: 'levels#level1'
-  get '/level/2', to: 'levels#level2'
-  get '/level/3', to: 'levels#level3'
+  resources :levels, only: %i(show index)
 end
 
 
