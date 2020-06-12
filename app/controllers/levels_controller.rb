@@ -21,5 +21,12 @@ class LevelsController < ApplicationController
       user_record.save
     end
   end
+
+  def example
+    
+  end
+
+
+
 end
 
