@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    body { 
+      background: black;
+      color: white;
+      font-family: 'Press Start 2P', cursive; }
+    .container { 
+      width: 60%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;}
+  </style>
   <title>404</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -8,11 +21,12 @@
 <body class="rails-default-error-page">
   <!-- This file lives in public/404.html -->
   <div class="dialog">
-    <div>
-      <h1>The page you were looking for doesn't exist.</h1>
-      <p>You may have mistyped the address or the page may have moved.</p>
+    <div class="container">
+      <h1>Oh, no! A bug</h1>
+      <br /><br />
+      <h1>404</h1>
+      <img src="./galagabug.png" alt="galaba bug">
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
   </div>
 </body>
 </html>
