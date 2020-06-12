@@ -1,5 +1,5 @@
 <div class="navbar">
-  <h1>JEDI</h1>
+  <h1><%= link_to  "JEDI", root_path %></h1>
   <div class="navbar-nav">
     <% if user_signed_in? %>
       <h3>Welcome,<br /><%= current_user.username %></h3>

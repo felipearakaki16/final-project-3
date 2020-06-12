@@ -20,6 +20,14 @@ class LevelsController < ApplicationController
       user_record.updated_at = DateTime.now
       user_record.save
     end
+    render layout: "special.html.erb"
   end
+
+  def example
+    
+  end
+
+
+
 end
 

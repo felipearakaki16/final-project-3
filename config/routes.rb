@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     resources :levels, only: %i(show)
   end
   resources :levels, only: %i(show index)
+
+  get "/level/example", to: "levels#example"
 end
 
 
