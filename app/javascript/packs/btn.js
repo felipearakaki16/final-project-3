@@ -4,7 +4,7 @@ const btnCodeBox = () => {
   const cssCode = document.querySelector('.css-code');
   const htmlCode = document.querySelector('.html-code');
 
-  if (btnHTML != null) {
+  if (btnHTML) {
     btnHTML.addEventListener('click', (event) => {
       event.preventDefault();
       htmlCode.classList.remove('disable');
@@ -12,7 +12,7 @@ const btnCodeBox = () => {
     });
   }
 
-  if (btnCSS != null) {
+  if (btnCSS) {
     btnCSS.addEventListener('click', (event) => {
       event.preventDefault();
       cssCode.classList.remove('disable');
@@ -25,7 +25,7 @@ const btnCodeBox = () => {
   const cssCodeFlex = document.querySelector('.css-code-flex');
   const htmlCodeFlex = document.querySelector('.html-code-flex');
   
-  if (btnHTMLFlex != null) {
+  if (btnHTMLFlex) {
     btnHTMLFlex.addEventListener('click', (event) => {
       event.preventDefault();
       htmlCodeFlex.classList.remove('disable');
@@ -33,7 +33,7 @@ const btnCodeBox = () => {
     });
   }
 
-  if (btnCSSFlex != null) {
+  if (btnCSSFlex) {
     btnCSSFlex.addEventListener('click', (event) => {
       event.preventDefault();
       cssCodeFlex.classList.remove('disable');
