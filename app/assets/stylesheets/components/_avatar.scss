@@ -1,19 +1,28 @@
+#page-container {
+  background-image: url(https://media.giphy.com/media/l0K4lUxBzIOeJd1EA/giphy.gif);
+  background-size: cover;
+}
+
+
+
+
+
 .avatar {
-  width: 40px;
+  //width: 80px;
   border-radius: 50%;
 }
 .avatar-large {
-  width: 56px;
-  border-radius: 50%;
+  width: 100px;
+  border-radius: 70%;
 }
 .avatar-bordered {
-  width: 40px;
-  border-radius: 50%;
+  width: 30px;
+  border-radius: 80%;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   border: white 1px solid;
 }
 .avatar-square {
-  width: 40px;
+  width: 80px;
   border-radius: 0px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   border: white 1px solid;
