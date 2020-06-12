@@ -20,12 +20,12 @@ body {
 .baloon {
   margin: 5% auto;
   width: 90%;
-  height: 200px;
-  padding: 5px 10px;
-  background-color: #cfcfcf;
-  color: #202020;
+  height: 19rem;
+  padding: 10px 15px;
+  background-color: rgb(0, 0, 0);
+  color: white;
   font-size: 18px;
-  border: 3px solid #afafaf;
+  border: 2px solid white;
   border-radius: 4px;
 }
 .products-container {
@@ -37,7 +37,7 @@ body {
   width: 100%;
 }
 .example {
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
