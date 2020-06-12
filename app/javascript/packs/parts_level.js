@@ -34,54 +34,56 @@ const content_level = {
           </div>
           <div class="html-code">
             <pre>
-              &lt;div class="card-example-position"&gt;
-                &lt;img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /&gt;
-                &lt;div class="card-example-position-infos"&gt;
-                  &lt;h2&gt;Product name&lt;/h2&gt;
-                  &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
+&lt;div class="card-example-position"&gt;
+&lt;img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /&gt;
+&lt;div class="card-example-position-infos"&gt;
+&lt;h2&gt;Product name&lt;/h2&gt;
+&lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
             </pre>
           </div>
           <div class="css-code disable">
             <pre>
-              .card-example-position {
-                overflow: hidden;
-                height: 120px;
-                background: white;
-                box-shadow: 0 0 15px rgba(0,0,0,0.2);
-                position: relative;
-              }
-              
-              .card-example-position img {
-                position: absolute;
-                left: 0;
-                height: 100%;
-                width: 120px;
-                object-fit: cover;
-              }
-              
-              .card-example-position h2 {
-                font-size: 16px;
-                font-weight: bold;
-                margin: 0;
-              }
-              
-              .card-example-position p {
-                font-size: 12px;
-                line-height: 1.4;
-                opacity: .7;
-                margin-bottom: 0;
-                margin-top: 8px;
-              }
-              
-              .card-example-position .card-example-position-infos {
-                padding: 16px;
-                position: absolute;
-                text-align: left;
-                left: 120px;
-                top: 20px;
-              }
+.card-example-position {
+  overflow: hidden;
+  height: 120px;
+  min-width: 500px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+  color: black;
+}
+
+.card-example-position img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-example-position h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-example-position p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-example-position .card-example-position-infos {
+  padding: 16px;
+  position: absolute;
+  text-align: left;
+  left: 120px;
+  top: 20px;
+}
             </pre>
           </div>
         </div>
@@ -101,50 +103,52 @@ const content_level = {
           </div>
           <div class="html-code-flex">
             <pre>
-            &lt;div class="card-example-flex"&gt;
-              &lt;img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /&gt;
-              &lt;div class="card-example-flex-infos"&gt;
-                &lt;h2&gt;Product name&lt;/h2&gt;
-                &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
+&lt;div class="card-example-flex"&gt;
+  &lt;img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboardjpg" /&gt;
+  &lt;div class="card-example-flex-infos"&gt;
+    &lt;h2&gt;Product name&lt;/h2&gt;
+    &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
             </pre>
           </div>
           <div class="css-code-flex disable">
             <pre>
-              .card-example-flex {
-                overflow: hidden;
-                height: 120px;
-                background: white;
-                box-shadow: 0 0 15px rgba(0,0,0,0.2);
-                display: flex;
-                align-items: center;
-                text-align: left;
-              }
-              
-              .card-example-flex img {
-                height: 100%;
-                width: 120px;
-                object-fit: cover;
-              }
-              
-              .card-example-flex h2 {
-                font-size: 16px;
-                font-weight: bold;
-                margin: 0;
-              }
-              
-              .card-example-flex p {
-                font-size: 12px;
-                line-height: 1.4;
-                opacity: .7;
-                margin-bottom: 0;
-                margin-top: 8px;
-              }
-              
-              .card-example-flex .card-example-flex-infos {
-                padding: 16px;
-              }
+.card-example-flex {
+  overflow: hidden;
+  height: 120px;
+  max-width: 500px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: black;
+}
+
+.card-example-flex img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-example-flex h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-example-flex p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-example-flex .card-example-flex-infos {
+  padding: 16px;
+}
             </pre>
           </div>
         </div>
@@ -208,13 +212,13 @@ const content_level = {
                 <h3>HTML</h3>
                 <div class="html-code-flex">
                   <pre>
-                    &lt;div class="grandpa"&gt;
-                      &lt;div class="father"&gt;
-                        &lt;div class="sons"&gt;&lt;/div&gt;
-                        &lt;div class="sons"&gt;&lt;/div&gt;
-                        &lt;div class="sons"&gt;&lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
+&lt;div class="grandpa"&gt;
+  &lt;div class="father"&gt;
+    &lt;div class="sons"&gt;&lt;/div&gt;
+    &lt;div class="sons"&gt;&lt;/div&gt;
+    &lt;div class="sons"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
                   </pre>
                 </div>
               </div>
@@ -231,10 +235,7 @@ const content_level = {
     {
       header: "<h1 class='actual-lvl'>Level 1</h1>",
       text: "A primeira coisa que devemos fazer é dizer ao pai que queremos 'display: flex;', então você verá que automáticamente seus filhos ficarão todos em apenas uma linha. Caso não tenha específicado a largura eles se empremerão para caber. ",
-      example: `<div id="iframes">
-      <iframe src="landing-page.html" id="frame-question" class="frame" frameborder="0" allowfullscreen="true"></iframe>
-      </div>
-    </div>`
+      example: ""
     }
   ],
   'Level 2': [],

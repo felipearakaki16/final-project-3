@@ -9,7 +9,7 @@ class User < ApplicationRecord
   has_many :levels, through: :user_records
   has_one_attached :photo
 
-  validates :username, presence: true
+  validates :username, presence: true, uniqueness: true
 
 end
 

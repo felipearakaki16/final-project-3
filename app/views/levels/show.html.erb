@@ -1,7 +1,11 @@
 <div class="content">
-  <div id="level-header"></div>
-  <div id="typewriter" class="baloon"></div>
+  <div id="level-header">
+  </div>
+
+  <div id="typewriter" class="baloon" data-level-name="<%= @level.name %>">
+  </div>
   <div id="examples"></div>
+
   <div class="btn-level">
     <button id="prev-btn">Prev</button>
     <button id="next-btn">Next</button>
@@ -12,7 +16,3 @@
   </div> 
 </div>
 <%= link_to "Back to Levels", levels_path %>
-<script>
-  let levelName = '<%= @level.name %>'
-</script>
-
