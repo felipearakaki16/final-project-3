@@ -2,7 +2,7 @@
 <div class="content">
   <div id="level-header">
   </div>
-  <div id="typewriter" class="baloon">
+  <div id="typewriter" class="baloon" data-level-name="<%= @level.name %>">
   </div>
   <div id="examples"></div>
   <div class="btn-level">
@@ -12,8 +12,3 @@
   </div>
 </div>
 <%= link_to "Back to Levels", levels_path %>
-<script>
-  let levelName = '<%= @level.name %>'
-</script>
-
-<%# Quando a fase for concluida, tem que mandar para o user_record_path para atualizar o completed_at%>
