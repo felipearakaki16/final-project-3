@@ -9,7 +9,7 @@ class UserRecordsController < ApplicationController
     user_record = UserRecord.includes(:level).where(user: current_user, level: params[:id])
     user_record.completed_at = DateTime.now
     user_record.save
-    redirect_to levels_path
+    redirect_to levels_path # confirmar se vai redirecionar para essa rota
   end
 
   def create
