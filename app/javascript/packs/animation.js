@@ -39,7 +39,6 @@ const init_animation = (levelName) => {
   const exampleBox = document.getElementById('examples');
   const nextBtn = document.getElementById('next-btn');
   const prevBtn = document.getElementById('prev-btn');
-  
 
   nextBtn.addEventListener('click', (event) => {
     event.preventDefault();
