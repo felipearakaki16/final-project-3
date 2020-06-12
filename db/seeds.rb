@@ -1,16 +1,16 @@
 Level.destroy_all
 puts 'Creating 6 levels'
-level1 = Level.new("name": "level 1", "dificulty": "easy")
+level1 = Level.new("name": "Level 1", "dificulty": "easy")
 level1.save!
-level2 = Level.new("name": "level 2", "dificulty": "medium")
+level2 = Level.new("name": "Level 2", "dificulty": "medium")
 level2.save!
-level3 = Level.new("name": "level 3", "dificulty": "medium")
+level3 = Level.new("name": "Level 3", "dificulty": "medium")
 level3.save!
-level4 = Level.new("name": "level 4 - Under construction...", "dificulty": "medium")
+level4 = Level.new("name": "Level 4 - Under construction...", "dificulty": "medium")
 level4.save!
-level5 = Level.new("name": "level 5 - Under construction...", "dificulty": "hard")
+level5 = Level.new("name": "Level 5 - Under construction...", "dificulty": "hard")
 level5.save!
-level6 = Level.new("name": "level 6 - Under construction...", "dificulty": "hard")
+level6 = Level.new("name": "Level 6 - Under construction...", "dificulty": "hard")
 level6.save!
 puts 'Finished creating 6 levels'
 
