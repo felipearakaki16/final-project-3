@@ -1,7 +1,7 @@
 <div class="content">
   <div class="game-card">
     <h1>Flexbox<br />Game</h1>
-    <% if (user_signed_in? && current_user.user_records.empty?) || !user_signed_in %>
+    <% if (user_signed_in? && current_user.user_records.empty?) || !user_signed_in? %>
       <h3><%= link_to  "Press Start", level_path(1) %></h3>
       <h3><%= link_to  "Select level", levels_path %></h3>
     <% elsif user_signed_in? && current_user.user_records.any? %>
