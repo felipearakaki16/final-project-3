@@ -18,18 +18,30 @@
   margin: 15% auto;
   padding: 20px;
   border: 3px solid white;
-  width: 80%;
+  width: 60%;
   ul {
     list-style: none;
+    text-align: center;
+  }
+  li {
+    margin: 16px;
+    padding: 10px;
+    &:hover {
+      border: 1px solid rgba(255, 255, 255, 0.7);
+    }
   }
   a {
     color: white;
     text-decoration: none;
+    &:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
   }
 }
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: white;
+  width: 24px;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -37,7 +49,7 @@
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   cursor: pointer;
 }

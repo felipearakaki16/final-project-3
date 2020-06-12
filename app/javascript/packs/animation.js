@@ -6,6 +6,7 @@ let part = 0;
 const level = content_level[ levelName ]
 let sampleString = level[part].text;
 let stringArray = sampleString.split('');
+
 const typing = () => {
   document.addEventListener("keyup", (event) => {
     if (event.keyCode === 13) {
@@ -55,9 +56,5 @@ prevBtn.addEventListener('click', (event) => {
   }
   btnCodeBox();
 });
-
-// Box with code examples
-
-
 
 export { typing };
