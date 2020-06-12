@@ -1,0 +1,22 @@
+.footer {
+  position: relative;
+  background-color: #715844;
+  color: white;
+  text-align: center;
+  height: 30vh;
+  bottom: 0;
+  margin: 20px 0 0 0;
+}
+.footer i {
+  font-size: 30px;
+}
+.footer p {
+  opacity: 0.8;
+}
+.footer a {
+  color: white;
+  transition: 0.3s;
+}
+.footer a:hover {
+  opacity: 0.8;
+}

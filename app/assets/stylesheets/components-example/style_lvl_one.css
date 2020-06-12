@@ -1,0 +1,25 @@
+/* Custom design below! */
+@import url("banner.css");
+@import url("cards.css");
+@import url("footer.css");
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Poppins:wght@200;300;400;700&display=swap');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+/* Utilities */
+body {
+  margin: 0;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

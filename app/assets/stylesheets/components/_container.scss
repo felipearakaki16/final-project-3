@@ -1,11 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #page-container {
   position: relative;
   min-height: 100vh;
 }
-
 #content-wrap {
-  padding-bottom: 12rem; /*Footer height*/
+  padding-bottom: 12rem;
+}
+.content {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.baloon {
+  margin: 5% auto;
+  width: 90%;
+  height: 200px;
+  padding: 5px 10px;
+  background-color: #cfcfcf;
+  color: #202020;
+  font-size: 18px;
+  border: 3px solid #afafaf;
+  border-radius: 4px;
 }
 .products-container {
   margin: 0 auto;
+}
+#examples {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.example {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
 }
