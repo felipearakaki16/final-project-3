@@ -9,14 +9,7 @@ class User < ApplicationRecord
   has_many :levels, through: :user_records
   has_one_attached :photo
 
-  validates :username, presence: true
+  validates :username, presence: true, uniqueness: true
 
-  # private
-
-  # def create_user_records
-  #   UserRecord.create(user: self, level_id: 1)
-  #   UserRecord.create(user: self, level_id: 2)
-  #   UserRecord.create(user: self, level_id: 3)
-  # end
 end
 

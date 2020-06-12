@@ -1,11 +1,14 @@
-<h1>Pages#home</h1>
-<p>Testando Claudio-nary</p>
-
-
-
-<%= cl_image_tag("tqiduj2ohlmjmfjwbrjv.jpg",
-      width: 400, height: 300, crop: :fill) %>
-
-<!-- for face detection -->
-<%= cl_image_tag("pggmykgkktnkldkmxae9.jpg",
-      width: 150, height: 150, crop: :thumb, gravity: :face) %>
+<div class="content">
+  <div class="game-card">
+    <h1>Flexbox<br />Game</h1>
+    <% if (user_signed_in? && current_user.user_records.empty?) || !user_signed_in? %>
+      <h3><%= link_to  "Press Start", level_path(1) %></h3>
+      <h3><%= link_to  "Select level", levels_path %></h3>
+    <% elsif user_signed_in? && current_user.user_records.any? %>
+      <div class="game-card-options">
+        <h3><%= link_to  "Resume", level_path(current_user.user_records.last.level_id) %></h3>
+        <h3><%= link_to  "Select level", levels_path %></h3>
+      </div>
+    <% end %>
+  </div>
+</div>

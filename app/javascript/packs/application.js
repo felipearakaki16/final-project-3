@@ -16,7 +16,6 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-
 // ----------------------------------------------------
 // Note(lewagon): ABOVE IS RAILS DEFAULT CONFIGURATION
 // WRITE YOUR OWN JS STARTING FROM HERE 👇
@@ -24,6 +23,9 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import { init_animation } from './animation';
+import { typing } from './animation';
+import { modalMenu } from './modal';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -31,4 +33,11 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  // typing();
+  const typewriter = document.getElementById('typewriter');
+  if (typewriter) {
+    const ln = typewriter.dataset.levelName;
+    init_animation(ln);
+  };
+  modalMenu();
 });
