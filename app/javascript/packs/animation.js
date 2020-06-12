@@ -31,7 +31,6 @@ const init_animation = (levelName) => {
   let part = 0;
   let sampleString = level[part].text;
   let loop = typing(sampleString);
-  console.log(loop)
   // Next and Prev Buttons
   const lvlHeader = document.getElementById('level-header');
   const exampleBox = document.getElementById('examples');
@@ -41,7 +40,6 @@ const init_animation = (levelName) => {
 
   nextBtn.addEventListener('click', (event) => {
     event.preventDefault();
-    console.log(loop);
     if (part === level.length - 1) {
       return;
     } else {
@@ -58,7 +56,6 @@ const init_animation = (levelName) => {
 
   prevBtn.addEventListener('click', (event) => {
     event.preventDefault();
-    console.log(loop);
     if (part === 0) {
       return;
     } else {
