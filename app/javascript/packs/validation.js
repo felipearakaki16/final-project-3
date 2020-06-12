@@ -1,7 +1,8 @@
-const correction = [/display: *flex;/, /justify-content: *space-around;/];
+const correction = [/display: *flex;/];
 const formAnswer = document.getElementById('box-answer');
 
-formAnswer.addEventListener('submit', (event) => {
+const validation = () => {
+  formAnswer.addEventListener('submit', (event) => {
   event.preventDefault();
   const answer = event.currentTarget.querySelector('#answer').value;
   let checkAnswer = "" + answer;
@@ -22,4 +23,7 @@ formAnswer.addEventListener('submit', (event) => {
   } else {
     document.querySelector('body').style.backgroundColor = "white"
   }
-})
+  })
+}
+
+export { validation }
