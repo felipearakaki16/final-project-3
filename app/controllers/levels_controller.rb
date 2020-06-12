@@ -11,6 +11,7 @@ class LevelsController < ApplicationController
   end
   
   def show
+    # render layout: "special.html.erb"
     @level = Level.find(params[:id])
     user_record = UserRecord.find_by(user: current_user, level: @level)
     if user_record.nil?
