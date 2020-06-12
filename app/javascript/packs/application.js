@@ -23,7 +23,7 @@ require("channels")
 
 // External imports
 import "bootstrap";
-import { typing } from './animation';
+import { init_animation } from './animation';
 import { modalMenu } from './modal';
 
 // Internal imports, e.g:
@@ -32,6 +32,11 @@ import { modalMenu } from './modal';
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  typing();
+  // typing();
+  const typewriter = document.getElementById('typewriter');
+  if (typewriter) {
+    const ln = typewriter.dataset.levelName;
+    init_animation(ln);
+  };
   modalMenu();
 });
