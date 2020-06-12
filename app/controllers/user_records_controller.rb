@@ -3,17 +3,13 @@ class UserRecordsController < ApplicationController
 
   def index
     @user_records = UserRecord.includes(:level).where(user: current_user).order("levels.name")
-    @user = User.find(current_user.id)
   end
 
   def update
-    @user_record.completed_at = nil
-    if @user_record.save
-      redirect_to user_records_path
-    else
-      redirect_to user_records_path
-    end
-
+    user_record = UserRecord.includes(:level).where(user: current_user, level: params[:id])
+    user_record.completed_at = DateTime.now
+    user_record.save
+    redirect_to levels_path
   end
 
   def create
