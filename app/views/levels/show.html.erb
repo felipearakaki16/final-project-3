@@ -1,6 +1,5 @@
 <div class="content">
   <div id="level-header">
-    <h1><%= @level.name %></h1>
   </div>
   <div id="typewriter" class="baloon">
   </div>
@@ -8,9 +7,11 @@
   <div class="btn-level">
     <button id="prev-btn">Prev</button>
     <button id="next-btn">Next</button>
-      <script src="jquery-3.5.1.min.js"></script>
     </div>
   </div>
 </div>
 <%= link_to "Back to Levels", levels_path %>
+<script>
+  let levelName = '<%= @level.name %>'
+</script>
 

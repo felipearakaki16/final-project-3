@@ -1,11 +1,11 @@
 import { btnCodeBox } from './btn';
 
-const { levelOne } = require('./parts_level');
+const { content_level } = require('./parts_level');
 let boxElement = document.getElementById('typewriter');
 let part = 0;
-let sampleString = levelOne[part].text;
+const level = content_level[ levelName ]
+let sampleString = level[part].text;
 let stringArray = sampleString.split('');
-
 const typing = () => {
   document.addEventListener("keyup", (event) => {
     if (event.keyCode === 13) {
@@ -28,14 +28,14 @@ const prevBtn = document.getElementById('prev-btn');
 
 nextBtn.addEventListener('click', (event) => {
   event.preventDefault();
-  if (part === levelOne.length - 1) {
+  if (part === level.length - 1) {
     return;
   } else {
     part+=1
-    lvlHeader.innerHTML = levelOne[part].header;
-    exampleBox.innerHTML = levelOne[part].example;
+    lvlHeader.innerHTML = level[part].header;
+    exampleBox.innerHTML = level[part].example;
     boxElement.innerHTML = "";
-    sampleString = levelOne[part].text;
+    sampleString = level[part].text;
     stringArray = sampleString.split('');
   };
   btnCodeBox();
@@ -47,10 +47,10 @@ prevBtn.addEventListener('click', (event) => {
     return;
   } else {
     part-=1
-    lvlHeader.innerHTML = levelOne[part].header;
-    exampleBox.innerHTML = levelOne[part].example;
+    lvlHeader.innerHTML = level[part].header;
+    exampleBox.innerHTML = level[part].example;
     boxElement.innerHTML = "";
-    sampleString = levelOne[part].text;
+    sampleString = level[part].text;
     stringArray = sampleString.split('');
   }
   btnCodeBox();
