@@ -12,6 +12,22 @@ class LevelsController < ApplicationController
   
   def show
     @level = Level.find(params[:id])
+    user_record = UserRecord.find_by(user: current_user, level: @level)
+    if user_record.nil?
+      user_record = UserRecord.new(user: current_user, level: @level)
+      user_record.save
+    else
+      user_record.updated_at = DateTime.now
+      user_record.save
+    end
+    render layout: "special.html.erb"
   end
+
+  def example
+    
+  end
+
+
+
 end
 
