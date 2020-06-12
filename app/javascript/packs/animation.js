@@ -14,13 +14,16 @@ const typing = (str) => {
   });
 
   const loop = setInterval( () => {
+    if ( stringArray[i] ) {
     boxElement.innerHTML += stringArray[i];
+    };
     if ( i >= stringArray.length ) {
       clearInterval(loop);
     }
     i++; 
   }, 50);
   // loop();
+  
 };
 
 const init_animation = (levelName) => {
