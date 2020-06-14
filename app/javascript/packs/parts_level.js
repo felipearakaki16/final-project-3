@@ -186,6 +186,7 @@ const content_level = {
           <div class="row-example">
             <div class="card-grid">Card</div>
             <div class="card-grid">Card</div>
+            <div class="card-grid">Card</div>
           </div>
         </div>
       </div>
@@ -235,17 +236,12 @@ const content_level = {
       header: "<h1 class='actual-lvl'>Level 1</h1>",
       text: "A primeira coisa que devemos fazer é dizer ao pai que queremos 'display: flex;', então você verá que automáticamente seus filhos ficarão todos em apenas uma linha. Caso não tenha específicado a largura eles se empremerão para caber. ",
       example: `<div class="content">
-      <div class="box-form">
-      <h3>Qual é a primeira coisa que devemos fazer para usar flexbox?</h3>
-      <form id="box-answer" action="#">
-        <input id="answer" type="text">
-      </form>
-      </div>
       <div id="iframes">
-      <iframe src="https://isaporto.github.io/landing/" id="frame-question" class="frame" frameborder="0" allowfullscreen="true">
+      <iframe src="https://isaporto.github.io/landing/" id="iframe-question" class="frame" frameborder="0" allowfullscreen="true">
       </iframe>
     </div>
-    </div>`
+    </div>`,
+    exercise: true
     }
   ],
   'Level 2': [],
