@@ -34,54 +34,56 @@ const content_level = {
           </div>
           <div class="html-code">
             <pre>
-              &lt;div class="card-example-position"&gt;
-                &lt;img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /&gt;
-                &lt;div class="card-example-position-infos"&gt;
-                  &lt;h2&gt;Product name&lt;/h2&gt;
-                  &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
+&lt;div class="card-example-position"&gt;
+&lt;img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /&gt;
+&lt;div class="card-example-position-infos"&gt;
+&lt;h2&gt;Product name&lt;/h2&gt;
+&lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
             </pre>
           </div>
           <div class="css-code disable">
             <pre>
-              .card-example-position {
-                overflow: hidden;
-                height: 120px;
-                background: white;
-                box-shadow: 0 0 15px rgba(0,0,0,0.2);
-                position: relative;
-              }
-              
-              .card-example-position img {
-                position: absolute;
-                left: 0;
-                height: 100%;
-                width: 120px;
-                object-fit: cover;
-              }
-              
-              .card-example-position h2 {
-                font-size: 16px;
-                font-weight: bold;
-                margin: 0;
-              }
-              
-              .card-example-position p {
-                font-size: 12px;
-                line-height: 1.4;
-                opacity: .7;
-                margin-bottom: 0;
-                margin-top: 8px;
-              }
-              
-              .card-example-position .card-example-position-infos {
-                padding: 16px;
-                position: absolute;
-                text-align: left;
-                left: 120px;
-                top: 20px;
-              }
+.card-example-position {
+  overflow: hidden;
+  height: 120px;
+  min-width: 500px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+  color: black;
+}
+
+.card-example-position img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-example-position h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-example-position p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-example-position .card-example-position-infos {
+  padding: 16px;
+  position: absolute;
+  text-align: left;
+  left: 120px;
+  top: 20px;
+}
             </pre>
           </div>
         </div>
@@ -101,50 +103,52 @@ const content_level = {
           </div>
           <div class="html-code-flex">
             <pre>
-            &lt;div class="card-example-flex"&gt;
-              &lt;img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /&gt;
-              &lt;div class="card-example-flex-infos"&gt;
-                &lt;h2&gt;Product name&lt;/h2&gt;
-                &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
+&lt;div class="card-example-flex"&gt;
+  &lt;img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboardjpg" /&gt;
+  &lt;div class="card-example-flex-infos"&gt;
+    &lt;h2&gt;Product name&lt;/h2&gt;
+    &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
             </pre>
           </div>
           <div class="css-code-flex disable">
             <pre>
-              .card-example-flex {
-                overflow: hidden;
-                height: 120px;
-                background: white;
-                box-shadow: 0 0 15px rgba(0,0,0,0.2);
-                display: flex;
-                align-items: center;
-                text-align: left;
-              }
-              
-              .card-example-flex img {
-                height: 100%;
-                width: 120px;
-                object-fit: cover;
-              }
-              
-              .card-example-flex h2 {
-                font-size: 16px;
-                font-weight: bold;
-                margin: 0;
-              }
-              
-              .card-example-flex p {
-                font-size: 12px;
-                line-height: 1.4;
-                opacity: .7;
-                margin-bottom: 0;
-                margin-top: 8px;
-              }
-              
-              .card-example-flex .card-example-flex-infos {
-                padding: 16px;
-              }
+.card-example-flex {
+  overflow: hidden;
+  height: 120px;
+  max-width: 500px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: black;
+}
+
+.card-example-flex img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-example-flex h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-example-flex p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-example-flex .card-example-flex-infos {
+  padding: 16px;
+}
             </pre>
           </div>
         </div>
@@ -173,16 +177,15 @@ const content_level = {
       <div class="ex-flex-grid">
         <h3>Grid Example</h3>
         <div class="grid-example">
-          <div class="card">Card</div>
+          <div class="card-grid">Card</div>
           <div class='column-example'>
-            <div class="card">Card</div>
-            <div class="card">Card</div>
-            <div class="card">Card</div>
+            <div class="card-grid">Card</div>
+            <div class="card-grid">Card</div>
+            <div class="card-grid">Card</div>
           </div>
           <div class="row-example">
-            <div class="card">Card</div>
-            <div class="card">Card</div>
-            <div class="card">Card</div>
+            <div class="card-grid">Card</div>
+            <div class="card-grid">Card</div>
           </div>
         </div>
       </div>
@@ -208,13 +211,13 @@ const content_level = {
                 <h3>HTML</h3>
                 <div class="html-code-flex">
                   <pre>
-                    &lt;div class="grandpa"&gt;
-                      &lt;div class="father"&gt;
-                        &lt;div class="sons"&gt;&lt;/div&gt;
-                        &lt;div class="sons"&gt;&lt;/div&gt;
-                        &lt;div class="sons"&gt;&lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
+&lt;div class="grandpa"&gt;
+  &lt;div class="father"&gt;
+    &lt;div class="sons"&gt;&lt;/div&gt;
+    &lt;div class="sons"&gt;&lt;/div&gt;
+    &lt;div class="sons"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
                   </pre>
                 </div>
               </div>
@@ -230,10 +233,22 @@ const content_level = {
     },
     {
       header: "<h1 class='actual-lvl'>Level 1</h1>",
-      text: "Let's begin by telling the father element that we want 'display: flex;', then you will automatically see that their children will be positioned inline. If you didn't set width before they will squeeze to fit. "
+      text: "Let's begin by telling the father element that we want 'display: flex;', then you will automatically see that their children will be positioned inline. If you didn't set width before they will squeeze to fit. ",
+      example: `<div class="content">
+      <div class="box-form">
+      <h3>What is the first thig we should do to use flexbox?</h3>
+      <form id="box-answer" action="#">
+        <input id="answer" type="text">
+      </form>
+    </div>
+      <div id="iframes">
+      <iframe src="https://isaporto.github.io/landing/" id="frame-question" class="frame" frameborder="0" allowfullscreen="true">
+      </iframe>
+    </div>
+    </div>`
     }
   ],
   'Level 2': [],
 }
 
-module.exports = { content_level };
+module.exports = { content_level }
