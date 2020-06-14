@@ -240,7 +240,7 @@ const content_level = {
       <form id="box-answer" action="#">
         <input id="answer" type="text">
       </form>
-    </div>
+      </div>
       <div id="iframes">
       <iframe src="https://isaporto.github.io/landing/" id="frame-question" class="frame" frameborder="0" allowfullscreen="true">
       </iframe>
