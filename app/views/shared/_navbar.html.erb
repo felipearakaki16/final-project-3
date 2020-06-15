@@ -2,7 +2,11 @@
   <h1><%= link_to  "JEDI", root_path %></h1>
   <div class="navbar-nav">
     <% if user_signed_in? %>
-    <%= cl_image_tag current_user.photo.key, width: 50, class: "avatar mr-3"%>
+      <% if current_user.photo.attached? %>
+        <%= cl_image_tag current_user.photo.key, width: 50, class: "avatar mr-3"%>
+      <% else %>
+        <%= image_tag "avatar.png" %>
+      <% end %>
       <h3>Welcome,<br /><%= current_user.username %></h3>
       <%= link_to  "#", :remote => true, 'data-action'=>"click->modal#open" do %>
         <i class="fas fa-caret-down"></i>
