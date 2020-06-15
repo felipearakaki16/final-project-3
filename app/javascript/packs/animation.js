@@ -35,6 +35,7 @@ const init_animation = (levelName) => {
       document.querySelector('.box-form').style.display = "block";
     } else {
       document.querySelector('.box-form').style.display = "none";
+
     }
   };
   loadExercise()
@@ -91,6 +92,7 @@ const init_animation = (levelName) => {
       loop = typing(sampleString);
       loadExercise();
       activation();
+
     };
     btnCodeBox();
   });
@@ -109,6 +111,7 @@ const init_animation = (levelName) => {
       loop = typing(sampleString);
       loadExercise();
       activation();
+
     }
     btnCodeBox();
   });
