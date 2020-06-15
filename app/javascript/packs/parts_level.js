@@ -227,7 +227,7 @@ const content_level = {
         </div>`
     },
     {
-      header: "<h1>Introduction</h1>",
+      header: "",
       text: `Bom, vamos começar!
       Primeiro, vamos aprender a usar flexbox adicionando propriedades no Pai para modificar seus filhos. `,
       example: "",

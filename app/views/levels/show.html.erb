@@ -4,21 +4,27 @@
 
   <div id="typewriter" class="baloon" data-level-name="<%= @level.name %>">
   </div>
+  <div class="btn-prev-next">
+    <button id="prev-btn">Prev</button>
+    <button id="next-btn">Next</button>
+  </div>
   <div class="box-form">
     <form id="box-answer" action="#">
       <input id="answer" type="text">
     </form>
   </div>
+  <div class="btn-level">
+    <%= button_to  "Back to Levels", levels_path, method: :get %>
+    <button id="jump">Jump</button>
+  </div>
   <div id="examples">
-    <div id="iframes">
+    <%
+=begin%>
+ <div id="iframes">
       <iframe src="<%= level_example_url(@level.examples.first) %>" id="iframe-question" class="frame" frameborder="0" allowfullscreen="true">
       </iframe>
-    </div>
-  </div>
-
-  <div class="btn-level">
-    <button id="prev-btn">Prev</button>
-    <button id="next-btn">Next</button>
+    </div> 
+<%
+=end%>
   </div>
 </div>
-<%= link_to "Back to Levels", levels_path %>
