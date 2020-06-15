@@ -1,0 +1,7 @@
+<div class="user">
+<%= cl_image_tag @user.photo.key %>
+<h2><%= @user.username %></h2>
+</div>
+<div class="user-info">
+  <strong>Subriscribed: </strong><%= @user.created_at.strftime("%d/%b/%Y") %>
+</div>
