@@ -3,7 +3,7 @@
   <div class="navbar-nav">
     <% if user_signed_in? %>
       <% if current_user.photo.attached? %>
-        <%= cl_image_tag current_user.photo.key, width: 50, class: "avatar mr-3"%>
+        <%= cl_image_tag current_user.photo.key, width: 50, class: "avatar mr-3" %>
       <% else %>
         <%= image_tag "avatar.png" %>
       <% end %>
