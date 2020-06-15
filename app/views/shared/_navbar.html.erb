@@ -2,6 +2,11 @@
   <h1><%= link_to  "JEDI", root_path %></h1>
   <div class="navbar-nav">
     <% if user_signed_in? %>
+      <% if current_user.photo.attached? %>
+        <%= cl_image_tag current_user.photo.key, width: 50, class: "avatar mr-3" %>
+      <% else %>
+        <%= image_tag "avatar.png", width: 50, class: "avatar mr-3" %>
+      <% end %>
       <h3>Welcome,<br /><%= current_user.username %></h3>
       <%= link_to  "#", :remote => true, 'data-action'=>"click->modal#open" do %>
         <i class="fas fa-caret-down"></i>
@@ -17,9 +22,17 @@
 <div id="modal-menu" class="modal" data-target='modal.modal'>
   <div class="modal-content">
     <span class="close" data-action="click->modal#close">&times;</span>
-    <ul>
-      <li><%= link_to "Edit account", edit_user_registration_path %></li>
-      <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-    </ul>
+    <% if user_signed_in? %>
+      <ul>
+        <li><%= link_to "View profile", user_path(current_user) %></li>
+        <li><%= link_to "Edit account", edit_user_registration_path %></li>
+        <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+      </ul>
+    <% else %>
+      <ul>
+        <li><%= link_to "Login", new_user_session_path %></li>
+        <li><%= link_to "Sign up", new_user_registration_path %></li>
+      </ul>
+    <% end %>
   </div>
 </div>

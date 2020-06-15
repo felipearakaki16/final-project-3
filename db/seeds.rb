@@ -4,9 +4,9 @@
 # level1.save!
 # puts 'Finished'
 
-puts 'Updating examples'
-landing_page = Example.first
-landing_page.target = "querySelector('.navbar-ex')"
+# puts 'Updating examples'
+# landing_page = Example.first
+# landing_page.target = "querySelector('.navbar-ex')"
 # landing_page.content = '<div class="navbar-ex">
 # <img class="logo" src="/assets/pacman-logo-49d24e69e4ade7bf3a9bef84d5223bc4276ca6bb31b1b987a536750c398d0813.png">
 # <ul>
@@ -74,8 +74,8 @@ landing_page.target = "querySelector('.navbar-ex')"
 # </ul>
 # </div>
 # </footer>'
-landing_page.save
-puts 'Finished'
+# landing_page.save
+# puts 'Finished'
 
 
 # User.destroy_all

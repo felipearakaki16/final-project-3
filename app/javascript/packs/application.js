@@ -27,7 +27,6 @@ import "bootstrap";
 import { init_animation } from './animation';
 
 
-
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -39,8 +38,6 @@ document.addEventListener('turbolinks:load', () => {
   if (typewriter) {
     const ln = typewriter.dataset.levelName;
     init_animation(ln);
+
   };
-
-
 });
-
