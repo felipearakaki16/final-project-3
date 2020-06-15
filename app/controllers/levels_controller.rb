@@ -21,9 +21,5 @@ class LevelsController < ApplicationController
       user_record.save
     end
   end
-  
-  # def example
-  #   render layout: "special.html.erb"
-  # end
 end
 
