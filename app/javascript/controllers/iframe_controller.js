@@ -14,7 +14,6 @@ export default class extends Controller {
 
   connect() {
     const exampleContent = this.frameTarget.dataset.example;
-    
     this.frameTarget.contentDocument.addEventListener("DOMContentLoaded", (event) => {
       event.currentTarget.getElementById('page-container-example').innerHTML = exampleContent;
     });

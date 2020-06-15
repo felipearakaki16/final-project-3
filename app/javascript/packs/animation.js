@@ -32,9 +32,9 @@ const init_animation = (levelName) => {
   let part = 0;
   const loadExercise = () => {
     if (level[part].exercise) {
-      document.querySelector('.box-form').style.display = "block";
+      document.querySelector('.box-exercise').style.display = "block";
     } else {
-      document.querySelector('.box-form').style.display = "none";
+      document.querySelector('.box-exercise').style.display = "none";
 
     }
   };

@@ -25,7 +25,6 @@ require("channels")
 // External imports
 import "bootstrap";
 import { init_animation } from './animation';
-// import { validation } from './validation'
 
 
 
@@ -41,7 +40,7 @@ document.addEventListener('turbolinks:load', () => {
     const ln = typewriter.dataset.levelName;
     init_animation(ln);
   };
-  // validation();
+
 
 });
 

@@ -1,4 +1,4 @@
-<div class="content" data-controller="iframe">
+<div class="content">
   <div id="level-header">
   </div>
 
@@ -17,7 +17,7 @@
   <div id="examples">
   </div>
 
-  <div class="box-form" data-controller="validation">
+  <div class="box-exercise" data-controller="iframe">
     <form id="box-answer" action="#">
       <input id="answer" data-answer="<%= @level.correction %>" data-action='keyup->iframe#validation' type="text">
     </form>
