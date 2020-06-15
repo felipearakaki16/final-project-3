@@ -1,7 +1,14 @@
 <div class="user">
-<%= cl_image_tag @user.photo.key %>
+<% if @user.photo.attached? %>
+  <%= cl_image_tag @user.photo.key %>
+<% else %>
+  <%= image_tag "avatar.png" %>
+<% end %>
 <h2><%= @user.username %></h2>
 </div>
 <div class="user-info">
   <strong>Subriscribed: </strong><%= @user.created_at.strftime("%d/%b/%Y") %>
+</div>
+<div class="btn-level">
+  <%= button_to  "Go to Levels", levels_path, method: :get %>
 </div>
