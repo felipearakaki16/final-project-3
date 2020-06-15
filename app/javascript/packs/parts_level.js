@@ -227,21 +227,16 @@ const content_level = {
         </div>`
     },
     {
-      header: "<h1>Introduction</h1>",
-      text: `Well, let's start!
-      First of all, let's learn how to use flexbox by adding properties to the father to modify their children. `,
-      example: ""
+      header: "",
+      text: `Bom, vamos começar!
+      Primeiro, vamos aprender a usar flexbox adicionando propriedades no Pai para modificar seus filhos. `,
+      example: "",
+      start: true
     },
     {
       header: "<h1 class='actual-lvl'>Level 1</h1>",
-      text: "Let's begin by telling the father element that we want 'display: flex;', then you will automatically see that their children will be positioned inline. If you didn't set width before they will squeeze to fit. ",
+      text: "A primeira coisa que devemos fazer é dizer ao pai que queremos 'display: flex;', então você verá que automáticamente seus filhos ficarão todos em apenas uma linha. ",
       example: `<div class="content">
-      <div class="box-form">
-      <h3>What is the first thig we should do to use flexbox?</h3>
-      <form id="box-answer" action="#">
-        <input id="answer" type="text">
-      </form>
-    </div>
       <div id="iframes">
       <iframe src="<%= level_example_url(@level.examples.first) %>" id="iframe-question" class="frame" frameborder="0" allowfullscreen="true">
       </iframe>

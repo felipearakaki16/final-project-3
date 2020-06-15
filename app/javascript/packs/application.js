@@ -24,7 +24,9 @@ require("channels")
 // External imports
 import "bootstrap";
 import { init_animation } from './animation';
-// import { validation } from './validation'
+import { modalMenu } from './modal';
+import { validation } from './validation'
+
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -38,7 +40,11 @@ document.addEventListener('turbolinks:load', () => {
     const ln = typewriter.dataset.levelName;
     init_animation(ln);
   };
-  // validation();
+  if (document.getElementById('menu')) {
+    modalMenu();
+  };
+  validation();
+
 });
 
 import "controllers"
