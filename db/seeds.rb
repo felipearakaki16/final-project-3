@@ -1,51 +1,83 @@
-Level.destroy_all
-puts 'Creating 6 levels'
-level1 = Level.new("name": "Level 1", "dificulty": "easy")
-level1.save!
-level2 = Level.new("name": "Level 2", "dificulty": "medium")
-level2.save!
-level3 = Level.new("name": "Level 3", "dificulty": "medium")
-level3.save!
-level4 = Level.new("name": "Level 4 - Under construction...", "dificulty": "medium")
-level4.save!
-level5 = Level.new("name": "Level 5 - Under construction...", "dificulty": "hard")
-level5.save!
-level6 = Level.new("name": "Level 6 - Under construction...", "dificulty": "hard")
-level6.save!
-puts 'Finished creating 6 levels'
+# Level.destroy_all
+# puts 'Creating level'
+# level1 = Level.new(name: "Level 1", dificulty: "easy")
+# level1.save!
+# puts 'Finished'
+
+puts 'Updating examples'
+landing_page = Example.first
+landing_page.content = '<div class="navbar-ex">
+<%= image_tag  "pacman-logo.png", class: "logo" %>
+<ul>
+  <li><a href="#">HOME</a></li>
+  <li><a href="#">ABOUT</a></li>
+  <li><a href="#">FAQ</a></li>
+  <li><a href="#">CONTACT</a></li>
+  <li><a href="#">GALLERY</a></li>
+  <li><a href="#">TEAM</a></li>
+</ul>
+</div>
+
+<div id="content-wrap">
+<div class="banner-ex">
+  <div class="banner-content">
+    <h1>Waka Waka Waka</h1>
+    <h2>- Pacman</h2>
+  </div>
+</div>
+<div style="text-align: center; padding: 20px 0;">
+  <h3>Ghosts</h3>
+  <div>
+    <div class="card-ghosts">
+      <%= image_tag "Blinky.png" %>
+      <h3>Blinky</h3>
+      <p>The leader of the gang. Blinky gives direct chase to Pac-Man. </p>
+    </div>
+    <div class="card-ghosts">
+      <%= image_tag "Pinky.png" %>
+      <h3>Pinky</h3>
+      <p>Pinky try to position in front of Pac-Man</p>
+    </div>
+    <div class="card-ghosts">
+      <%= image_tag "Inky.png" %>
+      <h3>Inky</h3>
+      <p>Kinda unpredictable. He will switch between chasing Pac-man, jump in front of him or just walk aleatory. </p>
+    </div>
+    <div class="card-ghosts">
+      <%= image_tag "Clyde.png" %>
+      <h3>Clyde</h3>
+      <p>The sweet and silly one. Sometimes will chase the Pac-man and sometimes will flee from him. </p>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer>
+<div>
+<h3>Social Media</h3>
+<div>
+  <a href="#"><%= image_tag "facebook.png", class: "icon" %></a>
+  <a href="#"><%= image_tag "instagram.png", class: "icon" %></a>
+  <a href="#"><%= image_tag "linkedin.png", class: "icon" %></a>
+  <a href="#"><%= image_tag "twitter.png", class: "icon" %></a>
+</div>
+</div>
+<%= image_tag  "Pacman.png", class: "pacman" %>
+<div>
+<h3>Important links</h3>
+<ul>
+  <li><a href="#">a link</a></li>
+  <li><a href="#">another link</a></li>
+  <li><a href="#">one more link</a></li>
+  <li><a href="#">last link</a></li>
+</ul>
+</div>
+</footer>'
+landing_page.save
+puts 'Finished'
 
 
-# puts 'Creating 6 users'
-# user1 = User.new("username": "player1", "email": "player1@test.com", "password": "123456")
-# user1.save!
-# user2 = User.new("username": "player2", "email": "player2@test.com", "password": "123456")
-# user2.save!
-# user3 = User.new("username": "player3", "email": "player3@test.com", "password": "123456")
-# user3.save!
-# user4 = User.new("username": "player4", "email": "player4@test.com", "password": "123456")
-# user4.save!
-# user5 = User.new("username": "player5", "email": "player5@test.com", "password": "123456")
-# user5.save!
-# user6 = User.new("username": "player6", "email": "player6@test.com", "password": "123456")
-# user6.save!
-# puts 'Six users created'
-User.destroy_all
-UserRecord.destroy_all
-
-# puts 'Creating 6 users records'
-# user_record1 = UserRecord.new("created_at": "2019-06-09 21:19:00", "completed_at": "2019-06-10 21:19:00", "level_id": 1, "user_id": 1)
-# user_record1.save!
-# user_record2 = UserRecord.new("created_at": "2019-07-09 21:19:00", "completed_at": "2019-07-10 21:19:00", "level_id": 2, "user_id": 1)
-# user_record2.save!
-# user_record3 = UserRecord.new("created_at": "2019-08-09 21:19:00", "completed_at": nil, "level_id": 3, "user_id": 1)
-# user_record3.save!
-# user_record4 = UserRecord.new("created_at": "2019-01-09 21:19:00", "completed_at": "2019-01-10 21:19:00", "level_id": 1, "user_id": 2)
-# user_record4.save!
-# user_record5 = UserRecord.new("created_at": "2019-02-09 21:19:00", "completed_at": "2019-02-10 21:19:00", "level_id": 2, "user_id": 2)
-# user_record5.save!
-# user_record6 = UserRecord.new("created_at": "2019-03-09 21:19:00", "completed_at": "2019-03-10 21:19:00", "level_id": 3, "user_id": 2)
-# user_record6.save!
-# puts 'Six users records created'
+# User.destroy_all
 
 #<User id: 2, email: "1234445@test.com", created_at: "2020-06-09 19:18:47", updated_at: "2020-06-09 19:18:47", username: "1234">,
  #<User id: 3, email: "player1@test.com", created_at: "2020-06-09 20:07:39", updated_at: "2020-06-09 20:07:39", username: "player1">,

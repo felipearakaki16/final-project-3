@@ -2,7 +2,7 @@
 #footer {
   position: absolute;
   bottom: 0;
-  height: 8rem;
+  height: 12rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -49,3 +49,45 @@
 
 // Footer of landing example
 
+.icon {
+  height: 2.5rem;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #111226;
+  min-height: 12rem;
+  padding: 0 15px;
+  h3 {
+    font-size: 1.3rem;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  a {
+    color: white;
+    font-size: 0.8rem;
+    &:hover {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+    }
+  }
+}
+.pacman {
+  height: 5rem;
+}
+.footer-correction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

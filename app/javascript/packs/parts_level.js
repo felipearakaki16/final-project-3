@@ -230,14 +230,15 @@ const content_level = {
       header: "<h1>Introduction</h1>",
       text: `Bom, vamos começar!
       Primeiro, vamos aprender a usar flexbox adicionando propriedades no Pai para modificar seus filhos. `,
-      example: ""
+      example: "",
+      start: true
     },
     {
       header: "<h1 class='actual-lvl'>Level 1</h1>",
-      text: "A primeira coisa que devemos fazer é dizer ao pai que queremos 'display: flex;', então você verá que automáticamente seus filhos ficarão todos em apenas uma linha. Caso não tenha específicado a largura eles se empremerão para caber. ",
+      text: "A primeira coisa que devemos fazer é dizer ao pai que queremos 'display: flex;', então você verá que automáticamente seus filhos ficarão todos em apenas uma linha. ",
       example: `<div class="content">
       <div id="iframes">
-      <iframe src="https://isaporto.github.io/landing/" id="iframe-question" class="frame" frameborder="0" allowfullscreen="true">
+      <iframe src="" id="iframe-question" class="frame" frameborder="0" allowfullscreen="true">
       </iframe>
     </div>
     </div>`,

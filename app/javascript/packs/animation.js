@@ -29,12 +29,12 @@ const init_animation = (levelName) => {
   const { content_level } = require('./parts_level');
   const level = content_level[ levelName ]
   let part = 0;
-  const loadForm = () => {
+  const loadExercise = () => {
     if (level[part].exercise) {
     document.querySelector('.box-form').style.display = "block";
     }
   };
-  loadForm()
+  loadExercise()
   let sampleString = level[part].text;
   let loop = typing(sampleString);
   // Next and Prev Buttons
@@ -56,7 +56,7 @@ const init_animation = (levelName) => {
       boxElement.innerHTML = "";
       sampleString = level[part].text;
       loop = typing(sampleString);
-      loadForm()
+      loadExercise()
     };
     btnCodeBox();
   });
@@ -73,7 +73,7 @@ const init_animation = (levelName) => {
       boxElement.innerHTML = "";
       sampleString = level[part].text;
       loop = typing(sampleString);
-      loadForm()
+      loadExercise()
     }
     btnCodeBox();
   });
