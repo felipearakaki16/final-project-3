@@ -1,6 +1,6 @@
-Level.destroy_all
-puts 'Creating leve l'
-level1 = Level.new(id: 1, name: "Level 1", dificulty: "easy", description: "Flexbox")
+# Level.destroy_all
+puts 'updating leve l'
+level1 = Level.update(description: "Flexbox")
 level1.save!
 puts 'Finished'
 
