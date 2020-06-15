@@ -186,6 +186,7 @@ const content_level = {
           <div class="row-example">
             <div class="card-grid">Card</div>
             <div class="card-grid">Card</div>
+            <div class="card-grid">Card</div>
           </div>
         </div>
       </div>
@@ -242,10 +243,11 @@ const content_level = {
       </form>
     </div>
       <div id="iframes">
-      <iframe src="https://isaporto.github.io/landing/" id="frame-question" class="frame" frameborder="0" allowfullscreen="true">
+      <iframe src="<%= level_example_url(@level.examples.first) %>" id="iframe-question" class="frame" frameborder="0" allowfullscreen="true">
       </iframe>
     </div>
-    </div>`
+    </div>`,
+    exercise: true
     }
   ],
   'Level 2': [],

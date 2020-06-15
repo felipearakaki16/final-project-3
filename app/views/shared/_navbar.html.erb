@@ -3,7 +3,7 @@
   <div class="navbar-nav">
     <% if user_signed_in? %>
       <h3>Welcome,<br /><%= current_user.username %></h3>
-      <%= link_to "#", id:"menu" do %>
+      <%= link_to  "#", :remote => true, 'data-action'=>"click->modal#open" do %>
         <i class="fas fa-caret-down"></i>
       <% end %>
     <% else %>
@@ -14,9 +14,9 @@
 </div>
 
 <!-- Modal -->
-<div id="modal-menu" class="modal">
+<div id="modal-menu" class="modal" data-target='modal.modal'>
   <div class="modal-content">
-    <span class="close">&times;</span>
+    <span class="close" data-action="click->modal#close">&times;</span>
     <ul>
       <li><%= link_to "Edit account", edit_user_registration_path %></li>
       <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>

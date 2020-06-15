@@ -7,7 +7,7 @@ const validation = () => {
   const answer = event.currentTarget.querySelector('#answer').value;
   let checkAnswer = "" + answer;
   const correct = [];
-  const change = document.getElementById('frame-question').contentDocument.querySelector('.cards');
+  const change = document.getElementById('iframe-question').contentDocument.querySelector('.cards');
   change.style = answer;
   correction.forEach((correctAnswer) => {
     if (answer.match(correctAnswer) !== null) {

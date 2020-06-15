@@ -42,3 +42,36 @@
     color: white;
   }
 }
+
+// Navbar of landing page example
+
+.navbar-ex {
+  padding: 10px;
+  height: 4.5rem;
+  border-bottom: 1px solid #4B4C9D;;
+  ul {
+    list-style: none;
+    a {
+      color: white;
+      &:hover {
+        color: rgb(204, 204, 204);
+        text-decoration: none;
+      }
+    }
+  }
+}
+.logo {
+  height: 100%;
+}
+.nav-correction {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  li {
+    margin: 0px 10px;
+  }
+}

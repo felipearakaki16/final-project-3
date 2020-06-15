@@ -22,11 +22,8 @@ class LevelsController < ApplicationController
     end
   end
   
-  def example
-    render layout: "special.html.erb"
-  end
-
-
-
+  # def example
+  #   render layout: "special.html.erb"
+  # end
 end
 

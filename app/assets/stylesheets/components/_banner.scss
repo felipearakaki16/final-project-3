@@ -1,0 +1,19 @@
+// Banner of landing page example
+.banner-ex {
+  height: 70vh;
+  background: url("pacman-background.jpg") no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid #4B4C9D;
+  text-align: end;
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+.banner-content {
+  width: max-content;
+}
+.banner-correction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
