@@ -27,6 +27,7 @@ import { init_animation } from './animation';
 import { modalMenu } from './modal';
 import { validation } from './validation'
 
+
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -43,6 +44,7 @@ document.addEventListener('turbolinks:load', () => {
     modalMenu();
   };
   validation();
+
 });
 
 import "controllers"

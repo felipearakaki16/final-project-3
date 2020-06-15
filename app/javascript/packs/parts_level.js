@@ -12,12 +12,12 @@ const content_level = {
     },
     {
       header: '<h1>Introduction</h1><h3>First of all</h3>',
-      text: "Primeiro de tudo, o porquê do flexbox ser tão utilizado! \nDentro da propriedade display do CSS existem alguns valores que já influenciam na posição dos elementos, que é o Block ( pré-selecionado ao criar uma div), Inline (pré-selecionado em img, a, strong tags, ...), dentre outros.",
-      example: "<div class='example'><p>This is a container ↝</p>\n <div class='block'>This it's a div with default 'display: block'</div>And this -> <i class='fas fa-hand-spock i'></i> is a i tag with default 'display: inline'</div>"
+      text: "First of all, let's explain why flexbox is so used!  \nInside display property in CSS, there are values that already change the position of elements, such as Block (which is default when creating a div tag), Inline (default for tags img, a, and strong), amongst others.",
+      example: "<div class='example'><p>This is a container ↝</p>\n <div class='block'>This is a div with default 'display: block'</div>And this -> <i class='fas fa-hand-spock i'></i> is a i tag with default 'display: inline'</div>"
     },
     {
       header: '<h1>Introduction</h1>',
-      text: "Essas propriedades tem um comportamento padrão que acaba influenciando no seu posicionamento, mas, como você já deve saber, existe uma propriedade do CSS chamada position em que podemos modificar explícitamente sua posição. Inclusive, é possível reproduzir posicionamentos de flex através da propriedade position absolute (para o container pai) e relative (para os elementos que são filhos direto), porém teríamos de ditar a posição deles utilizando top, bottom, left and right além de definir um tamanho específico. Isso faz com que tornar responsivo seja um pouco mais complicado. ",
+      text: "Those properties have a default behaviour which influences their positioning, however, as you already know, there is a CSS property named position in which it is posible to modify explicitly it's positioning. It is even possible to reproduce flex positions through the position property absolute (to father container) and relative (to children elements), however then we should define their position by using top, bottom, left or right, besides setting their especific size. This difficults a responsiveness approach. ",
       example: `<div class='example'>
       <h3>Card using position</h3>
       <div class="showVsCode">
@@ -157,7 +157,7 @@ const content_level = {
     },
     {
       header: "<h1>Introduction</h1>",
-      text: "Uma coisa que precisa saber antes sobre flexbox é que ele posiciona seus elementos de forma unidimensional, ou seja, ele trabalha com uma dimensão de cada vez, seja linha ou coluna. Para formas mais complexas como o bi-dimensional, recomendamos, após ter aprendido a utilizar o flexbox, você mergulhar em Grid! ",
+      text: "One thing that is important to keep in mind is that flexbox position elements in an unidimensinal way, that is, it works only in one dimension at time, being a row or a column. To more complex bi-dimensional treatment, we recommend, after mastering flexbox, to dive into Grid! ",
       example: `<div class='grid-flex'>
       <div class="ex-flex-grid">
         <h3>Flexbox example</h3>
@@ -194,11 +194,11 @@ const content_level = {
     },
     {
       header: "<h1>Introduction</h1>",
-      text: "O flexbox busca posicionar elementos dentro de seus containers, espaço em que estão contidos, ou seja, para organizar elementos utilizando propriedades do flex, muitas vezes você aplica eles no pai para ditar o comportamento dos seus filhos diretos.",
+      text: "Flexbox goal is to position elements inside its containers, spaces in which they are contained, that is, to organize elements by using flex properties, in which many times you apply on the father to set the behaviour you want in direct children.",
       example: `<div class="example">
-          <p>O <strong class="red">vermelho</strong> é pai do <strong class="blue">azul</strong> e o <strong class="blue">azul</strong> é filho direto do <strong class="red">vermelho</strong>;</p>
-          <p>O <strong class="blue">azul</strong> é pai dos <strong class="green">verdes</strong> e os <strong class="green">verdes</strong> são todos filhos diretos do <strong class="blue">azul</strong>;</p>
-          <p>O <strong class="red">vermelho</strong> não é pai dos <strong class="green">verdes</strong> como os <strong class="green">verdes</strong> também não são filhos diretos do <strong class="red">vermelho</strong></p>
+          <p><strong class="red">Red</strong> it's the father of <strong class="blue">blue</strong> and <strong class="blue">blue</strong> is a child of <strong class="red">red</strong>;</p>
+          <p><strong class="blue">Blue</strong> its the father of <strong class="green">green elements</strong> and <strong class="green">green elements</strong> are all direct children of <strong class="blue">blue</strong>;</p>
+          <p><strong class="red">Red</strong> it's not the father of <strong class="green">green elements</strong> like <strong class="green">green elements</strong> also are not direct children of <strong class="red">red</strong></p>
           <div class="showVsCode">
             <div class="grandpa">
               <div class="father">
@@ -228,14 +228,14 @@ const content_level = {
     },
     {
       header: "",
-      text: `Bom, vamos começar!
-      Primeiro, vamos aprender a usar flexbox adicionando propriedades no Pai para modificar seus filhos. `,
+      text: `Well, let's start!
+      First of all, let's learn how to use flexbox by adding properties to the father to modify their children.`,
       example: "",
       start: true
     },
     {
       header: "<h1 class='actual-lvl'>Level 1</h1>",
-      text: "A primeira coisa que devemos fazer é dizer ao pai que queremos 'display: flex;', então você verá que automáticamente seus filhos ficarão todos em apenas uma linha. ",
+      text: "Let's begin by telling the father element that we want 'display: flex;', then you will automatically see that their children will be positioned inline. If you didn't set width before they will squeeze to fit. ",
       example: `<div class="content">
       <div id="iframes">
       <iframe src="<%= level_example_url(@level.examples.first) %>" id="iframe-question" class="frame" frameborder="0" allowfullscreen="true">
@@ -248,4 +248,4 @@ const content_level = {
   'Level 2': [],
 }
 
-module.exports = { content_level };
+module.exports = { content_level }
