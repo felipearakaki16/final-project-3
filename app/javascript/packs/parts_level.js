@@ -238,7 +238,7 @@ const content_level = {
       text: "A primeira coisa que devemos fazer é dizer ao pai que queremos 'display: flex;', então você verá que automáticamente seus filhos ficarão todos em apenas uma linha. ",
       example: `<div class="content">
       <div id="iframes">
-      <iframe src="" id="iframe-question" class="frame" frameborder="0" allowfullscreen="true">
+      <iframe src="<%= level_example_url(@level.examples.first) %>" id="iframe-question" class="frame" frameborder="0" allowfullscreen="true">
       </iframe>
     </div>
     </div>`,
