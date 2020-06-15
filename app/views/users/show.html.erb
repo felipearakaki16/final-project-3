@@ -1,8 +1,7 @@
 <div class="user">
-<% if current_user.photo.attached? %>
+<% if @user.photo.attached? %>
   <%= cl_image_tag @user.photo.key %>
 <% else %>
-  <%# raise %>
   <%= image_tag "avatar.png" %>
 <% end %>
 <h2><%= @user.username %></h2>
