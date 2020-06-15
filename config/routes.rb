@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   resources :levels, only: %i(show index) do
     resources :examples, only: %i(show)
   end
+
+  resources :users, only: %i(show)
 end
 
 
