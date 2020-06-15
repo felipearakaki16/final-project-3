@@ -18,10 +18,10 @@ const validation = () => {
     }
   })
   checkAnswer = checkAnswer.replace(/\s*/, "");
-  if (checkingAllTrue(correct) && checkAnswer == "") {
+  if (correct.every(elem => elem === true) && checkAnswer == "") {
     document.querySelector('body').style.backgroundColor = "green"
   } else {
-    document.querySelector('body').style.backgroundColor = "white"
+    document.querySelector('body').style.backgroundColor = "black"
   }
   })
 }

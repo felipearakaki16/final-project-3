@@ -9,6 +9,11 @@ body {
   background-image: url(https://media.giphy.com/media/l0K4lUxBzIOeJd1EA/giphy.gif);
   background-size: cover;
 }
+#page-container-example {
+  position: relative;
+  min-height: 100vh;
+  background-color: black;
+}
 #content-wrap {
   padding-bottom: 12rem;
 }
