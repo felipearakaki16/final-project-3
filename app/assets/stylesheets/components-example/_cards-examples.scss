@@ -1,4 +1,4 @@
-.card {
+.card-example {
   position: relative;
   background-color: white;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
@@ -7,13 +7,13 @@
   height: 300px;
   padding: 10px;
 }
-.card img {
+.card-example img {
   width: 100px;
 }
-.card p {
+.card-example p {
   opacity: 0.8;
 }
-.container h2 {
+.container-example h2 {
   text-align: center;
   margin-top: 20px;
 }

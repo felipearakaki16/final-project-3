@@ -1,4 +1,4 @@
-.footer {
+.footer-example {
   position: relative;
   background-color: #715844;
   color: white;
@@ -7,16 +7,16 @@
   bottom: 0;
   margin: 20px 0 0 0;
 }
-.footer i {
+.footer-example i {
   font-size: 30px;
 }
-.footer p {
+.footer-example p {
   opacity: 0.8;
 }
-.footer a {
+.footer-example a {
   color: white;
   transition: 0.3s;
 }
-.footer a:hover {
+.footer-example a:hover {
   opacity: 0.8;
 }
