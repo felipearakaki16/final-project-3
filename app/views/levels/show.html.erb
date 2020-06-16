@@ -38,7 +38,7 @@
     </div>
   </div>
   <div id="iframes">
-    <iframe src="<%= level_example_url(@level.examples.first) %>" data-example="<%= @level.examples.first.content %>" data-tgt='<%= @level.examples.first.target %>' data-target='iframe.frame' id="iframe-question" class="frame" frameborder="0" allowfullscreen="true">
+    <iframe src="<%= level_example_url(@level, @level.examples.first) %>" data-example="<%= @level.examples.first.content %>" data-tgt='<%= @level.examples.first.target %>' data-target='iframe.frame' id="iframe-question" class="frame" frameborder="0" allowfullscreen="true">
     </iframe>
   </div> 
 </div>
