@@ -26,8 +26,8 @@
     <div class="css-code">
       <pre class="before">
       </pre>
-      <form autocomplete="off" id="box-answer" action="#">
-        <input id="answer" data-answer="<%= @level.correction %>" data-action='keyup->iframe#validation' type="text">
+      <form autocomplete="off" id="box-answer" data-action="submit->iframe#validation" remote="true">
+        <input data-target='iframe.input' id="answer" data-answer="<%= @level.correction %>" data-action='keyup->iframe#style' type="text">
       </form>
       <pre class="after">
       </pre>
