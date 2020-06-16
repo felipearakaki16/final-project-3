@@ -81,8 +81,9 @@ const init_animation = (levelName) => {
     activation();
     btnCodeBox();
   });
-
+  
   nextBtn.addEventListener('click', (event) => {
+    event.currentTarget.blur();
     event.preventDefault();
     if (part === level.length - 1) {
       return;
@@ -103,6 +104,7 @@ const init_animation = (levelName) => {
 
   prevBtn.addEventListener('click', (event) => {
     event.preventDefault();
+    event.currentTarget.blur();
     if (part === 0) {
       return;
     } else {

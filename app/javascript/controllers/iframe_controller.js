@@ -10,40 +10,48 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-  static targets = [ "frame" ]
+  static targets = [ "frame", "input" ]
 
   connect() {
     const exampleContent = this.frameTarget.dataset.example;
-    this.frameTarget.contentDocument.addEventListener("DOMContentLoaded", (event) => {
-      console.log(this.frameTarget.contentDocument.readyState);
-      event.currentTarget.getElementById('page-container-example').innerHTML = exampleContent;
-    });
+    this.frameTarget.onload = (event) => {
+      event.currentTarget.contentDocument.getElementById('page-container-example').innerHTML = exampleContent;
+    };
   };
 
-  validation(event) {
+  style(event) {
     const exampleTarget = this.frameTarget.dataset.tgt;
     let answer = event.currentTarget.value;
+    eval("this.frameTarget.contentDocument." + exampleTarget).style = answer;
+  }
+
+  validation(event) {
+    event.preventDefault()
+    let answer = this.inputTarget.value;
     let checkAnswer = "" + answer;
     const correct = [];
-    eval("this.frameTarget.contentDocument." + exampleTarget).style = answer;
-    const correction = JSON.parse(event.currentTarget.dataset.answer);
-
+    const correction = JSON.parse(this.inputTarget.dataset.answer);
     correction.forEach( (correctAnswer) => {
-      let answerRegex = new RegExp(correctAnswer)
-      if (answer.match(answerRegex) !== null) {
-        checkAnswer = checkAnswer.replace(answerRegex, "");
-        correct.push(true);
-      } else {
-        correct.push(false);
-      }
-    })
-
+        let answerRegex = new RegExp(correctAnswer)
+        if (answer.match(answerRegex) !== null) {
+          checkAnswer = checkAnswer.replace(answerRegex, "");
+          correct.push(true);
+        } else {
+          correct.push(false);
+        }
+      })
     checkAnswer = checkAnswer.replace(/\s*/, "");
-
     if (correct.every(elem => elem === true) && checkAnswer == "") {
-      document.querySelector('body').style.backgroundColor = "green"
+      return;
     } else {
-      document.querySelector('body').style.backgroundColor = "black"
-    }
+      document.querySelector('.box-codes').classList.add('shake');
+      setTimeout(() => {
+        document.querySelector('.box-codes').classList.remove('shake');
+      }, 800)
+    } 
+    console.log("hello");
   }
+  
+
+
 }
