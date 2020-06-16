@@ -1,4 +1,4 @@
-<div class="content" data-controller="iframe">
+<div class="content">
   <div id="level-header">
   </div>
 
@@ -16,18 +16,29 @@
 
   <div id="examples">
   </div>
-
-  <div class="box-form" data-controller="validation">
-    <form id="box-answer" action="#">
-      <input id="answer" data-answer="<%= @level.correction %>" data-action='keyup->iframe#validation' type="text">
-    </form>
-    <div id="iframes">
-      <iframe src="<%= level_example_url(@level.examples.first, @level) %>" data-example="<%= @level.examples.first.content %>" data-tgt='<%= @level.examples.first.target %>' data-target='iframe.frame' id="iframe-question" class="frame" frameborder="0" allowfullscreen="true">
-      <%# raise %>
-      </iframe>
-    </div> 
-  </div>
 </div>
 
-
-<%# level_example GET    /levels/:level_id/examples/:id(.:format) examples#show %>
+<div class="box-exercise" data-controller="iframe">
+  <div class="box-codes" style="height: 100vh; width: auto;">
+    <div>
+      <button class="btn-css">CSS</button><button class="btn-html">HTML</button>
+    </div>
+    <div class="css-code">
+      <pre class="before">
+      </pre>
+      <form autocomplete="off" id="box-answer" action="#">
+        <input id="answer" data-answer="<%= @level.correction %>" data-action='keyup->iframe#validation' type="text">
+      </form>
+      <pre class="after">
+      </pre>
+    </div>
+    <div class="html-code disable">
+      <pre class="code">
+      </pre>
+    </div>
+  </div>
+  <div id="iframes">
+    <iframe src="<%= level_example_url(@level.examples.first) %>" data-example="<%= @level.examples.first.content %>" data-tgt='<%= @level.examples.first.target %>' data-target='iframe.frame' id="iframe-question" class="frame" frameborder="0" allowfullscreen="true">
+    </iframe>
+  </div> 
+</div>

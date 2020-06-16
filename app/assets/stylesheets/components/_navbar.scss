@@ -19,7 +19,7 @@
   font-family: 'Architects Daughter', cursive;
 }
 .navbar {
-  background: #2c2c2c;
+  background: #3d6f82;
   padding: 0.8rem 1rem;
   h1 {
     margin: 0;
@@ -48,7 +48,7 @@
 .navbar-ex {
   padding: 10px;
   height: 4.5rem;
-  border-bottom: 1px solid #4B4C9D;;
+  border-bottom: 1px solid #4B4C9D;
   ul {
     list-style: none;
     a {
@@ -74,4 +74,24 @@
   li {
     margin: 0px 10px;
   }
+}
+
+.navbar-ex {
+  padding: 10px;
+  height: 4.5rem;
+  border-bottom: 1px solid #4B4C9D;
+
+}
+.navbar-ex ul {
+  list-style: none;
+}
+.navbar-ex a {
+  color: white;
+}
+.navbar-ex a:hover {
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+}
+.navbar-ex .logo {
+  height: 100%;
 }

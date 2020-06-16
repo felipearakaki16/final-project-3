@@ -39,3 +39,8 @@ body {
 .products-container {
   margin: 0 auto;
 }
+
+.box-exercise {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
