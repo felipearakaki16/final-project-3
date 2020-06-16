@@ -257,7 +257,7 @@ const content_level = {
   height: 100%;
 }`,
       code: `<div class="navbar-ex">
-  <img class="logo" src="/assets/pacman-logo-49d24e69e4ade7bf3a9bef84d5223bc4276ca6bb31b1b987a536750c398d0813.png">
+  <img class="logo" src="/assets/pacman-logo.png">
   <ul>
     <li><a href="#">HOME</a></li>
     <li><a href="#">ABOUT</a></li>
