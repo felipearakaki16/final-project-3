@@ -22,7 +22,7 @@ const content_level = {
       <h3>Card using position</h3>
       <div class="showVsCode">
         <div class='card-example-position'>
-          <img src='https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg' />
+        <img src="/assets/mario-bros-question-block-8ac03c7e9923291bc2d04e0c1054e954b790edf67aa937fbde7e39bc42b8c1f6.png">
           <div class='card-example-position-infos'>
             <h2>Product name</h2>
             <p>Product description with <strong>relevant info</strong> only.</p>
@@ -35,7 +35,7 @@ const content_level = {
           <div class="html-code">
             <pre>
 &lt;div class="card-example-position"&gt;
-  &lt;img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /&gt;
+  &lt;img src="/assets/mario-bros-question-block.png" /&gt;
   &lt;div class="card-example-position-infos"&gt;
     &lt;h2&gt;Product name&lt;/h2&gt;
     &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
@@ -91,7 +91,7 @@ const content_level = {
       <h3>Card using flex</h3>
       <div class="showVsCode">
         <div class='card-example-flex'>
-          <img src='https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg' />
+        <img src="/assets/mario-bros-question-block-8ac03c7e9923291bc2d04e0c1054e954b790edf67aa937fbde7e39bc42b8c1f6.png">
           <div class='card-example-flex-infos'>
             <h2>Product name</h2>
             <p>Product description with <strong>relevant info</strong> only.</p>
@@ -104,7 +104,7 @@ const content_level = {
           <div class="html-code-flex">
             <pre>
 &lt;div class="card-example-flex"&gt;
-  &lt;img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboardjpg" /&gt;
+  &lt;img src="/assets/mario-bros-question-block.png" /&gt;
   &lt;div class="card-example-flex-infos"&gt;
     &lt;h2&gt;Product name&lt;/h2&gt;
     &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
