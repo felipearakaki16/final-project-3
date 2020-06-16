@@ -10,6 +10,11 @@ body {
   background-size: cover;
   //https://media.giphy.com/media/9bTjZrytydVRK/giphy.gif
 }
+#page-container-example {
+  position: relative;
+  min-height: 100vh;
+  background-color: black;
+}
 #content-wrap {
   padding-bottom: 12rem;
 }
