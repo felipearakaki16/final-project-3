@@ -6,15 +6,11 @@
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #2c2c2c;
+  justify-content: space-between;
+  background-color: #3d6f82;
   i {
     font-size: 46px;
 
-  }
-  .footer-info {
-    display: flex;
-    position: absolute;
-    right: 0;
   }
 }
 .github {
@@ -36,10 +32,10 @@
 }
 .social-medias {
   text-align: center;
-  a {
-    color: white;
+  a img {
+    height: 3rem;
     &:hover {
-      color: rgba(255, 255, 255, 0.7);
+      opacity: 0.8;
     }
   }
 }
