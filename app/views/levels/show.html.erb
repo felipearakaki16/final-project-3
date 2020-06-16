@@ -17,13 +17,23 @@
   <div id="examples">
   </div>
 
-  <div class="box-exercise" data-controller="iframe">
-    <form id="box-answer" action="#">
-      <input id="answer" data-answer="<%= @level.correction %>" data-action='keyup->iframe#validation' type="text">
-    </form>
+  <div class="showVsCode" data-controller="iframe">
+    <div class="box-codes">
+      <div>
+        <button class="btn-html">HTML</button><button class="btn-css">CSS</button>
+      </div>
+      <div class="html-code">
+      </div>
+      <div class="css-code">
+        <form autocomplete="off" id="box-answer" action="#">
+          <input id="answer" data-answer="<%= @level.correction %>" data-action='keyup->iframe#validation' type="text">
+        </form>
+      </div>
+    </div>
     <div id="iframes">
       <iframe src="<%= level_example_url(@level.examples.first) %>" data-example="<%= @level.examples.first.content %>" data-tgt='<%= @level.examples.first.target %>' data-target='iframe.frame' id="iframe-question" class="frame" frameborder="0" allowfullscreen="true">
       </iframe>
     </div> 
   </div>
+
 </div>
