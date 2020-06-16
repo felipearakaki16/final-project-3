@@ -17,7 +17,7 @@ const content_level = {
     },
     {
       header: '<h1>Introduction</h1>',
-      text: "Those properties have a default behaviour which influences their positioning, however, as you already know, there is a CSS property named position in which it is posible to modify explicitly it's positioning. It is even possible to reproduce flex positions through the position property absolute (to father container) and relative (to children elements), however then we should define their position by using top, bottom, left or right, besides setting their especific size. This difficults a responsiveness approach. ",
+      text: "Those properties have a default behaviour which influences their position, however, as you already know, there is a CSS property named position which it's posible to explicitly modify its position. It is even possible to reproduce flex positions through the position property absolute (to the parent container) and relative (to children elements), however we would have to define their position using top, bottom, left or right properties, besides setting their specific size. This difficults a responsiveness approach. ",
       example: `<div class='example'>
       <h3>Card using position</h3>
       <div class="showVsCode">
@@ -35,11 +35,11 @@ const content_level = {
           <div class="html-code">
             <pre>
 &lt;div class="card-example-position"&gt;
-&lt;img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /&gt;
-&lt;div class="card-example-position-infos"&gt;
-&lt;h2&gt;Product name&lt;/h2&gt;
-&lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
-&lt;/div&gt;
+  &lt;img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /&gt;
+  &lt;div class="card-example-position-infos"&gt;
+    &lt;h2&gt;Product name&lt;/h2&gt;
+    &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
             </pre>
           </div>
@@ -194,11 +194,11 @@ const content_level = {
     },
     {
       header: "<h1>Introduction</h1>",
-      text: "Flexbox goal is to position elements inside its containers, spaces in which they are contained, that is, to organize elements by using flex properties, in which many times you apply on the father to set the behaviour you want in direct children.",
+      text: "Flexbox goal is to position elements inside its containers, spaces in which they are contained, that is, to organize elements by using flex properties, in which many times you apply on the parent to set the behaviour you want in direct children.",
       example: `<div class="example">
-          <p><strong class="red">Red</strong> it's the father of <strong class="blue">blue</strong> and <strong class="blue">blue</strong> is a child of <strong class="red">red</strong>;</p>
-          <p><strong class="blue">Blue</strong> its the father of <strong class="green">green elements</strong> and <strong class="green">green elements</strong> are all direct children of <strong class="blue">blue</strong>;</p>
-          <p><strong class="red">Red</strong> it's not the father of <strong class="green">green elements</strong> like <strong class="green">green elements</strong> also are not direct children of <strong class="red">red</strong></p>
+          <p><strong class="red">Red</strong> it's the parent of <strong class="blue">blue</strong> and <strong class="blue">blue</strong> is a child of <strong class="red">red</strong>;</p>
+          <p><strong class="blue">Blue</strong> its the parent of <strong class="green">green elements</strong> and <strong class="green">green elements</strong> are all direct children of <strong class="blue">blue</strong>;</p>
+          <p><strong class="red">Red</strong> it's not the parent of <strong class="green">green elements</strong> like <strong class="green">green elements</strong> also are not direct children of <strong class="red">red</strong></p>
           <div class="showVsCode">
             <div class="grandpa">
               <div class="father">
@@ -229,15 +229,44 @@ const content_level = {
     {
       header: "",
       text: `Well, let's start!
-      First of all, let's learn how to use flexbox by adding properties to the father to modify their children.`,
+      First of all, let's learn how to use flexbox by adding properties to the parent to modify their children.`,
       example: "",
       start: true
     },
     {
       header: "<h1 class='actual-lvl'>Level 1</h1>",
-      text: "Wow, what a mess! Let's begin by telling the father element that we want 'display: flex;', then you will automatically see that their children will be positioned inline. If you didn't set width before they will squeeze to fit. ",
+      text: "Wow, what a mess! Let's begin by telling the parent element that we want 'display: flex;', then you will automatically see that their children will be positioned inline. If you didn't set width before they will squeeze to fit. ",
       example: '',
-    exercise: true
+      exercise: true,
+      before: `.navbar-ex {
+  padding: 10px;
+  height: 4.5rem;
+  border-bottom: 1px solid #4B4C9D;`,
+      after: `}
+.navbar-ex ul {
+  list-style: none;
+}
+.navbar-ex a {
+  color: white;
+}
+.navbar-ex a:hover {
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+}
+.navbar-ex .logo {
+  height: 100%;
+}`,
+      code: `<div class="navbar-ex">
+  <img class="logo" src="/assets/pacman-logo-49d24e69e4ade7bf3a9bef84d5223bc4276ca6bb31b1b987a536750c398d0813.png">
+  <ul>
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">ABOUT</a></li>
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#">CONTACT</a></li>
+    <li><a href="#">GALLERY</a></li>
+    <li><a href="#">TEAM</a></li>
+  </ul>
+</div>`
     }
   ],
   'Level 2': [],

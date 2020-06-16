@@ -97,58 +97,6 @@
   padding: 16px;
 }
 
-// Style of Code example boxes
-
-.showVsCode {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.box-codes {
-  width: 500px;
-  height: 400px;
-  position: relative;
-}
-pre {
-  color: white;
-}
-.html-code {
-  text-align: left;
-  position: absolute;
-  overflow: scroll;
-  width: 100%;
-  height: 90%;
-}
-.css-code {
-  text-align: left;
-  position: absolute;
-  overflow: scroll;
-  width: 100%;
-  height: 90%;
-}
-.html-code-flex {
-  text-align: left;
-  position: absolute;
-  overflow: scroll;
-  width: 100%;
-  height: 90%;
-}
-.css-code-flex {
-  text-align: left;
-  position: absolute;
-  overflow: scroll;
-  width: 100%;
-  height: 90%;
-}
-
-.disable {
-  display: none;
-}
-
-pre {
-  overflow: initial;
-}
-
 // Example of grid vs flex
 .grid-flex {
   display: grid;
@@ -203,6 +151,7 @@ pre {
   border: 5px solid red;
   border-radius: 5px;
   padding: 15px;
+  margin: 0 70px;
 }
 .father {
   border: 5px solid blue;

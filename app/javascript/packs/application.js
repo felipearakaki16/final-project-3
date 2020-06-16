@@ -38,6 +38,6 @@ document.addEventListener('turbolinks:load', () => {
   if (typewriter) {
     const ln = typewriter.dataset.levelName;
     init_animation(ln);
+
   };
 });
-

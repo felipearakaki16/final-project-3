@@ -30,11 +30,15 @@ const init_animation = (levelName) => {
   const { content_level } = require('./parts_level');
   const level = content_level[ levelName ]
   let part = 0;
+
   const loadExercise = () => {
     if (level[part].exercise) {
-      document.querySelector('.box-form').style.display = "block";
+      document.querySelector('.box-exercise').classList.remove('disable');
+      document.querySelector('.before').innerText = level[part].before;
+      document.querySelector('.after').innerText = level[part].after;
+      document.querySelector('.code').innerText = level[part].code;
     } else {
-      document.querySelector('.box-form').style.display = "none";
+      document.querySelector('.box-exercise').classList.add('disable');
 
     }
   };
