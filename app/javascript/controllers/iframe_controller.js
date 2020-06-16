@@ -10,7 +10,7 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-  static targets = [ "frame", "input" ]
+  static targets = [ "frame", "input", "modal" ]
 
   connect() {
     const exampleContent = this.frameTarget.dataset.example;
@@ -42,16 +42,16 @@ export default class extends Controller {
       })
     checkAnswer = checkAnswer.replace(/\s*/, "");
     if (correct.every(elem => elem === true) && checkAnswer == "") {
-      return;
+      this.modalTarget.classList.add('active');
     } else {
       document.querySelector('.box-codes').classList.add('shake');
       setTimeout(() => {
         document.querySelector('.box-codes').classList.remove('shake');
-      }, 800)
+      }, 800);
     } 
-    console.log("hello");
   }
-  
 
-
+  close() {
+    this.modalTarget.classList.remove('active');
+  }
 }
