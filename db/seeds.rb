@@ -1,11 +1,11 @@
 Level.destroy_all
 puts 'Creating level'
-level1 = Level.new(name: "Level 1", description: "Display", correction: [/display: *flex;/], difficulty: "easy")
+level1 = Level.new(id: 1, name: "Level 1", description: "Display", correction: [/display: *flex;/], difficulty: "easy")
 level1.save!
 puts 'Finished'
 
 puts 'Updating examples'
-landing_page = Example.new(level: level1, target: "querySelector('.navbar-ex')")
+landing_page = Example.new(id: 1, level: level1, target: "querySelector('.navbar-ex')")
 landing_page.content = '<div class="navbar-ex">
 <img class="logo" src="/images/pacman-logo.png">
 <ul>
