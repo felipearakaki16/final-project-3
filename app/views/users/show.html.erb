@@ -4,7 +4,8 @@
     <% if @user.photo.attached? %>
       <%= cl_image_tag @user.photo.key, class: "profile-avatar" %>
     <% else %>
-      <%= image_tag "avatar.png", class: "profile-avatar" %>
+      <img src="/game_images/avatar.png" class="profile-avatar">
+      <%#= image_tag "avatar.png", class: "profile-avatar" %>
     <% end %>
     <h2><%= @user.username %> #<%= @user.id %></h2>
     <p><strong>Subscribed: </strong><%= current_user.created_at.strftime("%d/%b/%Y") %></p>

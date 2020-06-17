@@ -5,7 +5,8 @@
       <% if current_user.photo.attached? %>
         <%= cl_image_tag current_user.photo.key, width: 50, class: "avatar mr-3" %>
       <% else %>
-        <%= image_tag "avatar.png", width: 50, class: "avatar mr-3" %>
+        <img src="/game_images/avatar.png" width=50 class="avatar mr-3">
+        <%#= image_tag "avatar.png", width: 50, class: "avatar mr-3" %>
       <% end %>
       <h3>Welcome,<br /><%= current_user.username %></h3>
       <%= link_to  "#", :remote => true, 'data-action'=>"click->modal#open" do %>

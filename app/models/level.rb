@@ -4,5 +4,5 @@ class Level < ApplicationRecord
   has_many :examples
 
   validates :name, presence: true
-  validates :dificulty, presence: true
+  validates :difficulty, presence: true
 end
