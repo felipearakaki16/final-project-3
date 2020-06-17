@@ -1,6 +1,6 @@
 Level.destroy_all
 puts 'Creating level'
-level1 = Level.new(id: 1, name: "Level 1", description: "Display", correction: [/display: *flex;/], difficulty: "easy")
+level1 = Level.new(id: 1, name: "Level 1", description: "Display", correction: ["display: *flex;"], difficulty: "easy")
 level1.save!
 puts 'Finished'
 
