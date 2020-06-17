@@ -29,62 +29,12 @@ const content_level = {
           </div>
         </div>
         <div class="box-codes">
-          <div>
-            <button class="btn-html">HTML</button><button class="btn-css">CSS</button>
+          <div class="buttons-boxcode">
+            <button class="btn-css">CSS</button><button class="btn-html">HTML</button>
           </div>
-          <div class="html-code">
-            <pre><code class="language-markup">
-&lt;div class="card-example-position"&gt;
-  &lt;img src="/assets/mario-bros-question-block.png" /&gt;
-  &lt;div class="card-example-position-infos"&gt;
-    &lt;h2&gt;Product name&lt;/h2&gt;
-    &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-            </code></pre>
+          <div class="html-code disable">
           </div>
-          <div class="css-code disable">
-            <pre><code class="language-css">
-.card-example-position {
-  overflow: hidden;
-  height: 120px;
-  min-width: 500px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  position: relative;
-  color: black;
-}
-
-.card-example-position img {
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
-}
-
-.card-example-position h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.card-example-position p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-}
-
-.card-example-position .card-example-position-infos {
-  padding: 16px;
-  position: absolute;
-  text-align: left;
-  left: 120px;
-  top: 20px;
-}
-            </code></pre>
+          <div class="css-code">
           </div>
         </div>
       </div>
@@ -98,62 +48,106 @@ const content_level = {
           </div>
         </div>
         <div class="box-codes">
-          <div>
-            <button class="btn-html-flex">HTML</button><button class="btn-css-flex">CSS</button>
+          <div class="buttons-boxcode">
+            <button class="btn-css-flex">CSS</button><button class="btn-html-flex">HTML</button>
           </div>
-          <div class="html-code-flex">
-            <pre><code class="language-markup">
-&lt;div class="card-example-flex"&gt;
-  &lt;img src="/assets/mario-bros-question-block.png" /&gt;
-  &lt;div class="card-example-flex-infos"&gt;
-    &lt;h2&gt;Product name&lt;/h2&gt;
-    &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-            </code></pre>
+          <div class="html-code-flex disable">
           </div>
-          <div class="css-code-flex disable">
-            <pre><code class="language-css">
-.card-example-flex {
-  overflow: hidden;
-  height: 120px;
-  max-width: 500px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-  text-align: left;
-  color: black;
-}
-
-.card-example-flex img {
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
-}
-
-.card-example-flex h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.card-example-flex p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-}
-
-.card-example-flex .card-example-flex-infos {
-  padding: 16px;
-}
-            </code></pre>
+          <div class="css-code-flex">
           </div>
         </div>
       </div>
     </div>`,
+    exampleCodes: {
+      'html-code': `<div class="card-example-position">
+      <img src="/assets/mario-bros-question-block.png" />
+      <div class="card-example-position-infos">
+        <h2>Product name</h2>
+        <p>Product description with <strong>relevant info</strong> only.</p>
+      </div>
+    </div>`,
+    'css-code': `.card-example-position {
+      overflow: hidden;
+      height: 120px;
+      min-width: 500px;
+      background: white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      position: relative;
+      color: black;
+    }
+    
+    .card-example-position img {
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 120px;
+      object-fit: cover;
+    }
+    
+    .card-example-position h2 {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    .card-example-position p {
+      font-size: 12px;
+      line-height: 1.4;
+      opacity: .7;
+      margin-bottom: 0;
+      margin-top: 8px;
+    }
+    
+    .card-example-position .card-example-position-infos {
+      padding: 16px;
+      position: absolute;
+      text-align: left;
+      left: 120px;
+      top: 20px;
+    }`,
+    'html-code-flex': `<div class="card-example-flex">
+    <img src="/assets/mario-bros-question-block.png" />
+    <div class="card-example-flex-infos">
+      <h2>Product name</h2>
+      <p>Product description with <strong>relevant info</strong> only.</p>
+    </div>
+  </div>`,
+    'css-code-flex': `.card-example-flex {
+      overflow: hidden;
+      height: 120px;
+      max-width: 500px;
+      background: white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      text-align: left;
+      color: black;
+    }
+    
+    .card-example-flex img {
+      height: 100%;
+      width: 120px;
+      object-fit: cover;
+    }
+    
+    .card-example-flex h2 {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    .card-example-flex p {
+      font-size: 12px;
+      line-height: 1.4;
+      opacity: .7;
+      margin-bottom: 0;
+      margin-top: 8px;
+    }
+    
+    .card-example-flex .card-example-flex-infos {
+      padding: 16px;
+    }`,
+    }
     },
     {
       header: "<h1>Introduction</h1>",
@@ -211,20 +205,20 @@ const content_level = {
               <div class="box-codes">
                 <h3>HTML</h3>
                 <div class="html-code-flex">
-                  <pre><code class="language-markup">
-&lt;div class="grandpa"&gt;
-  &lt;div class="father"&gt;
-    &lt;div class="sons"&gt;&lt;/div&gt;
-    &lt;div class="sons"&gt;&lt;/div&gt;
-    &lt;div class="sons"&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-                  </code></pre>
                 </div>
               </div>
             </div>
           </div>
+        </div>`,
+        exampleCodes: {
+          'html-code-flex': `<div class="grandpa">
+          <div class="father">
+            <div class="sons"></div>
+            <div class="sons"></div>
+            <div class="sons"></div>
+          </div>
         </div>`
+        }
     },
     {
       header: "",

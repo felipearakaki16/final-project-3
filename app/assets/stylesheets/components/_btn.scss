@@ -55,3 +55,35 @@
         border-right: 6px black solid;
     }
 }
+.btn-css {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  color: white;
+  &:focus {
+    outline: 0;
+  }
+}
+.btn-html {
+  border: none;
+  color: white;
+  background: #3d6f82;
+  &:focus {
+    outline: 0;
+  }
+}
+.btn-css-flex {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  color: white;
+  &:focus {
+    outline: 0;
+  }
+}
+.btn-html-flex {
+  border: none;
+  color: white;
+  background: #3d6f82;
+  &:focus {
+    outline: 0;
+  }
+}
