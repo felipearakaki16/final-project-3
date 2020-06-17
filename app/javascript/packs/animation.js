@@ -1,4 +1,8 @@
 import { btnCodeBox } from './btn';
+import { highlight } from 'prismjs';
+import 'prismjs/components/prism-css';
+import 'prismjs/components/prism-markup';
+import { css } from 'jquery';
 
 
 const typing = (str) => {
@@ -30,18 +34,40 @@ const init_animation = (levelName) => {
   const { content_level } = require('./parts_level');
   const level = content_level[ levelName ]
   let part = 0;
-
+  
+  const hightlightCode = (str, language) => {
+    const highlightedCode = highlight(str, eval('Prism.languages.' + language));
+    const highlightedHTML = `<pre class="language-` + language + `"><code class="language-` + language + `">${highlightedCode}</code></pre>`;
+    return highlightedHTML
+  }
   const loadExercise = () => {
     if (level[part].exercise) {
       document.querySelector('.box-exercise').classList.remove('disable');
-      document.querySelector('.before').innerText = level[part].before;
-      document.querySelector('.after').innerText = level[part].after;
-      document.querySelector('.code').innerText = level[part].code;
-    } else {
+      document.querySelector('.before').innerHTML = hightlightCode(level[part].before, 'css');
+      document.querySelector('.after').innerHTML = hightlightCode(level[part].after, 'css');
+      document.querySelector('.code').innerHTML = hightlightCode(level[part].code, 'markup');
+    } else if (document.querySelector('.html-code-flex')) {
+      loadCodeExamples();
+    }  else {
       document.querySelector('.box-exercise').classList.add('disable');
 
     }
   };
+  const loadCodeExamples = () => {
+    const htmlCode = document.querySelector('.html-code');
+    const cssCode = document.querySelector('.css-code');
+    const htmlCodeFlex = document.querySelector('.html-code-flex');
+    const cssCodeFlex = document.querySelector('.css-code-flex');
+    if (cssCodeFlex) {
+      htmlCode.innerHTML = hightlightCode(level[part].exampleCodes['html-code'], 'markup');
+      cssCode.innerHTML = hightlightCode(level[part].exampleCodes['css-code'], 'css');
+      htmlCodeFlex.innerHTML = hightlightCode(level[part].exampleCodes['html-code-flex'], 'markup');
+      cssCodeFlex.innerHTML = hightlightCode(level[part].exampleCodes['css-code-flex'], 'css');
+    } else {
+      htmlCodeFlex.innerHTML = hightlightCode(level[part].exampleCodes['html-code-flex'], 'markup');
+    }
+  };
+
   loadExercise()
   let sampleString = level[part].text;
   let loop = typing(sampleString);

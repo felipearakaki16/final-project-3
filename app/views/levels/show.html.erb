@@ -11,7 +11,7 @@
 
   <div class="btn-level">
     <%= button_to  "Back to Levels", levels_path, method: :get %>
-    <button id="jump">Jump</button>
+    <button id="jump">Skip intro</button>
   </div>
 
   <div id="examples">
@@ -20,21 +20,21 @@
 
 <div class="box-exercise" data-controller="iframe">
   <div class="box-codes" style="height: 70%; margin-left: 10px; width: auto;">
-    <div>
+    <div class="buttons-boxcode">
       <button class="btn-css">CSS</button><button class="btn-html">HTML</button>
     </div>
     <div class="css-code">
-      <pre class="before">
-      </pre>
+      <div class="before">
+      </div>
       <form autocomplete="off" id="box-answer" data-action="submit->iframe#validation" remote="true">
         <input autofocus data-target='iframe.input' id="answer" data-answer="<%= @level.correction %>" data-action='keyup->iframe#style' type="text">
       </form>
-      <pre class="after">
-      </pre>
+      <div class="after">
+      </div>
     </div>
     <div class="html-code disable">
-      <pre class="code">
-      </pre>
+      <div class="code">
+      </div>
     </div>
     <button class="next" type="submit" form="box-answer">Next</button>
   </div>
@@ -51,4 +51,3 @@
     </div>
   </div>
 </div>
-
