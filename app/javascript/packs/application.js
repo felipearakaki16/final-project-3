@@ -26,6 +26,7 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import Prism from 'prismjs';
 import { init_animation } from './animation';
 import Prism from 'prismjs';
 
@@ -42,4 +43,5 @@ document.addEventListener('turbolinks:load', () => {
     const ln = typewriter.dataset.levelName;
     init_animation(ln);
   };
+  Prism
 });

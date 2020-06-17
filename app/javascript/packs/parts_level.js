@@ -2,12 +2,12 @@ const content_level = {
   'Level 1': [
     {
       header: '<h1>Introduction</h1>',
-      text: "Hello, welcome to this Flexbox game! I guess if you are here it's because you already know CSS basics. If you don't know probably you will not understand a lot of stuff, sooo... Please, check CSS basics before move on! It's like teach someone to crack an egg without teach her how to cook one.",
+      text: "Hello, welcome to this Flexbox game! I guess if you are here it's because you already know CSS basics. If you don't know probably you will not understand a lot of stuff, sooo... Please, check CSS basics before moving on! It's like teaching someone to crack an egg without teaching him or her how to cook one.",
       example: ""
     },
     {
       header: '<h1>Introduction</h1><h3>How it works</h3>',
-      text: "All you have to do it's write the right commands that we are gonna ask you. In this module we are learning flexbox, if you try to use another commands will not pass that stage. Even if the position of the element is correct.",
+      text: "All you have to do it's write the right commands that we are gonna ask you. In this module we are learning flexbox, if you try to use a different command it will not pass that stage. Even if the position of the element is correct.",
       example: ""
     },
     {
@@ -33,7 +33,7 @@ const content_level = {
             <button class="btn-html">HTML</button><button class="btn-css">CSS</button>
           </div>
           <div class="html-code">
-            <pre>
+            <pre><code class="language-markup">
 &lt;div class="card-example-position"&gt;
   &lt;img src="/assets/mario-bros-question-block.png" /&gt;
   &lt;div class="card-example-position-infos"&gt;
@@ -41,10 +41,10 @@ const content_level = {
     &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-            </pre>
+            </code></pre>
           </div>
           <div class="css-code disable">
-            <pre>
+            <pre><code class="language-css">
 .card-example-position {
   overflow: hidden;
   height: 120px;
@@ -84,7 +84,7 @@ const content_level = {
   left: 120px;
   top: 20px;
 }
-            </pre>
+            </code></pre>
           </div>
         </div>
       </div>
@@ -102,7 +102,7 @@ const content_level = {
             <button class="btn-html-flex">HTML</button><button class="btn-css-flex">CSS</button>
           </div>
           <div class="html-code-flex">
-            <pre>
+            <pre><code class="language-markup">
 &lt;div class="card-example-flex"&gt;
   &lt;img src="/assets/mario-bros-question-block.png" /&gt;
   &lt;div class="card-example-flex-infos"&gt;
@@ -110,10 +110,10 @@ const content_level = {
     &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-            </pre>
+            </code></pre>
           </div>
           <div class="css-code-flex disable">
-            <pre>
+            <pre><code class="language-css">
 .card-example-flex {
   overflow: hidden;
   height: 120px;
@@ -149,7 +149,7 @@ const content_level = {
 .card-example-flex .card-example-flex-infos {
   padding: 16px;
 }
-            </pre>
+            </code></pre>
           </div>
         </div>
       </div>
@@ -211,7 +211,7 @@ const content_level = {
               <div class="box-codes">
                 <h3>HTML</h3>
                 <div class="html-code-flex">
-                  <pre>
+                  <pre><code class="language-markup">
 &lt;div class="grandpa"&gt;
   &lt;div class="father"&gt;
     &lt;div class="sons"&gt;&lt;/div&gt;
@@ -219,7 +219,7 @@ const content_level = {
     &lt;div class="sons"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-                  </pre>
+                  </code></pre>
                 </div>
               </div>
             </div>

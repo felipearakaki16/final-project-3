@@ -17,7 +17,6 @@
 #   <li><a href="#">TEAM</a></li>
 # </ul>
 # </div>
-
 # <div id="content-wrap">
 # <div class="banner-ex">
 #   <div class="banner-content">
@@ -51,7 +50,6 @@
 #   </div>
 # </div>
 # </div>
-
 # <footer>
 # <div>
 # <h3>Social Media</h3>
