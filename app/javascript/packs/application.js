@@ -2,6 +2,8 @@
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
+//= require prism
+
 import "controllers"
 
 require("@rails/ujs").start()
@@ -25,6 +27,7 @@ require("channels")
 // External imports
 import "bootstrap";
 import { init_animation } from './animation';
+import Prism from 'prismjs';
 
 
 // Internal imports, e.g:
@@ -38,6 +41,5 @@ document.addEventListener('turbolinks:load', () => {
   if (typewriter) {
     const ln = typewriter.dataset.levelName;
     init_animation(ln);
-
   };
 });
