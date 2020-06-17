@@ -12,3 +12,25 @@
     <% end %>
   </div>
 </div>
+<iframe src="<%= asset_path('musicaflex.mp3') %>" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe>
+<audio autoplay loop  id="playAudio">
+    <source src="<%= asset_path('musicaflex.mp3') %>">
+</audio>
+<script>
+  //const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  //let element;
+  //if (!isChrome){
+  //  element = document.getElementById('iframeAudio');
+  //} else {
+  //  element = document.getElementById('playAudio');
+  //}
+  //element.parentNode.removeChild(element);
+  //if (confirm("podemos tocar música?")){
+   //const audio = new Audio('<%#=asset_path("musicaflex.mp3")%>');
+  //audio.play();
+  //}
+  //window.onload = function() {
+   // document.getElementById("my_audio").play();
+//}
+</script>
