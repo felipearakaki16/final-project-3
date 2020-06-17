@@ -2,12 +2,12 @@ const content_level = {
   'Level 1': [
     {
       header: '<h1>Introduction</h1>',
-      text: "Hello, welcome to this Flexbox game! I guess if you are here it's because you already know CSS basics. If you don't know probably you will not understand a lot of stuff, sooo... Please, check CSS basics before move on! It's like teach someone to crack an egg without teach her how to cook one.",
+      text: "Hello, welcome to this Flexbox game! I guess if you are here it's because you already know CSS basics. If you don't know probably you will not understand a lot of stuff, sooo... Please, check CSS basics before moving on! It's like teaching someone to crack an egg without teaching him or her how to cook one.",
       example: ""
     },
     {
       header: '<h1>Introduction</h1><h3>How it works</h3>',
-      text: "All you have to do it's write the right commands that we are gonna ask you. In this module we are learning flexbox, if you try to use another commands will not pass that stage. Even if the position of the element is correct.",
+      text: "All you have to do it's write the right commands that we are gonna ask you. In this module we are learning flexbox, if you try to use a different command it will not pass that stage. Even if the position of the element is correct.",
       example: ""
     },
     {
@@ -235,7 +235,7 @@ const content_level = {
     },
     {
       header: "<h1 class='actual-lvl'>Level 1</h1>",
-      text: "Wow, what a mess! Let's begin by telling the parent element that we want 'display: flex;', then you will automatically see that their children will be positioned inline. If you didn't set width before they will squeeze to fit. ",
+      text: "Wow, what a mess! Let's begin by telling the parent element that we want 'display: flex;', then you will automatically see that their children will be positioned inline. If you didn't set width before they will squeeze to fit. \n Hint: In each line of code, always finish with a semicolon. ",
       example: '',
       exercise: true,
       before: `.navbar-ex {

@@ -19,7 +19,7 @@
 </div>
 
 <div class="box-exercise" data-controller="iframe">
-  <div class="box-codes" style="height: 100vh; width: auto;">
+  <div class="box-codes" style="height: 70%; margin-left: 10px; width: auto;">
     <div>
       <button class="btn-css">CSS</button><button class="btn-html">HTML</button>
     </div>
@@ -27,7 +27,7 @@
       <pre class="before">
       </pre>
       <form autocomplete="off" id="box-answer" data-action="submit->iframe#validation" remote="true">
-        <input data-target='iframe.input' id="answer" data-answer="<%= @level.correction %>" data-action='keyup->iframe#style' type="text">
+        <input autofocus data-target='iframe.input' id="answer" data-answer="<%= @level.correction %>" data-action='keyup->iframe#style' type="text">
       </form>
       <pre class="after">
       </pre>
@@ -36,9 +36,19 @@
       <pre class="code">
       </pre>
     </div>
+    <button class="next" type="submit" form="box-answer">Next</button>
   </div>
   <div id="iframes">
     <iframe src="<%= level_example_url(@level.examples.first) %>" data-example="<%= @level.examples.first.content %>" data-tgt='<%= @level.examples.first.target %>' data-target='iframe.frame' id="iframe-question" class="frame" frameborder="0" allowfullscreen="true">
     </iframe>
   </div> 
+
+  <div id="modal-menu" class="modal" data-action='click@window->iframe#close' data-target='iframe.modal'>
+    <div class="modal-content">
+      <h1>Level complete</h1>
+      <br />
+      <%= button_to  "Next level", root_path, method: :get %>
+    </div>
+  </div>
 </div>
+
