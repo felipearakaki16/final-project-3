@@ -22,7 +22,7 @@ const content_level = {
       <h3>Card using position</h3>
       <div class="showVsCode">
         <div class='card-example-position'>
-        <img src="/game_images/mario-bros-question-block.png">
+        <img src="/images/mario-bros-question-block.png">
           <div class='card-example-position-infos'>
             <h2>Product name</h2>
             <p>Product description with <strong>relevant info</strong> only.</p>
@@ -35,7 +35,7 @@ const content_level = {
           <div class="html-code">
             <pre><code class="language-markup">
 &lt;div class="card-example-position"&gt;
-  &lt;img src="/game_images/mario-bros-question-block.png"&gt;
+  &lt;img src="/images/mario-bros-question-block.png"&gt;
   &lt;div class="card-example-position-infos"&gt;
     &lt;h2&gt;Product name&lt;/h2&gt;
     &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
@@ -91,7 +91,7 @@ const content_level = {
       <h3>Card using flex</h3>
       <div class="showVsCode">
         <div class='card-example-flex'>
-        <img src="/game_images/mario-bros-question-block.png">
+        <img src="/images/mario-bros-question-block.png">
           <div class='card-example-flex-infos'>
             <h2>Product name</h2>
             <p>Product description with <strong>relevant info</strong> only.</p>
@@ -104,7 +104,7 @@ const content_level = {
           <div class="html-code-flex">
             <pre><code class="language-markup">
 &lt;div class="card-example-flex"&gt;
-  &lt;img src="/game_images/mario-bros-question-block.png"&gt;
+  &lt;img src="/images/mario-bros-question-block.png"&gt;
   &lt;div class="card-example-flex-infos"&gt;
     &lt;h2&gt;Product name&lt;/h2&gt;
     &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
@@ -257,7 +257,7 @@ const content_level = {
   height: 100%;
 }`,
       code: `<div class="navbar-ex">
-  <img class="logo" src="/game_images/pacman-logo.png">
+  <img class="logo" src="/images/pacman-logo.png">
   <ul>
     <li><a href="#">HOME</a></li>
     <li><a href="#">ABOUT</a></li>

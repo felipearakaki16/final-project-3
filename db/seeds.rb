@@ -7,7 +7,7 @@ puts 'Finished'
 puts 'Updating examples'
 landing_page = Example.new(level: level1, target: "querySelector('.navbar-ex')")
 landing_page.content = '<div class="navbar-ex">
-<img class="logo" src="/game_images/pacman-logo.png">
+<img class="logo" src="/images/pacman-logo.png">
 <ul>
   <li><a href="#">HOME</a></li>
   <li><a href="#">ABOUT</a></li>
@@ -28,22 +28,22 @@ landing_page.content = '<div class="navbar-ex">
   <h3>Ghosts</h3>
   <div>
     <div class="card-ghosts">
-      <img src="/game_images/Blinky.png" alt="Blinky">
+      <img src="/images/Blinky.png" alt="Blinky">
       <h3>Blinky</h3>
       <p>The leader of the gang. Blinky gives direct chase to Pac-Man. </p>
     </div>
     <div class="card-ghosts">
-      <img src="/game_images/Pinky.png" alt="Pinky">
+      <img src="/images/Pinky.png" alt="Pinky">
       <h3>Pinky</h3>
       <p>Pinky try to position in front of Pac-Man</p>
     </div>
     <div class="card-ghosts">
-      <img src="/game_images/Inky.png" alt="Inky">
+      <img src="/images/Inky.png" alt="Inky">
       <h3>Inky</h3>
       <p>Kinda unpredictable. He will switch between chasing Pac-man, jump in front of him or just walk aleatory. </p>
     </div>
     <div class="card-ghosts">
-      <img src="/game_images/Clyde.png" alt="Clyde">
+      <img src="/images/Clyde.png" alt="Clyde">
       <h3>Clyde</h3>
       <p>The sweet and silly one. Sometimes will chase the Pac-man and sometimes will flee from him. </p>
     </div>
@@ -54,13 +54,13 @@ landing_page.content = '<div class="navbar-ex">
 <div>
 <h3>Social Media</h3>
 <div>
-  <a href="#"><img class="icon" src="/game_images/facebook.png"></a>
-  <a href="#"><img class="icon" src="/game_images/instagram.png"></a>
-  <a href="#"><img class="icon" src="/game_images/linkedin.png"></a>
-  <a href="#"><img class="icon" src="/game_images/twitter.png"></a>
+  <a href="#"><img class="icon" src="/images/facebook.png"></a>
+  <a href="#"><img class="icon" src="/images/instagram.png"></a>
+  <a href="#"><img class="icon" src="/images/linkedin.png"></a>
+  <a href="#"><img class="icon" src="/images/twitter.png"></a>
 </div>
 </div>
-<img class="pacman" src="/game_images/Pacman.png">
+<img class="pacman" src="/images/Pacman.png">
 <div>
 <h3>Important links</h3>
 <ul>
