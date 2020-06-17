@@ -29,23 +29,44 @@ const content_level = {
           </div>
         </div>
         <div class="box-codes">
-          <div>
-            <button class="btn-html">HTML</button><button class="btn-css">CSS</button>
+          <div class="buttons-boxcode">
+            <button class="btn-css">CSS</button><button class="btn-html">HTML</button>
           </div>
-          <div class="html-code">
-            <pre><code class="language-markup">
-&lt;div class="card-example-position"&gt;
-  &lt;img src="/images/mario-bros-question-block.png"&gt;
-  &lt;div class="card-example-position-infos"&gt;
-    &lt;h2&gt;Product name&lt;/h2&gt;
-    &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-            </code></pre>
+          <div class="html-code disable">
           </div>
-          <div class="css-code disable">
-            <pre><code class="language-css">
-.card-example-position {
+          <div class="css-code">
+          </div>
+        </div>
+      </div>
+      <h3>Card using flex</h3>
+      <div class="showVsCode">
+        <div class='card-example-flex'>
+        <img src="/assets/mario-bros-question-block-8ac03c7e9923291bc2d04e0c1054e954b790edf67aa937fbde7e39bc42b8c1f6.png">
+          <div class='card-example-flex-infos'>
+            <h2>Product name</h2>
+            <p>Product description with <strong>relevant info</strong> only.</p>
+          </div>
+        </div>
+        <div class="box-codes">
+          <div class="buttons-boxcode">
+            <button class="btn-css-flex">CSS</button><button class="btn-html-flex">HTML</button>
+          </div>
+          <div class="html-code-flex disable">
+          </div>
+          <div class="css-code-flex">
+          </div>
+        </div>
+      </div>
+    </div>`,
+    exampleCodes: {
+      'html-code': `<div class="card-example-position">
+  <img src="/assets/mario-bros-question-block.png" />
+  <div class="card-example-position-infos">
+    <h2>Product name</h2>
+    <p>Product description with <strong>relevant info</strong> only.</p>
+  </div>
+</div>`,
+    'css-code': `.card-example-position {
   overflow: hidden;
   height: 120px;
   min-width: 500px;
@@ -54,7 +75,7 @@ const content_level = {
   position: relative;
   color: black;
 }
-
+    
 .card-example-position img {
   position: absolute;
   left: 0;
@@ -62,7 +83,7 @@ const content_level = {
   width: 120px;
   object-fit: cover;
 }
-
+    
 .card-example-position h2 {
   font-size: 16px;
   font-weight: bold;
@@ -83,38 +104,15 @@ const content_level = {
   text-align: left;
   left: 120px;
   top: 20px;
-}
-            </code></pre>
-          </div>
-        </div>
-      </div>
-      <h3>Card using flex</h3>
-      <div class="showVsCode">
-        <div class='card-example-flex'>
-        <img src="/images/mario-bros-question-block.png">
-          <div class='card-example-flex-infos'>
-            <h2>Product name</h2>
-            <p>Product description with <strong>relevant info</strong> only.</p>
-          </div>
-        </div>
-        <div class="box-codes">
-          <div>
-            <button class="btn-html-flex">HTML</button><button class="btn-css-flex">CSS</button>
-          </div>
-          <div class="html-code-flex">
-            <pre><code class="language-markup">
-&lt;div class="card-example-flex"&gt;
-  &lt;img src="/images/mario-bros-question-block.png"&gt;
-  &lt;div class="card-example-flex-infos"&gt;
-    &lt;h2&gt;Product name&lt;/h2&gt;
-    &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-            </code></pre>
-          </div>
-          <div class="css-code-flex disable">
-            <pre><code class="language-css">
-.card-example-flex {
+}`,
+    'html-code-flex': `<div class="card-example-flex">
+  <img src="/assets/mario-bros-question-block.png" />
+  <div class="card-example-flex-infos">
+    <h2>Product name</h2>
+    <p>Product description with <strong>relevant info</strong> only.</p>
+  </div>
+</div>`,
+    'css-code-flex': `.card-example-flex {
   overflow: hidden;
   height: 120px;
   max-width: 500px;
@@ -148,12 +146,8 @@ const content_level = {
 
 .card-example-flex .card-example-flex-infos {
   padding: 16px;
-}
-            </code></pre>
-          </div>
-        </div>
-      </div>
-    </div>`,
+}`,
+    }
     },
     {
       header: "<h1>Introduction</h1>",
@@ -211,20 +205,20 @@ const content_level = {
               <div class="box-codes">
                 <h3>HTML</h3>
                 <div class="html-code-flex">
-                  <pre><code class="language-markup">
-&lt;div class="grandpa"&gt;
-  &lt;div class="father"&gt;
-    &lt;div class="sons"&gt;&lt;/div&gt;
-    &lt;div class="sons"&gt;&lt;/div&gt;
-    &lt;div class="sons"&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-                  </code></pre>
                 </div>
               </div>
             </div>
           </div>
-        </div>`
+        </div>`,
+        exampleCodes: {
+          'html-code-flex': `<div class="grandpa">
+  <div class="father">
+    <div class="sons"></div>
+    <div class="sons"></div>
+    <div class="sons"></div>
+  </div>
+</div>`
+        }
     },
     {
       header: "",
@@ -257,7 +251,7 @@ const content_level = {
   height: 100%;
 }`,
       code: `<div class="navbar-ex">
-  <img class="logo" src="/images/pacman-logo.png">
+  <img class="logo" src="/assets/pacman-logo.png">
   <ul>
     <li><a href="#">HOME</a></li>
     <li><a href="#">ABOUT</a></li>
