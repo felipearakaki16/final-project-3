@@ -197,7 +197,7 @@ const content_level = {
       text: "Flexbox goal is to position elements inside its containers, spaces in which they are contained, that is, to organize elements by using flex properties, in which many times you apply on the parent to set the behaviour you want in direct children.",
       example: `<div class="example">
           <p><strong class="red">Red</strong> it's the parent of <strong class="blue">blue</strong> and <strong class="blue">blue</strong> is a child of <strong class="red">red</strong>;</p>
-          <p><strong class="blue">Blue</strong> its the parent of <strong class="green">green elements</strong> and <strong class="green">green elements</strong> are all direct children of <strong class="blue">blue</strong>;</p>
+          <p><strong class="blue">Blue</strong> it's the parent of <strong class="green">green elements</strong> and <strong class="green">green elements</strong> are all direct children of <strong class="blue">blue</strong>;</p>
           <p><strong class="red">Red</strong> it's not the parent of <strong class="green">green elements</strong> like <strong class="green">green elements</strong> also are not direct children of <strong class="red">red</strong></p>
           <div class="showVsCode">
             <div class="grandpa">
@@ -211,8 +211,8 @@ const content_level = {
               <div class="box-codes">
                 <h3>HTML</h3>
                 <div class="html-code-flex">
-                  <pre>
-&lt;div class="grandpa"&gt;
+                  <pre class="gray">
+&lt;</pre><pre class="blue">div</pre><pre class="white"> class="grandpa"&gt;
   &lt;div class="father"&gt;
     &lt;div class="sons"&gt;&lt;/div&gt;
     &lt;div class="sons"&gt;&lt;/div&gt;
