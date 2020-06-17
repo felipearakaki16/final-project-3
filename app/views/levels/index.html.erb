@@ -5,7 +5,7 @@
       <%= link_to "PLAY", level_path(level[:level]), class:"eightbit-btn" %>
       <h4><%= level[:level].difficulty %></h4>
       <p><%= level[:level].description %></p>
-      <p><%= "Level completed" if !level[:record]&.completed_at.nil? %></p>
+      <p><%= "Completed" if !level[:record]&.completed_at.nil? %></p>
     </div>
   <% end %>
 </div>
