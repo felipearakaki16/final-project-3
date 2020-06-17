@@ -22,7 +22,7 @@ const content_level = {
       <h3>Card using position</h3>
       <div class="showVsCode">
         <div class='card-example-position'>
-        <img src="/assets/mario-bros-question-block-8ac03c7e9923291bc2d04e0c1054e954b790edf67aa937fbde7e39bc42b8c1f6.png">
+        <img src="/game_images/mario-bros-question-block.png">
           <div class='card-example-position-infos'>
             <h2>Product name</h2>
             <p>Product description with <strong>relevant info</strong> only.</p>
@@ -35,7 +35,7 @@ const content_level = {
           <div class="html-code">
             <pre><code class="language-markup">
 &lt;div class="card-example-position"&gt;
-  &lt;img src="/assets/mario-bros-question-block.png" /&gt;
+  &lt;img src="/game_images/mario-bros-question-block.png"&gt;
   &lt;div class="card-example-position-infos"&gt;
     &lt;h2&gt;Product name&lt;/h2&gt;
     &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
@@ -91,7 +91,7 @@ const content_level = {
       <h3>Card using flex</h3>
       <div class="showVsCode">
         <div class='card-example-flex'>
-        <img src="/assets/mario-bros-question-block-8ac03c7e9923291bc2d04e0c1054e954b790edf67aa937fbde7e39bc42b8c1f6.png">
+        <img src="/game_images/mario-bros-question-block.png">
           <div class='card-example-flex-infos'>
             <h2>Product name</h2>
             <p>Product description with <strong>relevant info</strong> only.</p>
@@ -104,7 +104,7 @@ const content_level = {
           <div class="html-code-flex">
             <pre><code class="language-markup">
 &lt;div class="card-example-flex"&gt;
-  &lt;img src="/assets/mario-bros-question-block.png" /&gt;
+  &lt;img src="/game_images/mario-bros-question-block.png"&gt;
   &lt;div class="card-example-flex-infos"&gt;
     &lt;h2&gt;Product name&lt;/h2&gt;
     &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
@@ -211,13 +211,8 @@ const content_level = {
               <div class="box-codes">
                 <h3>HTML</h3>
                 <div class="html-code-flex">
-<<<<<<< HEAD
-                  <pre class="gray">
-&lt;</pre><pre class="blue">div</pre><pre class="white"> class="grandpa"&gt;
-=======
                   <pre><code class="language-markup">
 &lt;div class="grandpa"&gt;
->>>>>>> 48aee5fcccbb3fe5bbcdd149dcb094103c51a5e3
   &lt;div class="father"&gt;
     &lt;div class="sons"&gt;&lt;/div&gt;
     &lt;div class="sons"&gt;&lt;/div&gt;
@@ -262,7 +257,7 @@ const content_level = {
   height: 100%;
 }`,
       code: `<div class="navbar-ex">
-  <img class="logo" src="/assets/pacman-logo-49d24e69e4ade7bf3a9bef84d5223bc4276ca6bb31b1b987a536750c398d0813.png">
+  <img class="logo" src="/game_images/pacman-logo.png">
   <ul>
     <li><a href="#">HOME</a></li>
     <li><a href="#">ABOUT</a></li>
