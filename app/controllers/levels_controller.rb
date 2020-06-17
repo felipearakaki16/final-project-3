@@ -18,7 +18,7 @@ class LevelsController < ApplicationController
       @user_record.save
     else
       @user_record.updated_at = DateTime.now
-      @user_record.save
+      @ user_record.save
     end
   end
 end
