@@ -60,93 +60,93 @@ const content_level = {
     </div>`,
     exampleCodes: {
       'html-code': `<div class="card-example-position">
-      <img src="/assets/mario-bros-question-block.png" />
-      <div class="card-example-position-infos">
-        <h2>Product name</h2>
-        <p>Product description with <strong>relevant info</strong> only.</p>
-      </div>
-    </div>`,
+  <img src="/assets/mario-bros-question-block.png" />
+  <div class="card-example-position-infos">
+    <h2>Product name</h2>
+    <p>Product description with <strong>relevant info</strong> only.</p>
+  </div>
+</div>`,
     'css-code': `.card-example-position {
-      overflow: hidden;
-      height: 120px;
-      min-width: 500px;
-      background: white;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      position: relative;
-      color: black;
-    }
+  overflow: hidden;
+  height: 120px;
+  min-width: 500px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+  color: black;
+}
     
-    .card-example-position img {
-      position: absolute;
-      left: 0;
-      height: 100%;
-      width: 120px;
-      object-fit: cover;
-    }
+.card-example-position img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
     
-    .card-example-position h2 {
-      font-size: 16px;
-      font-weight: bold;
-      margin: 0;
-    }
-    
-    .card-example-position p {
-      font-size: 12px;
-      line-height: 1.4;
-      opacity: .7;
-      margin-bottom: 0;
-      margin-top: 8px;
-    }
-    
-    .card-example-position .card-example-position-infos {
-      padding: 16px;
-      position: absolute;
-      text-align: left;
-      left: 120px;
-      top: 20px;
-    }`,
+.card-example-position h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-example-position p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-example-position .card-example-position-infos {
+  padding: 16px;
+  position: absolute;
+  text-align: left;
+  left: 120px;
+  top: 20px;
+}`,
     'html-code-flex': `<div class="card-example-flex">
-    <img src="/assets/mario-bros-question-block.png" />
-    <div class="card-example-flex-infos">
-      <h2>Product name</h2>
-      <p>Product description with <strong>relevant info</strong> only.</p>
-    </div>
-  </div>`,
+  <img src="/assets/mario-bros-question-block.png" />
+  <div class="card-example-flex-infos">
+    <h2>Product name</h2>
+    <p>Product description with <strong>relevant info</strong> only.</p>
+  </div>
+</div>`,
     'css-code-flex': `.card-example-flex {
-      overflow: hidden;
-      height: 120px;
-      max-width: 500px;
-      background: white;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      display: flex;
-      align-items: center;
-      text-align: left;
-      color: black;
-    }
-    
-    .card-example-flex img {
-      height: 100%;
-      width: 120px;
-      object-fit: cover;
-    }
-    
-    .card-example-flex h2 {
-      font-size: 16px;
-      font-weight: bold;
-      margin: 0;
-    }
-    
-    .card-example-flex p {
-      font-size: 12px;
-      line-height: 1.4;
-      opacity: .7;
-      margin-bottom: 0;
-      margin-top: 8px;
-    }
-    
-    .card-example-flex .card-example-flex-infos {
-      padding: 16px;
-    }`,
+  overflow: hidden;
+  height: 120px;
+  max-width: 500px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: black;
+}
+
+.card-example-flex img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-example-flex h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-example-flex p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-example-flex .card-example-flex-infos {
+  padding: 16px;
+}`,
     }
     },
     {
@@ -212,12 +212,12 @@ const content_level = {
         </div>`,
         exampleCodes: {
           'html-code-flex': `<div class="grandpa">
-          <div class="father">
-            <div class="sons"></div>
-            <div class="sons"></div>
-            <div class="sons"></div>
-          </div>
-        </div>`
+  <div class="father">
+    <div class="sons"></div>
+    <div class="sons"></div>
+    <div class="sons"></div>
+  </div>
+</div>`
         }
     },
     {

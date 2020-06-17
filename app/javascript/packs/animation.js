@@ -2,6 +2,7 @@ import { btnCodeBox } from './btn';
 import { highlight } from 'prismjs';
 import 'prismjs/components/prism-css';
 import 'prismjs/components/prism-markup';
+import { css } from 'jquery';
 
 
 const typing = (str) => {
@@ -42,18 +43,9 @@ const init_animation = (levelName) => {
   const loadExercise = () => {
     if (level[part].exercise) {
       document.querySelector('.box-exercise').classList.remove('disable');
-      // Adding prism to before code
-      const highlightedBeforeCode = highlight(level[part].before, Prism.languages.css);
-      const highlightedBeforeHTML = `<pre class="language-css"><code class="language-css">${highlightedBeforeCode}</code></pre>`;
-      document.querySelector('.before').innerHTML = highlightedBeforeHTML;
-      // Adding prism to after code
-      const highlightedAfterCode = highlight(level[part].after, Prism.languages.css);
-      const highlightedAfterHTML = `<pre class="language-css"><code class="language-css">${highlightedAfterCode}</code></pre>`;
-      document.querySelector('.after').innerHTML = highlightedAfterHTML;
-      // Adding prism to html code
-      const highlightedCode = highlight(level[part].code, Prism.languages.markup);
-      const highlightedHTML = `<pre class="language-markup"><code class="language-markup">${highlightedCode}</code></pre>`;
-      document.querySelector('.code').innerHTML = highlightedHTML;
+      document.querySelector('.before').innerHTML = hightlightCode(level[part].before, 'css');
+      document.querySelector('.after').innerHTML = hightlightCode(level[part].after, 'css');
+      document.querySelector('.code').innerHTML = hightlightCode(level[part].code, 'markup');
     } else if (document.querySelector('.html-code-flex')) {
       loadCodeExamples();
     }  else {
@@ -67,14 +59,12 @@ const init_animation = (levelName) => {
     const htmlCodeFlex = document.querySelector('.html-code-flex');
     const cssCodeFlex = document.querySelector('.css-code-flex');
     if (cssCodeFlex) {
-      const highlight = highlight(level[part].code, Prism.languages.markup);
-      const highlightedHTML = `<pre class="language-markup"><code class="language-markup">${highlightedCode}</code></pre>`;
-      htmlCode.innerHTML = highlight(level[part].exampleCodes['html-code'], Prism.languages.markup);
-      cssCode.innerHTML = highlight(level[part].exampleCodes['css-code'], Prism.languages.css);
-      htmlCodeFlex.innerHTML = highlight(level[part].exampleCodes['html-code-flex'], Prism.languages.markup);
-      cssCodeFlex.innerHTML = highlight(level[part].exampleCodes['html-code-flex'], Prism.languages.css);
+      htmlCode.innerHTML = hightlightCode(level[part].exampleCodes['html-code'], 'markup');
+      cssCode.innerHTML = hightlightCode(level[part].exampleCodes['css-code'], 'css');
+      htmlCodeFlex.innerHTML = hightlightCode(level[part].exampleCodes['html-code-flex'], 'markup');
+      cssCodeFlex.innerHTML = hightlightCode(level[part].exampleCodes['css-code-flex'], 'css');
     } else {
-      htmlCodeFlex.innerHTML = highlight(level[part].exampleCodes['html-code-flex'], Prism.languages.markup);
+      htmlCodeFlex.innerHTML = hightlightCode(level[part].exampleCodes['html-code-flex'], 'markup');
     }
   };
 
