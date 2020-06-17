@@ -50,3 +50,12 @@ body {
   border-radius: 10px;
   justify-content: center;
 }
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.content-records {
+  display: flex;
+  flex-wrap: wrap;
+}
