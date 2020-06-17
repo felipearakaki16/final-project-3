@@ -1,12 +1,11 @@
 # Level.destroy_all
 # puts 'Creating level'
-# level1 = Level.new(name: "Level 1", correction: [/display: *flex;/], dificulty: "easy")
+# level1 = Level.new(name: "Level 1", description: "Display", correction: [/display: *flex;/], dificulty: "easy")
 # level1.save!
 # puts 'Finished'
 
 # puts 'Updating examples'
-# landing_page = Example.first
-# landing_page.target = "querySelector('.navbar-ex')"
+# landing_page = Example.new(level: level1, target: "querySelector('.navbar-ex')")
 # landing_page.content = '<div class="navbar-ex">
 # <img class="logo" src="/assets/pacman-logo-49d24e69e4ade7bf3a9bef84d5223bc4276ca6bb31b1b987a536750c398d0813.png">
 # <ul>
@@ -18,7 +17,6 @@
 #   <li><a href="#">TEAM</a></li>
 # </ul>
 # </div>
-
 # <div id="content-wrap">
 # <div class="banner-ex">
 #   <div class="banner-content">
@@ -52,7 +50,6 @@
 #   </div>
 # </div>
 # </div>
-
 # <footer>
 # <div>
 # <h3>Social Media</h3>
@@ -76,17 +73,3 @@
 # </footer>'
 # landing_page.save
 # puts 'Finished'
-
-
-# User.destroy_all
-
-#<User id: 2, email: "1234445@test.com", created_at: "2020-06-09 19:18:47", updated_at: "2020-06-09 19:18:47", username: "1234">,
- #<User id: 3, email: "player1@test.com", created_at: "2020-06-09 20:07:39", updated_at: "2020-06-09 20:07:39", username: "player1">,
- #<User id: 4, email: "player2@test.com", created_at: "2020-06-09 20:07:40", updated_at: "2020-06-09 20:07:40", username: "player2">,
- #<User id: 5, email: "player3@test.com", created_at: "2020-06-09 20:07:40", updated_at: "2020-06-09 20:07:40", username: "player3">,
- #<User id: 6, email: "player4@test.com", created_at: "2020-06-09 20:07:40", updated_at: "2020-06-09 20:07:40", username: "player4">,
- #<User id: 7, email: "player5@test.com", created_at: "2020-06-09 20:07:40", updated_at: "2020-06-09 20:07:40", username: "player5">,
- #<User id: 8, email: "player6@test.com", created_at: "2020-06-09 20:07:41", updated_at: "2020-06-09 20:07:41", username: "player6">,
- #<User id: 9, email: "eueueueueu@tester.com", created_at: "2020-06-09 21:17:09", updated_at: "2020-06-09 21:17:18", username: "eueueueueu">,
- #<User id: 10, email: "testetesteteste@email.com", created_at: "2020-06-09 21:19:00", updated_at: "2020-06-09 21:27:53", username: "eumesmo">,
- #<User id: 1, email: "tester1@tester.com", created_at: "2020-06-08 21:27:04", updated_at: "2020-06-10 14:08:01", username: "first player">]

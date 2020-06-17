@@ -33,7 +33,7 @@ const content_level = {
             <button class="btn-html">HTML</button><button class="btn-css">CSS</button>
           </div>
           <div class="html-code">
-            <pre>
+            <pre><code class="language-markup">
 &lt;div class="card-example-position"&gt;
   &lt;img src="/assets/mario-bros-question-block.png" /&gt;
   &lt;div class="card-example-position-infos"&gt;
@@ -41,10 +41,10 @@ const content_level = {
     &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-            </pre>
+            </code></pre>
           </div>
           <div class="css-code disable">
-            <pre>
+            <pre><code class="language-css">
 .card-example-position {
   overflow: hidden;
   height: 120px;
@@ -84,7 +84,7 @@ const content_level = {
   left: 120px;
   top: 20px;
 }
-            </pre>
+            </code></pre>
           </div>
         </div>
       </div>
@@ -102,7 +102,7 @@ const content_level = {
             <button class="btn-html-flex">HTML</button><button class="btn-css-flex">CSS</button>
           </div>
           <div class="html-code-flex">
-            <pre>
+            <pre><code class="language-markup">
 &lt;div class="card-example-flex"&gt;
   &lt;img src="/assets/mario-bros-question-block.png" /&gt;
   &lt;div class="card-example-flex-infos"&gt;
@@ -110,10 +110,10 @@ const content_level = {
     &lt;p&gt;Product description with &lt;strong&gt;relevant info&lt;/strong&gt; only.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-            </pre>
+            </code></pre>
           </div>
           <div class="css-code-flex disable">
-            <pre>
+            <pre><code class="language-css">
 .card-example-flex {
   overflow: hidden;
   height: 120px;
@@ -149,7 +149,7 @@ const content_level = {
 .card-example-flex .card-example-flex-infos {
   padding: 16px;
 }
-            </pre>
+            </code></pre>
           </div>
         </div>
       </div>
@@ -211,15 +211,20 @@ const content_level = {
               <div class="box-codes">
                 <h3>HTML</h3>
                 <div class="html-code-flex">
+<<<<<<< HEAD
                   <pre class="gray">
 &lt;</pre><pre class="blue">div</pre><pre class="white"> class="grandpa"&gt;
+=======
+                  <pre><code class="language-markup">
+&lt;div class="grandpa"&gt;
+>>>>>>> 48aee5fcccbb3fe5bbcdd149dcb094103c51a5e3
   &lt;div class="father"&gt;
     &lt;div class="sons"&gt;&lt;/div&gt;
     &lt;div class="sons"&gt;&lt;/div&gt;
     &lt;div class="sons"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-                  </pre>
+                  </code></pre>
                 </div>
               </div>
             </div>
@@ -235,7 +240,7 @@ const content_level = {
     },
     {
       header: "<h1 class='actual-lvl'>Level 1</h1>",
-      text: "Wow, what a mess! Let's begin by telling the parent element that we want 'display: flex;', then you will automatically see that their children will be positioned inline. If you didn't set width before they will squeeze to fit. ",
+      text: "Wow, what a mess! Let's begin by telling the parent element that we want 'display: flex;', then you will automatically see that their children will be positioned inline. If you didn't set width before they will squeeze to fit. \n Hint: In each line of code, always finish with a semicolon. ",
       example: '',
       exercise: true,
       before: `.navbar-ex {
