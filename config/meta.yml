@@ -1,0 +1,5 @@
+meta_product_name: "PRO{GAME}"
+meta_title: "PRO{GAME} - Learn to code by playing games."
+meta_description: "A coding game that you learn and be able to implement a solution on a real project."
+meta_image: "https://media.giphy.com/media/TZf4ZyXb0lXXi/source.gif" # should exist in `app/assets/images/`
+# twitter_account: "@product_twitter_account"   # required for Twitter Cards
