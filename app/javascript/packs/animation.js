@@ -2,7 +2,6 @@ import { btnCodeBox } from './btn';
 import { highlight } from 'prismjs';
 import 'prismjs/components/prism-css';
 import 'prismjs/components/prism-markup';
-import { css } from 'jquery';
 
 
 const typing = (str) => {
@@ -92,7 +91,6 @@ const init_animation = (levelName) => {
       jumpBtn.classList.add('disable');
     }
 
-    
     if (part === level.length - 1) {
       nextBtn.classList.add('disable')
     } else {

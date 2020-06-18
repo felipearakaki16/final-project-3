@@ -266,7 +266,7 @@ const content_level = {
   'Level 2': [
     {
       header: "<h1>Level 2</h1>",
-      text: "Hey, you're back! Well, before move one, I need to be sure you got it how flex works. Remember, 'display: flex' modify only its direct children! Change the element inside another one using flex probably won't work. Happily you can set 'display: flex' to div inside another div without any problems!",
+      text: "Hey again! Well, before move on I need to be sure you got it how flex works. Remember, 'display: flex' modify only its direct children! Change the element inside the direct children using flex probably won't work. Happily you can set 'display: flex' to div inside another div without any problems!",
       example: "",
       start: true
     },
@@ -274,9 +274,42 @@ const content_level = {
       header: "<h1>Level 2</h1>",
       text: "Saying that, please set one more time the display. In this time we will work in the ul tag, direct children of '.navbar-ex' div",
       example: "",
-      exercise: "true"
+      exercise: "true",
+      before: `.navbar-ex {
+  padding: 10px;
+  height: 4.5rem;
+  border-bottom: 1px solid #4B4C9D;
+.navbar-ex ul {
+  list-style: none;`,
+      after: `}
+.navbar-ex a {
+  color: white;
+}
+.navbar-ex a:hover {
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+}
+.navbar-ex .logo {
+  height: 100%;
+}`,
+      code: `<div class="navbar-ex">
+<img class="logo" src="/assets/pacman-logo.png">
+<ul>
+  <li><a href="#">HOME</a></li>
+  <li><a href="#">ABOUT</a></li>
+  <li><a href="#">FAQ</a></li>
+  <li><a href="#">CONTACT</a></li>
+  <li><a href="#">GALLERY</a></li>
+  <li><a href="#">TEAM</a></li>
+</ul>
+</div>`
     }
   ],
+  'Level 3': [
+    {
+      header: ""
+    }
+  ]
 }
 
 module.exports = { content_level }
