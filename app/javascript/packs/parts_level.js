@@ -188,7 +188,7 @@ const content_level = {
     },
     {
       header: "<h1>Introduction</h1>",
-      text: "Flexbox goal is to position elements inside its containers, spaces in which they are contained, that is, to organize elements by using flex properties, in which many times you apply on the parent to set the behaviour you want in direct children.",
+      text: "Flexbox goal is to position its direct children elements inside itself. Most of the time you apply a property on the parent to set the behaviour you want in the direct childrens.",
       example: `<div class="example">
           <p><strong class="red">Red</strong> it's the parent of <strong class="blue">blue</strong> and <strong class="blue">blue</strong> is a child of <strong class="red">red</strong>;</p>
           <p><strong class="blue">Blue</strong> it's the parent of <strong class="green">green elements</strong> and <strong class="green">green elements</strong> are all direct children of <strong class="blue">blue</strong>;</p>
@@ -263,7 +263,20 @@ const content_level = {
 </div>`
     }
   ],
-  'Level 2': [],
+  'Level 2': [
+    {
+      header: "<h1>Level 2</h1>",
+      text: "Hey, you're back! Well, before move one, I need to be sure you got it how flex works. Remember, 'display: flex' modify only its direct children! Change the element inside another one using flex probably won't work. Happily you can set 'display: flex' to div inside another div without any problems!",
+      example: "",
+      start: true
+    },
+    {
+      header: "<h1>Level 2</h1>",
+      text: "Saying that, please set one more time the display. In this time we will work in the ul tag, direct children of '.navbar-ex' div",
+      example: "",
+      exercise: "true"
+    }
+  ],
 }
 
 module.exports = { content_level }

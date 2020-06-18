@@ -80,12 +80,19 @@ const init_animation = (levelName) => {
   
   const activation = () => {
     if (part === 0) {
-      jumpBtn.classList.remove('disable')
-      prevBtn.classList.add('disable')
+      lvlHeader.innerHTML = level[part].header;
+      prevBtn.classList.add('disable');
     } else {
-      jumpBtn.classList.add('disable')
-      prevBtn.classList.remove('disable')
+      prevBtn.classList.remove('disable');
     }
+
+    if (level[part].start === undefined && part === 0) {
+      jumpBtn.classList.remove('disable');
+    } else {
+      jumpBtn.classList.add('disable');
+    }
+
+    
     if (part === level.length - 1) {
       nextBtn.classList.add('disable')
     } else {
