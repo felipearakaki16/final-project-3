@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # get "/:username", to: "users#show", :as => "user"
+  # get "/:id", to: "users#show", :as => "user", :id => :username
   devise_for :users, controllers: {
     registrations: 'users/registrations'
   }

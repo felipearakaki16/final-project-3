@@ -2,7 +2,8 @@ class UsersController < ApplicationController
   before_action :authenticate_user!
 
   def show
-    @user = User.find(params[:id])
+    # @user = User.where(id: current_user)
+    @user = User.friendly.find(params[:id])
     redirect_to root_path unless current_user == @user
     @levels = []
     Level.all.each do |level|
@@ -12,4 +13,8 @@ class UsersController < ApplicationController
       @levels << hash
     end
    end
+
+
+
+
 end
