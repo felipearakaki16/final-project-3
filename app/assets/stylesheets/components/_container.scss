@@ -3,11 +3,11 @@ body {
   padding: 0;
   color: white !important;
   a {
-    color: white !important;
-    text-decoration: none !important;
+    color: white;
+    text-decoration: none;
     &:hover {
-      text-decoration: none !important;
-      color: white !important;
+      text-decoration: none;
+      color: white;
     }
   }
 }

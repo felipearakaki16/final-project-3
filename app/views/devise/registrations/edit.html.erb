@@ -8,7 +8,7 @@
       <%= f.input :username,
                     required: true,
                     autofocus: true,
-                    input_html: { autocomplete: "username", class: "nes-input is-dark" }%>
+                    input_html: { autocomplete: "username", class: "nes-input is-dark", style: "font-family: 'Press Start 2P'" }%>
       <%= f.input :email, required: true, autofocus: true, input_html: { class: "nes-input is-dark" } %>
 
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
@@ -35,14 +35,13 @@
     </div>
 
     <div class="form-actions">
-      <%= f.button :submit, "Update", class: "nes-btn" %>
-      <%# raise %>
+      <button type="submit" class="nes-btn">Uptade</button>
     </div>
   <% end %>
 
   <h3>Cancel my account</h3>
 
-  <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+  <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "nes-btn" %></p>
 
-  <%= link_to "Back", :back %>
+  <%= link_to "Back", :back, class: "nes-btn" %>
 </div>
