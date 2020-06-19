@@ -149,7 +149,7 @@ const content_level = {
     },
     {
       header: "<h1>Introduction</h1>",
-      text: "One thing that is important to keep in mind is that flexbox position elements in an unidimensinal way, that is, it works only in one dimension at time, being a row or a column. To more complex bi-dimensional treatment, we recommend, after mastering flexbox, to dive into Grid! ",
+      text: "One thing that is important to keep in mind is that flexbox position elements in an one-dimensional way, that is, it works only in one dimension at time, being a row or a column. To more complex two-dimensional treatment, we recommend, after mastering flexbox, to dive into Grid! ",
       example: `<div class='grid-flex'>
       <div class="ex-flex-grid">
         <h3>Flexbox example</h3>
@@ -354,7 +354,45 @@ const content_level = {
   ],
   'Level 3': [
     {
-      header: ""
+      header: "<h1>Level 3</h1>",
+      text: "Welcome back! Well, I know that the landing page it's not really tidy, but don't worry! We will soon learn how to organize. First we need to know how we want to organize. Remember when I say that the flex it's one-dimensional? Yea, we have to chose if we want in row or in column",
+      example: "",
+      start: true
+    },
+    {
+      header: "<h1>Level 3</h1><h3>Flex-direction</h3>",
+      text: "Flex-direction it's a property to the parent element to say in which direction its direct children will be. By default, you probably already notice that the 'display: flex;' automatically set 'flex-direction: row'. There's four options of values to this property: column, row, column-reverse and row-reverse. The reverse it's nothing but the position inverse of elements. ",
+      example: ""
+    },
+    {
+      header: "<h1>Level 3</h1>",
+      text: "Let's see in practice! I want you to set display flex in this cards but I don't want them in row. ",
+      example: "",
+      exercise: true,
+      before: `.cards-ghosts {`,
+      after: `}`,
+      code: `<div class="cards-ghosts">
+  <div class="card-ghosts">
+    <img src="/images/Blinky.png" alt="Blinky">
+    <h3>Blinky</h3>
+    <p>The leader of the gang. Blinky gives direct chase to Pac-Man. </p>
+  </div>
+  <div class="card-ghosts">
+    <img src="/images/Pinky.png" alt="Pinky">
+    <h3>Pinky</h3>
+    <p>Pinky try to position in front of Pac-Man</p>
+  </div>
+  <div class="card-ghosts">
+    <img src="/images/Inky.png" alt="Inky">
+    <h3>Inky</h3>
+    <p>Kinda unpredictable. He will switch between chasing Pac-man, jump in front of him or just walk aleatory. </p>
+  </div>
+  <div class="card-ghosts">
+    <img src="/images/Clyde.png" alt="Clyde">
+    <h3>Clyde</h3>
+    <p>The sweet and silly one. Sometimes will chase the Pac-man and sometimes will flee from him. </p>
+  </div>
+</div>`,
     }
   ]
 }
