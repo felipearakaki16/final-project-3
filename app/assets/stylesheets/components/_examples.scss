@@ -4,7 +4,6 @@
   width: 100%;
 }
 .example {
-  border: 1px solid white;
   border-radius: 5px;
   padding: 15px;
   margin: 10px;
@@ -101,7 +100,6 @@
 .grid-flex {
   display: grid;
   grid-template-columns: 50% 50%;
-  border: 1px solid black;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
@@ -141,9 +139,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-area: 2/1/2/3;
-}
-.ex-flex-grid {
-  border: 1px solid;
 }
 
 // Example parents divs

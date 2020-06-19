@@ -28,10 +28,8 @@ const content_level = {
             <p>Product description with <strong>relevant info</strong> only.</p>
           </div>
         </div>
-        <div class="box-codes">
-          <div class="buttons-boxcode">
-            <button class="btn-css">CSS</button><button class="btn-html">HTML</button>
-          </div>
+        <div class="box-codes nes-container is-dark">
+            <button class="btn-css nes-btn">CSS</button><button class="btn-html nes-btn is-disabled">HTML</button>
           <div class="html-code disable">
           </div>
           <div class="css-code">
@@ -47,9 +45,9 @@ const content_level = {
             <p>Product description with <strong>relevant info</strong> only.</p>
           </div>
         </div>
-        <div class="box-codes">
+        <div class="box-codes nes-container is-dark">
           <div class="buttons-boxcode">
-            <button class="btn-css-flex">CSS</button><button class="btn-html-flex">HTML</button>
+            <button class="btn-css-flex nes-btn">CSS</button><button class="btn-html-flex nes-btn is-disabled">HTML</button>
           </div>
           <div class="html-code-flex disable">
           </div>
@@ -188,7 +186,7 @@ const content_level = {
     },
     {
       header: "<h1>Introduction</h1>",
-      text: "Flexbox goal is to position elements inside its containers, spaces in which they are contained, that is, to organize elements by using flex properties, in which many times you apply on the parent to set the behaviour you want in direct children.",
+      text: "Flexbox goal is to position its direct children elements inside itself. Most of the time you apply a property on the parent to set the behaviour you want in the direct childrens.",
       example: `<div class="example">
           <p><strong class="red">Red</strong> it's the parent of <strong class="blue">blue</strong> and <strong class="blue">blue</strong> is a child of <strong class="red">red</strong>;</p>
           <p><strong class="blue">Blue</strong> it's the parent of <strong class="green">green elements</strong> and <strong class="green">green elements</strong> are all direct children of <strong class="blue">blue</strong>;</p>
@@ -263,7 +261,102 @@ const content_level = {
 </div>`
     }
   ],
-  'Level 2': [],
+  'Level 2': [
+    {
+      header: "<h1>Level 2</h1>",
+      text: "Hey again! Well, before move on I need to be sure you got it how flex works. Remember, 'display: flex' modify only its direct children! Change the element inside the direct children using flex probably won't work. Happily you can set 'display: flex' to div inside another div without any problems!",
+      example: `<div class="p-3" data-controller="radio">
+      <h3>Display: flex</h3>
+      <table class="m-auto">
+        <tr>
+          <td>
+            <label>
+              <input type="radio" data-action="click->radio#none" class="nes-radio is-dark" name="answer" checked />
+              <span>No one</span>
+            </label>
+          </td>
+          <td>
+            <label>
+              <input data-action="click->radio#parent" type="radio" class="nes-radio is-dark" name="answer" />
+              <span>On the parent</span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input data-action="click->radio#children" type="radio" class="nes-radio is-dark" name="answer" />
+              <span>On direct children one</span>
+            </label>
+          </td>
+          <td>
+            <label>
+              <input data-action="click->radio#both" type="radio" class="nes-radio is-dark" name="answer" />
+              <span>On both</span>
+            </label>
+          </td>
+        </tr>
+      </table>
+      <div>
+        <div data-target="radio.parent" class="nes-container is-dark with-title m-auto-15">
+          <p class="title">Parent</p>
+          <div data-target="radio.children" class="nes-container is-dark with-title">
+            <p class="title">Children one</p>
+            <div class="nes-container is-dark"></div>
+            <div class="nes-container is-dark"></div>
+            <div class="nes-container is-dark"></div>
+          </div>
+          <div class="nes-container is-dark with-title">
+            <p class="title">Children two</p>
+            <div class="nes-container is-dark"></div>
+            <div class="nes-container is-dark"></div>
+            <div class="nes-container is-dark"></div>
+          </div>
+        </div>
+      </div>
+    </div>`,
+      start: true
+    },
+    {
+      header: "<h1>Level 2</h1>",
+      text: "Saying that, please set one more time the display. In this time we will work in the ul tag, direct children of '.navbar-ex' div",
+      example: "",
+      exercise: "true",
+      before: `.navbar-ex {
+  padding: 10px;
+  height: 4.5rem;
+  border-bottom: 1px solid #4B4C9D;
+.navbar-ex ul {
+  list-style: none;`,
+      after: `}
+.navbar-ex a {
+  color: white;
+}
+.navbar-ex a:hover {
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+}
+.navbar-ex .logo {
+  height: 100%;
+}`,
+      code: `<div class="navbar-ex">
+<img class="logo" src="/assets/pacman-logo.png">
+<ul>
+  <li><a href="#">HOME</a></li>
+  <li><a href="#">ABOUT</a></li>
+  <li><a href="#">FAQ</a></li>
+  <li><a href="#">CONTACT</a></li>
+  <li><a href="#">GALLERY</a></li>
+  <li><a href="#">TEAM</a></li>
+</ul>
+</div>`
+    }
+  ],
+  'Level 3': [
+    {
+      header: ""
+    }
+  ]
 }
 
 module.exports = { content_level }

@@ -1,6 +1,6 @@
 <!--
 -->
-<div class="content content-profile">
+<div class="nes-container is-rounded is-dark center m-auto">
     <% if @user.photo.attached? %>
       <%= cl_image_tag @user.photo.key, class: "profile-avatar" %>
     <% else %>
@@ -11,11 +11,11 @@
     <p><strong>Subscribed: </strong><%= current_user.created_at.strftime("%d/%b/%Y") %></p>
   <div class="content-records">
     <% @levels.sort_by{ |e| e[:level] }.each do |level| %>
-      <div class="card-record">
-      <h2><%= level[:level].name %></h2>
+      <div class="nes-container is-dark is-rounded m-auto">
+      <h2 class="m-auto" ><%= level[:level].name %></h2>
       <!-- <p><%= link_to "Play", level_path(level[:level]), class: "eightbit-btn" %></p> -->
-      <p><strong></strong><%= level[:level].description %></p>    
-      <p><strong>Started: </strong><%= level[:record]&.created_at&.strftime("%d/%b/%Y  -  %Hh%M") %></p>
+      <p class="m-auto"><%= level[:level].description %></p>  
+      <p class="mt-3"><strong>Started: </strong><%= level[:record]&.created_at&.strftime("%d/%b/%Y  -  %Hh%M") %></p>
       <p><strong>Updated: </strong><%= level[:record]&.updated_at&.strftime("%d/%b/%Y  -  %Hh%M") %></p>
       <p><strong>Completed: </strong><%= level[:record]&.completed_at&.strftime("%d/%b/%Y  -  %Hh%M") %></p>
       </div>

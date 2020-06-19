@@ -2,7 +2,6 @@ import { btnCodeBox } from './btn';
 import { highlight } from 'prismjs';
 import 'prismjs/components/prism-css';
 import 'prismjs/components/prism-markup';
-import { css } from 'jquery';
 
 
 const typing = (str) => {
@@ -80,16 +79,28 @@ const init_animation = (levelName) => {
   
   const activation = () => {
     if (part === 0) {
-      jumpBtn.classList.remove('disable')
-      prevBtn.classList.add('disable')
+      lvlHeader.innerHTML = level[part].header;
+      prevBtn.classList.add('disable');
     } else {
-      jumpBtn.classList.add('disable')
-      prevBtn.classList.remove('disable')
+      prevBtn.classList.remove('disable');
     }
-    if (part === level.length - 1) {
-      nextBtn.classList.add('disable')
+
+    if (level[part].start === undefined && part === 0) {
+      jumpBtn.classList.remove('disable');
     } else {
-      nextBtn.classList.remove('disable')
+      jumpBtn.classList.add('disable');
+    }
+
+    if (part === level.length - 1) {
+      nextBtn.classList.add('disable');
+    } else {
+      nextBtn.classList.remove('disable');
+    }
+    if (level[part].example) {
+      exampleBox.classList.remove('disable');
+      exampleBox.innerHTML = level[part].example;
+    } else {
+      exampleBox.classList.add('disable');
     }
   };
   activation();

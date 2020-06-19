@@ -61,8 +61,8 @@ ActiveRecord::Schema.define(version: 2020_06_18_220411) do
     t.string "difficulty"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "description"
     t.text "correction", default: [], array: true
+    t.string "description"
   end
 
   create_table "user_records", force: :cascade do |t|

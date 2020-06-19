@@ -8,8 +8,8 @@
       <%= f.input :username,
                     required: true,
                     autofocus: true,
-                    input_html: { autocomplete: "username" }%>
-      <%= f.input :email, required: true, autofocus: true %>
+                    input_html: { autocomplete: "username", class: "nes-input is-dark", style: "font-family: 'Press Start 2P'" }%>
+      <%= f.input :email, required: true, autofocus: true, input_html: { class: "nes-input is-dark" } %>
 
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
         <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
@@ -18,26 +18,30 @@
       <%= f.input :password,
                   hint: "leave it blank if you don't want to change it",
                   required: false,
-                  input_html: { autocomplete: "new-password" } %>
+                  input_html: { autocomplete: "new-password", class: "nes-input is-dark" } %>
       <%= f.input :password_confirmation,
                   required: false,
-                  input_html: { autocomplete: "new-password" } %>
+                  input_html: { autocomplete: "new-password", class: "nes-input is-dark" } %>
       <%= f.input :current_password,
                   hint: "we need your current password to confirm your changes",
                   required: true,
-                  input_html: { autocomplete: "current-password" } %>
-      <%= f.input :photo, as: :file %>
+                  input_html: { autocomplete: "current-password", class: "nes-input is-dark" } %>
+      <label class="nes-btn my-3">
+        Select a image
+        <span style="display:none;">
+          <%= f.input :photo, as: :file %>
+        </span>
+      </label>
     </div>
 
     <div class="form-actions">
-      <%= f.button :submit, "Update", class: "btn btn-green" %>
-      <%# raise %>
+      <button type="submit" class="nes-btn">Uptade</button>
     </div>
   <% end %>
 
   <h3>Cancel my account</h3>
 
-  <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+  <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "nes-btn" %></p>
 
-  <%= link_to "Back", :back %>
+  <%= link_to "Back", :back, class: "nes-btn" %>
 </div>

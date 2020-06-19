@@ -1,8 +1,8 @@
 <div class='flex-list'>
   <% @levels.sort_by{ |e| e[:level] }.each do |level| %>
-    <div class='card-level border-pixel'>
-      <h2><%= level[:level].name %></h2>
-      <%= link_to "PLAY", level_path(level[:level]), class:"eightbit-btn" %>
+    <div class='nes-container with-title is-centered is-dark'>
+      <p class="title"><%= level[:level].name %></p>
+      <%= link_to "PLAY", level_path(level[:level]), class:"nes-btn is-dark" %>
       <h4><%= level[:level].difficulty %></h4>
       <p><%= level[:level].description %></p>
       <p><%= "Completed" if !level[:record]&.completed_at.nil? %></p>

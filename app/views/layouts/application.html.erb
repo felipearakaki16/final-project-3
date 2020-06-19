@@ -2,18 +2,39 @@
 <html>
   <head>
     <title>PRO{GAME} - Learn to code by playing games</title>
-    <%= favicon_link_tag asset_path('/images/favicon-teste.png'), :rel => 'icon', :type => 'image/png' %>
+    <%= favicon_link_tag asset_path('/images/joystick.png'), :rel => 'icon', :type => 'image/png' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <%
+=begin%>
+ <title><%= meta_title %></title>
+    <meta name="description" content="<%= meta_description %>">
+
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="<%= meta_title %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= request.original_url %>" />
+    <meta property="og:image" content="<%= meta_image %>" />
+    <meta property="og:description" content="<%= meta_description %>" />
+    <meta property="og:site_name" content="<%= meta_title %>" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="<%= DEFAULT_META["twitter_account"] %>">
+    <meta name="twitter:title" content="<%= meta_title %>">
+    <meta name="twitter:description" content="<%= meta_description %>">
+    <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
+    <meta name="twitter:image:src" content="<%= meta_image %>"> 
+<%
+=end%>
   </head>
 
-  <body> 
+  <body data-controller="credits"> 
     <div id="page-container" data-controller="modal">
       <%= render 'shared/navbar' %>
       <p class="alert"><%= alert %></p>
@@ -22,6 +43,76 @@
         <%= yield %>
       </div>
       <%= render 'shared/footer' %>
+    </div>
+    <div class="modal" data-action='click@window->credits#close' data-target='credits.modal'>
+      <div class="modal-content modal-lg nes-container is-dark is-rounded">
+        <span class="close" data-action="click->credits#close">&times;</span>
+        <h1>Credits</h1>
+          <div>
+            <table>
+              <tbody>
+                <tr>
+                  <td><%= image_tag  "isa.jpg", class:"avatar-sm" %> Isabela Porto</td>
+                  <td>
+                    <a href="https://github.com/isaporto" target="_blank">
+                      <i class="nes-icon github is-medium"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><%= image_tag  "felipe.jpg", class:"avatar-sm" %> Felipe Arakaki</td>
+                  <td>
+                    <a href="https://github.com/felipearakaki16" target="_blank">
+                      <i class="nes-icon github is-medium"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><%= image_tag  "monique.jpg", class:"avatar-sm" %> Monique Marinho</td>
+                  <td>
+                    <a href="https://github.com/msmarinho" target="_blank">
+                      <i class="nes-icon github is-medium"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Special Thanks</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td><%= image_tag  "roberto.jpg", class:"avatar-sm" %> Roberto Barros</td>
+                </tr>
+                <tr>
+                  <td><%= image_tag  "rafael.jpg", class:"avatar-sm" %> Rafael Alonso</td>
+                </tr>
+                <tr>
+                  <td><%= image_tag  "Thierry.jpg", class:"avatar-sm" %> Thierry</td>
+                </tr>
+                <tr>
+                  <td><%= image_tag  "Hugo.jpg", class:"avatar-sm" %> Hugo</td>
+                </tr>
+                <tr>
+                  <td><%= image_tag  "João.jpg", class:"avatar-sm" %> Juca</td>
+                </tr>
+                <tr>
+                  <td><%= image_tag  "Gabs.jpg", class:"avatar-sm" %> Gabriel Schiavo</td>
+                </tr>
+                <tr>
+                  <td><%= image_tag  "Bruno.jpg", class:"avatar-sm" %> Bruno Tostes</td>
+                </tr>
+                <tr>
+                  <td><%= image_tag  "Ana.jpg", class:"avatar-sm" %> Ana Ricetti</td>
+                </tr>
+                <tr>
+                  <td><%= image_tag  "fabiana.jpg", class:"avatar-sm" %> Fabiana</td>
+                </tr>
+                <tr>
+                  <td><%= image_tag  "mathieu.jpg", class:"avatar-sm" %> Mathieu</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
     </div>
   </body>
 </html>

@@ -17,6 +17,9 @@
     }
   }
 }
+.title {
+  font-size: 20px !important;
+}
 .game-card-options {
   display: flex;
   padding: 15px;
@@ -99,55 +102,6 @@
   }
 }
 
-.card-show {
-  margin: 0 auto;
-  background: rgba(255, 203, 116, 0.7);
-  width: 90%;
-  overflow: hidden;
-  border-radius: 10px;
-  .product-img-show {
-    margin: 15px;
-  }
-  .purchase-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 15px 0;
-  }
-  .show-content {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  .details-product-show {
-    display: flex;
-    justify-content: space-between;
-  }
-  .payment {
-    font-size: 24px;
-    color: #4F8A8B;
-  }
-  .delivery-show {
-    display: flex;
-    align-items: center;
-    p {
-      margin: 0 0 0 10px;
-    }
-  }
-  .seller {
-    display: flex;
-    align-items: center;
-    p {
-      margin: 0 0 0 10px;
-    }
-    .avatar-seller {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-    }
-  }
-}
-
 .card-desc {
   margin: 0 auto;
   background: rgba(255, 203, 116, 0.7);
@@ -215,21 +169,6 @@
   justify-content: center;
 }
 
-.card-level {
-  background-color: rgba(61, 111, 130, 0.8);
-  border-radius: 4px;
-  border: 2px white solid;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  a {
-    color: white;
-  }
-  p, h4 {
-    margin: 8px 0;
-  }
-}
 .card-record {
   border-radius: 2px;
   border: 2px solid white;
@@ -238,4 +177,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.nes-container.with-title.is-centered>.title {
+  color: white;
+  font-family: 'Press Start 2P';
+}
+.flex-list > .nes-container {
+  max-width: 300px;
+  min-height: 250px;
+  margin: 10px;
+  p {
+    width: max-content;
+    margin: 10px auto;
+  }
 }

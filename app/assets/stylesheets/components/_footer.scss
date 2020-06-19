@@ -1,47 +1,17 @@
-
 #footer {
+  height: 2rem;
   position: absolute;
   bottom: 0;
-  height: 12rem;
-  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background-color: #3d6f82;
-  i {
-    font-size: 46px;
-
-  }
-}
-.github {
-  margin: 0 10px;
-  display: flex;
-  align-items: center;
-  a {
-    color: white;
-    &:hover {
-      color: rgba(255, 255, 255, 0.7);
-    }
-  }
-  h3 {
-    margin: 0 5px;
-  }
-}
-.footer-info > div {
-  margin: 0 20px;
-}
-.social-medias {
-  text-align: center;
-  a img {
-    height: 3rem;
-    &:hover {
-      opacity: 0.8;
-    }
+  width: 100%;
+  padding: 0 8px;
+  p {
+    margin: 0;
   }
 }
 
 // Footer of landing example
-
 .icon {
   height: 2.5rem;
   &:hover {

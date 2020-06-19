@@ -1,22 +1,44 @@
 body {
   margin: 0;
   padding: 0;
+  background: #212529 !important;
+  color: white !important;
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
 }
 
+.m-auto {
+  margin: 0 auto;
+  width: max-content;
+}
+.m-auto-15 {
+  margin: 15px auto !important;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #page-container {
   position: relative;
   min-height: 100vh;
-  background-image: url(https://media.giphy.com/media/TZf4ZyXb0lXXi/source.gif);
-  background-size: cover;
+  background: #212529;
   //https://media.giphy.com/media/9bTjZrytydVRK/giphy.gif
 }
 #page-container-example {
   position: relative;
   min-height: 100vh;
   background-color: black;
+  color: white;
 }
 #content-wrap {
-  padding-bottom: 12rem;
+  padding-bottom: 2rem;
 }
 .content {
   margin: 10px auto;
@@ -24,17 +46,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-.baloon {
-  margin: 5% auto;
+.content-home {
+  margin: 10px auto;
   width: 90%;
-  height: 100%;
-  padding: 10px 15px;
-  background-color: rgb(0, 0, 0);
-  color: white;
-  font-size: 18px;
-  border: 2px solid white;
-  border-radius: 4px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .products-container {
   margin: 0 auto;
@@ -44,6 +65,7 @@ body {
   display: grid;
   grid-template-columns: 40% 60%;
   margin: 20px 0;
+  width: 100%;
 }
 .content-profile {
   border: 1px solid white;
@@ -58,4 +80,8 @@ body {
 .content-records {
   display: flex;
   flex-wrap: wrap;
+}
+.nes-container {
+  width: 90%;
+  text-align: center;
 }

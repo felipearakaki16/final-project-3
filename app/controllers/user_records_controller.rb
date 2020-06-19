@@ -1,10 +1,6 @@
 class UserRecordsController < ApplicationController
   before_action :set_user_record, only: %i(create update)
 
-  def index
-    @user_records = UserRecord.includes(:level).where(user: current_user).order("levels.name")
-  end
-
   def update
     # user_record = UserRecord.includes(:level).find_by(user: current_user, level: params[:id])
     user_record = UserRecord.includes(:level).find_by(user: current_user, level: UserRecord.find(params[:id]).level)

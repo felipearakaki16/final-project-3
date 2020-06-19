@@ -8,8 +8,8 @@ const btnCodeBox = () => {
     btnHTML.addEventListener('click', (event) => {
       event.preventDefault();
       event.currentTarget.blur();
-      event.currentTarget.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-      btnCSS.style.backgroundColor = "#3d6f82";
+      btnCSS.classList.add('is-disabled');
+      btnHTML.classList.remove('is-disabled');
       htmlCode.classList.remove('disable');
       cssCode.classList.add('disable');
     });
@@ -19,8 +19,8 @@ const btnCodeBox = () => {
     btnCSS.addEventListener('click', (event) => {
       event.preventDefault();
       event.currentTarget.blur();
-      event.currentTarget.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-      btnHTML.style.backgroundColor = "#3d6f82";
+      btnHTML.classList.add('is-disabled');
+      btnCSS.classList.remove('is-disabled');
       cssCode.classList.remove('disable');
       htmlCode.classList.add('disable');
     })
@@ -35,8 +35,8 @@ const btnCodeBox = () => {
     btnHTMLFlex.addEventListener('click', (event) => {
       event.preventDefault();
       event.currentTarget.blur();
-      event.currentTarget.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-      btnCSSFlex.style.backgroundColor = "#3d6f82";
+      btnCSSFlex.classList.add('is-disabled');
+      btnHTMLFlex.classList.remove('is-disabled');
       htmlCodeFlex.classList.remove('disable');
       cssCodeFlex.classList.add('disable');
     });
@@ -46,8 +46,8 @@ const btnCodeBox = () => {
     btnCSSFlex.addEventListener('click', (event) => {
       event.preventDefault();
       event.currentTarget.blur();
-      event.currentTarget.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-      btnHTMLFlex.style.backgroundColor = "#3d6f82";
+      btnHTMLFlex.classList.add('is-disabled');
+      btnCSSFlex.classList.remove('is-disabled');
       cssCodeFlex.classList.remove('disable');
       htmlCodeFlex.classList.add('disable');
     })
