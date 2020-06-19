@@ -1,7 +1,7 @@
 <div class='flex-list'>
   <% @levels.sort_by{ |e| e[:level] }.each do |level| %>
     <div class='nes-container with-title is-centered is-dark'>
-      <h2 class="title"><%= level[:level].name %></h2>
+      <p class="title"><%= level[:level].name %></p>
       <%= link_to "PLAY", level_path(level[:level]), class:"nes-btn is-dark" %>
       <h4><%= level[:level].difficulty %></h4>
       <p><%= level[:level].description %></p>

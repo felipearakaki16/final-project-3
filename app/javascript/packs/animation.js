@@ -98,6 +98,7 @@ const init_animation = (levelName) => {
     }
     if (level[part].example) {
       exampleBox.classList.remove('disable');
+      exampleBox.innerHTML = level[part].example;
     } else {
       exampleBox.classList.add('disable');
     }

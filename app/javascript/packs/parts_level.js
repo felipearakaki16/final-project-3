@@ -265,7 +265,56 @@ const content_level = {
     {
       header: "<h1>Level 2</h1>",
       text: "Hey again! Well, before move on I need to be sure you got it how flex works. Remember, 'display: flex' modify only its direct children! Change the element inside the direct children using flex probably won't work. Happily you can set 'display: flex' to div inside another div without any problems!",
-      example: "",
+      example: `<div class="p-3" data-controller="radio">
+      <h3>Display: flex</h3>
+      <table class="m-auto">
+        <tr>
+          <td>
+            <label>
+              <input type="radio" data-action="click->radio#none" class="nes-radio is-dark" name="answer" checked />
+              <span>No one</span>
+            </label>
+          </td>
+          <td>
+            <label>
+              <input data-action="click->radio#parent" type="radio" class="nes-radio is-dark" name="answer" />
+              <span>On the parent</span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input data-action="click->radio#children" type="radio" class="nes-radio is-dark" name="answer" />
+              <span>On direct children one</span>
+            </label>
+          </td>
+          <td>
+            <label>
+              <input data-action="click->radio#both" type="radio" class="nes-radio is-dark" name="answer" />
+              <span>On both</span>
+            </label>
+          </td>
+        </tr>
+      </table>
+      <div>
+        <div data-target="radio.parent" class="nes-container is-dark with-title m-auto-15">
+          <p class="title">Parent</p>
+          <div data-target="radio.children" class="nes-container is-dark with-title">
+            <p class="title">Children one</p>
+            <div class="nes-container is-dark"></div>
+            <div class="nes-container is-dark"></div>
+            <div class="nes-container is-dark"></div>
+          </div>
+          <div class="nes-container is-dark with-title">
+            <p class="title">Children two</p>
+            <div class="nes-container is-dark"></div>
+            <div class="nes-container is-dark"></div>
+            <div class="nes-container is-dark"></div>
+          </div>
+        </div>
+      </div>
+    </div>`,
       start: true
     },
     {

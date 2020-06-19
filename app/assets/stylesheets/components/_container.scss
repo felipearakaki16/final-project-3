@@ -17,6 +17,9 @@ body {
   margin: 0 auto;
   width: max-content;
 }
+.m-auto-15 {
+  margin: 15px auto !important;
+}
 .center {
   display: flex;
   flex-direction: column;
@@ -62,6 +65,7 @@ body {
   display: grid;
   grid-template-columns: 40% 60%;
   margin: 20px 0;
+  width: 100%;
 }
 .content-profile {
   border: 1px solid white;
