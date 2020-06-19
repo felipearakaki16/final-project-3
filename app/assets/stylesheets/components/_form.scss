@@ -1,5 +1,19 @@
 #answer {
   font-family: auto;
   line-height: 1rem;
-  margin-left: 1em;
+  width: 80%;
+  margin-left: 3rem;
+}
+.form-control {
+  border: none;
+  border-radius: 0;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active,
+input:-internal-autofill-selected  {
+  font-family: 'Press Start 2P', cursive !important;
+  color: white !important;
+  background-color: #212529 !important; 
 }

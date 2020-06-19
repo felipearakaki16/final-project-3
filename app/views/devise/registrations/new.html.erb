@@ -8,23 +8,29 @@
       <%= f.input :username,
                   required: true,
                   autofocus: true,
-                  input_html: { autocomplete: "username" }%>
+                  input_html: { autocomplete: "username", class: "nes-input is-dark" }%>
       <%= f.input :email,
                   required: true,
                   autofocus: true,
-                  input_html: { autocomplete: "email" }%>
+                  input_html: { autocomplete: "email", class: "nes-input is-dark" }%>
       <%= f.input :password,
                   required: true,
                   hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                  input_html: { autocomplete: "new-password" } %>
+                  input_html: { autocomplete: "new-password", class: "nes-input is-dark" } %>
       <%= f.input :password_confirmation,
                   required: true,
-                  input_html: { autocomplete: "new-password" } %>
-      <%= f.input :photo, as: :file %>
+                  input_html: { autocomplete: "new-password", class: "nes-input is-dark" } %>
+      <label class="nes-btn my-3">
+        Select a image
+        <span style="display:none;">
+          <%= f.input :photo, as: :file %>
+        </span>
+      </label>
+
     </div>
 
     <div class="form-actions">
-      <%= f.button :submit, "Sign up", class: "btn btn-green" %>
+      <%= f.button :submit, "Sign up", class: "nes-btn" %>
     </div>
   <% end %>
 

@@ -13,12 +13,12 @@ landing_page = Example.new(id: 1, level: level1, target: "querySelector('.navbar
 landing_page.content = '<div class="navbar-ex">
 <img class="logo" src="/images/pacman-logo.png">
 <ul>
-  <li><a href="#">HOME</a></li>
-  <li><a href="#">ABOUT</a></li>
-  <li><a href="#">FAQ</a></li>
-  <li><a href="#">CONTACT</a></li>
-  <li><a href="#">GALLERY</a></li>
-  <li><a href="#">TEAM</a></li>
+  <li><a href="#" onclick="event.preventDefault">HOME</a></li>
+  <li><a href="#" onclick="event.preventDefault">ABOUT</a></li>
+  <li><a href="#" onclick="event.preventDefault">FAQ</a></li>
+  <li><a href="#" onclick="event.preventDefault">CONTACT</a></li>
+  <li><a href="#" onclick="event.preventDefault">GALLERY</a></li>
+  <li><a href="#" onclick="event.preventDefault">TEAM</a></li>
 </ul>
 </div>
 <div id="content-wrap">
@@ -58,20 +58,20 @@ landing_page.content = '<div class="navbar-ex">
 <div>
 <h3>Social Media</h3>
 <div>
-  <a href="#"><img class="icon" src="/images/facebook.png"></a>
-  <a href="#"><img class="icon" src="/images/instagram.png"></a>
-  <a href="#"><img class="icon" src="/images/linkedin.png"></a>
-  <a href="#"><img class="icon" src="/images/twitter.png"></a>
+  <a href="#" onclick="event.preventDefault"><img class="icon" src="/images/facebook.png"></a>
+  <a href="#" onclick="event.preventDefault"><img class="icon" src="/images/instagram.png"></a>
+  <a href="#" onclick="event.preventDefault"><img class="icon" src="/images/linkedin.png"></a>
+  <a href="#" onclick="event.preventDefault"><img class="icon" src="/images/twitter.png"></a>
 </div>
 </div>
 <img class="pacman" src="/images/Pacman.png">
 <div>
 <h3>Important links</h3>
 <ul>
-  <li><a href="#">a link</a></li>
-  <li><a href="#">another link</a></li>
-  <li><a href="#">one more link</a></li>
-  <li><a href="#">last link</a></li>
+  <li><a href="#" onclick="event.preventDefault">a link</a></li>
+  <li><a href="#" onclick="event.preventDefault">another link</a></li>
+  <li><a href="#" onclick="event.preventDefault">one more link</a></li>
+  <li><a href="#" onclick="event.preventDefault">last link</a></li>
 </ul>
 </div>
 </footer>'
@@ -82,12 +82,12 @@ landing_page = Example.new(id: 2, level: level2, target: "querySelector('.navbar
 landing_page.content = '<div class="navbar-ex d-flex">
 <img class="logo" src="/images/pacman-logo.png">
 <ul>
-  <li><a href="#">HOME</a></li>
-  <li><a href="#">ABOUT</a></li>
-  <li><a href="#">FAQ</a></li>
-  <li><a href="#">CONTACT</a></li>
-  <li><a href="#">GALLERY</a></li>
-  <li><a href="#">TEAM</a></li>
+  <li><a href="#" onclick="event.preventDefault">HOME</a></li>
+  <li><a href="#" onclick="event.preventDefault">ABOUT</a></li>
+  <li><a href="#" onclick="event.preventDefault">FAQ</a></li>
+  <li><a href="#" onclick="event.preventDefault">CONTACT</a></li>
+  <li><a href="#" onclick="event.preventDefault">GALLERY</a></li>
+  <li><a href="#" onclick="event.preventDefault">TEAM</a></li>
 </ul>
 </div>
 <div id="content-wrap">
@@ -127,20 +127,20 @@ landing_page.content = '<div class="navbar-ex d-flex">
 <div>
 <h3>Social Media</h3>
 <div>
-  <a href="#"><img class="icon" src="/images/facebook.png"></a>
-  <a href="#"><img class="icon" src="/images/instagram.png"></a>
-  <a href="#"><img class="icon" src="/images/linkedin.png"></a>
-  <a href="#"><img class="icon" src="/images/twitter.png"></a>
+  <a href="#" onclick="event.preventDefault"><img class="icon" src="/images/facebook.png"></a>
+  <a href="#" onclick="event.preventDefault"><img class="icon" src="/images/instagram.png"></a>
+  <a href="#" onclick="event.preventDefault"><img class="icon" src="/images/linkedin.png"></a>
+  <a href="#" onclick="event.preventDefault"><img class="icon" src="/images/twitter.png"></a>
 </div>
 </div>
 <img class="pacman" src="/images/Pacman.png">
 <div>
 <h3>Important links</h3>
 <ul>
-  <li><a href="#">a link</a></li>
-  <li><a href="#">another link</a></li>
-  <li><a href="#">one more link</a></li>
-  <li><a href="#">last link</a></li>
+  <li><a href="#" onclick="event.preventDefault">a link</a></li>
+  <li><a href="#" onclick="event.preventDefault">another link</a></li>
+  <li><a href="#" onclick="event.preventDefault">one more link</a></li>
+  <li><a href="#" onclick="event.preventDefault">last link</a></li>
 </ul>
 </div>
 </footer>'

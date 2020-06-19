@@ -92,9 +92,14 @@ const init_animation = (levelName) => {
     }
 
     if (part === level.length - 1) {
-      nextBtn.classList.add('disable')
+      nextBtn.classList.add('disable');
     } else {
-      nextBtn.classList.remove('disable')
+      nextBtn.classList.remove('disable');
+    }
+    if (level[part].example) {
+      exampleBox.classList.remove('disable');
+    } else {
+      exampleBox.classList.add('disable');
     }
   };
   activation();

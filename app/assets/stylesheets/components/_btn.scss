@@ -5,7 +5,7 @@
   padding: 10px;
 }
 .disable {
-  display: none;
+  display: none !important;
 }
 .next {
   position: absolute;
@@ -45,4 +45,7 @@
   &:focus {
     outline: 0;
   }
+}
+.nes-btn {
+  color: black !important;
 }

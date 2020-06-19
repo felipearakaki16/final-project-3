@@ -8,8 +8,8 @@
       <%= f.input :username,
                     required: true,
                     autofocus: true,
-                    input_html: { autocomplete: "username" }%>
-      <%= f.input :email, required: true, autofocus: true %>
+                    input_html: { autocomplete: "username", class: "nes-input is-dark" }%>
+      <%= f.input :email, required: true, autofocus: true, input_html: { class: "nes-input is-dark" } %>
 
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
         <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
@@ -18,19 +18,24 @@
       <%= f.input :password,
                   hint: "leave it blank if you don't want to change it",
                   required: false,
-                  input_html: { autocomplete: "new-password" } %>
+                  input_html: { autocomplete: "new-password", class: "nes-input is-dark" } %>
       <%= f.input :password_confirmation,
                   required: false,
-                  input_html: { autocomplete: "new-password" } %>
+                  input_html: { autocomplete: "new-password", class: "nes-input is-dark" } %>
       <%= f.input :current_password,
                   hint: "we need your current password to confirm your changes",
                   required: true,
-                  input_html: { autocomplete: "current-password" } %>
-      <%= f.input :photo, as: :file %>
+                  input_html: { autocomplete: "current-password", class: "nes-input is-dark" } %>
+      <label class="nes-btn my-3">
+        Select a image
+        <span style="display:none;">
+          <%= f.input :photo, as: :file %>
+        </span>
+      </label>
     </div>
 
     <div class="form-actions">
-      <%= f.button :submit, "Update", class: "btn btn-green" %>
+      <%= f.button :submit, "Update", class: "nes-btn" %>
       <%# raise %>
     </div>
   <% end %>

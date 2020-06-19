@@ -2,19 +2,19 @@
   <div id="level-header">
   </div>
 
-  <div id="typewriter" class="baloon" data-level-name="<%= @level.name %>"></div>
+  <div id="typewriter" class="nes-container is-rounded is-dark" data-level-name="<%= @level.name %>"></div>
 
   <div class="btn-prev-next">
-    <button id="prev-btn">Prev</button>
-    <button id="next-btn">Next</button>
+    <button id="prev-btn" class="nes-btn my-3">Prev</button>
+    <button id="next-btn" class="nes-btn my-3">Next</button>
   </div>
 
   <div class="btn-level">
-    <%= button_to  "Back to Levels", levels_path, method: :get %>
-    <button id="jump">Skip intro</button>
+    <%= button_to  "Back to Levels", levels_path, class: "nes-btn", method: :get %>
+    <button id="jump" class="disable nes-btn">Skip intro</button>
   </div>
 
-  <div id="examples">
+  <div id="examples" class="nes-container is-dark is-rounded">
   </div>
 </div>
 
@@ -27,7 +27,7 @@
       <div class="before">
       </div>
       <form autocomplete="off" id="box-answer" data-action="submit->iframe#validation" remote="true">
-        <input autofocus data-target='iframe.input' id="answer" data-answer="<%= @level.correction %>" data-action='keyup->iframe#style' type="text">
+        <input autofocus data-target='iframe.input' id="answer" data-answer="<%= @level.correction %>" data-action='keyup->iframe#style' class="nes-input is-rounded" type="text">
       </form>
       <div class="after">
       </div>
@@ -44,10 +44,10 @@
   </div> 
 
   <div id="modal-menu" class="modal" data-action='click@window->iframe#close' data-target='iframe.modal'>
-    <div class="modal-content">
+    <div class="modal-content nes-container is-dark is-rounded">
       <h1>Level complete</h1>
       <br />
-      <%= button_to  "Next level", user_record_path(@user_record), method: :patch %>
+      <%= button_to  "Next level", user_record_path(@user_record), class:"nes-btn", method: :patch %>
     </div>
   </div>
 </div>
