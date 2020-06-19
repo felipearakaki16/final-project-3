@@ -23,7 +23,7 @@ require("channels")
 // ----------------------------------------------------
 
 // External imports
-import "nes.css/css/nes.min.css";
+// import "nes.css/css/nes.min.css";
 import "bootstrap";
 import { init_animation } from './animation';
 
