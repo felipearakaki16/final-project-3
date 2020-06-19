@@ -28,8 +28,17 @@ body {
 #page-container {
   position: relative;
   min-height: 100vh;
-  background: #212529;
+  background-image: image-url('stars.gif');
   //https://media.giphy.com/media/9bTjZrytydVRK/giphy.gif
+}
+#page-home {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-image: linear-gradient(rgba(33, 37, 41, 0.3), rgba(33, 37, 41, 0.3)), url('https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif');
+  background-size: cover;
+  z-index: 0;
+  top: 0;
 }
 #page-container-example {
   position: relative;
