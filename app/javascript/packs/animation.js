@@ -46,7 +46,7 @@ const init_animation = (levelName) => {
       document.querySelector('.after').innerHTML = hightlightCode(level[part].after, 'css');
       document.querySelector('.code').innerHTML = hightlightCode(level[part].code, 'markup');
     } else if (document.querySelector('.html-code-flex')) {
-      loadCodeExamples();
+        loadCodeExamples();
     }  else {
       document.querySelector('.box-exercise').classList.add('disable');
 
@@ -62,7 +62,7 @@ const init_animation = (levelName) => {
       cssCode.innerHTML = hightlightCode(level[part].exampleCodes['css-code'], 'css');
       htmlCodeFlex.innerHTML = hightlightCode(level[part].exampleCodes['html-code-flex'], 'markup');
       cssCodeFlex.innerHTML = hightlightCode(level[part].exampleCodes['css-code-flex'], 'css');
-    } else {
+    } else if (htmlCodeFlex) {
       htmlCodeFlex.innerHTML = hightlightCode(level[part].exampleCodes['html-code-flex'], 'markup');
     }
   };
@@ -99,6 +99,7 @@ const init_animation = (levelName) => {
     if (level[part].example) {
       exampleBox.classList.remove('disable');
       exampleBox.innerHTML = level[part].example;
+      loadCodeExamples();
     } else {
       exampleBox.classList.add('disable');
     }
