@@ -3,9 +3,9 @@
   <div class="navbar-nav">
     <% if user_signed_in? %>
       <% if current_user.photo.attached? %>
-        <%= cl_image_tag current_user.photo.key, class: "avatar mr-3" %>
+        <%= cl_image_tag current_user.photo.key, class: "avatar-sm mr-3" %>
       <% else %>
-        <img src="/images/avatar.png" class="avatar mr-3">
+        <img src="/images/avatar.png" class="avatar-sm mr-3">
         <%#= image_tag "avatar.png", width: 50, class: "avatar mr-3" %>
       <% end %>
       <h3>Welcome,<br /><%= current_user.username %></h3>
