@@ -1,25 +1,27 @@
-<div class="content-home">
-  <div class="nes-container is-dark is-rounded center">
-    <h1 class="mb-5">Flexbox Game</h1>
-    <% if (user_signed_in? && current_user.user_records.empty?) || !user_signed_in? %>
-      <h3><%= link_to  "Press Start", level_path(@level_one.id) %></h3>
-      <h3><%= link_to  "Select level", levels_path %></h3>
-      <%= link_to  "#", :remote => true, 'data-action'=>"click->credits#open" do %>
-        <h3 data-action="click->credits#open">Credits</h3>
-      <% end %>
-      <h3><%= link_to  "Github", "https://github.com/felipearakaki16/final-project-3", target:"_blank" %></h3>
-    <% elsif user_signed_in? && current_user.user_records.any? %>
-        <h3><%= link_to  "Continue", level_path(current_user.user_records.last.level_id) %></h3>
+<div id="page-home">
+  <div class="content-home">
+    <div class="nes-container is-dark is-rounded center">
+      <h1 class="mb-5">Flexbox Game</h1>
+      <% if (user_signed_in? && current_user.user_records.empty?) || !user_signed_in? %>
+        <h3><%= link_to  "Press Start", level_path(@level_one.id) %></h3>
         <h3><%= link_to  "Select level", levels_path %></h3>
         <%= link_to  "#", :remote => true, 'data-action'=>"click->credits#open" do %>
-          <h3>Credits</h3>
+          <h3 data-action="click->credits#open">Credits</h3>
         <% end %>
         <h3><%= link_to  "Github", "https://github.com/felipearakaki16/final-project-3", target:"_blank" %></h3>
-    <% end %>
-  </div>
-  <div class="nes-container is-dark is-rounded center my-3 py-3">
-    <h1 class="mb-3">Grid Game</h1>
-    <h3>Coming soon</h3>
+      <% elsif user_signed_in? && current_user.user_records.any? %>
+          <h3><%= link_to  "Continue", level_path(current_user.user_records.last.level_id) %></h3>
+          <h3><%= link_to  "Select level", levels_path %></h3>
+          <%= link_to  "#", :remote => true, 'data-action'=>"click->credits#open" do %>
+            <h3>Credits</h3>
+          <% end %>
+          <h3><%= link_to  "Github", "https://github.com/felipearakaki16/final-project-3", target:"_blank" %></h3>
+      <% end %>
+    </div>
+    <div class="nes-container is-dark is-rounded center my-3 py-3">
+      <h1 class="mb-3">Grid Game</h1>
+      <h3>Coming soon</h3>
+    </div>
   </div>
 </div>
 
