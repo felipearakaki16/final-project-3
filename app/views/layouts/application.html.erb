@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PRO{GAME}</title>
+    <title>PRO{GAME} - Learn to code by playing games</title>
+    <%= favicon_link_tag asset_path('/images/joystick.png'), :rel => 'icon', :type => 'image/png' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,7 +10,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
-    <%= favicon_link_tag asset_path('joystick.png'), type:'image/png' %>
     <%
 =begin%>
  <title><%= meta_title %></title>
