@@ -28,10 +28,8 @@ const content_level = {
             <p>Product description with <strong>relevant info</strong> only.</p>
           </div>
         </div>
-        <div class="box-codes">
-          <div class="buttons-boxcode">
-            <button class="btn-css">CSS</button><button class="btn-html">HTML</button>
-          </div>
+        <div class="box-codes nes-container is-dark">
+            <button class="btn-css nes-btn">CSS</button><button class="btn-html nes-btn is-disabled">HTML</button>
           <div class="html-code disable">
           </div>
           <div class="css-code">
@@ -47,9 +45,9 @@ const content_level = {
             <p>Product description with <strong>relevant info</strong> only.</p>
           </div>
         </div>
-        <div class="box-codes">
+        <div class="box-codes nes-container is-dark">
           <div class="buttons-boxcode">
-            <button class="btn-css-flex">CSS</button><button class="btn-html-flex">HTML</button>
+            <button class="btn-css-flex nes-btn">CSS</button><button class="btn-html-flex nes-btn is-disabled">HTML</button>
           </div>
           <div class="html-code-flex disable">
           </div>

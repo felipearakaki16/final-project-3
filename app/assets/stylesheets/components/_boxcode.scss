@@ -9,7 +9,8 @@
   width: 500px;
   height: 400px;
   position: relative;
-  background: #2d2d2d;
+  padding: 0 !important;
+  overflow: hidden;
 }
 pre code {
   white-space: pre-wrap !important;       /* Since CSS 2.1 */
@@ -24,27 +25,7 @@ pre code {
   width: 100%;
   height: 90%;
   overflow: hidden;
-  &:hover {
-    overflow-y: scroll;
-    transition: 0.8s;
-  }
-    &::-webkit-scrollbar-track
-  {
-    border-radius: 10px;
-    background-color: transparent;
-  }
-
-    &::-webkit-scrollbar
-  {
-    width: 12px;
-    background-color: transparent;
-  }
-
-    &::-webkit-scrollbar-thumb
-  {
-    border-radius: 10px;
-    background-color: #3d6f82;
-  }
+  font-size: 12px;
 }
 .css-code {
   text-align: left;
@@ -52,53 +33,29 @@ pre code {
   overflow: hidden;
   width: 100%;
   height: 90%;
-  &:hover {
-    overflow-y: scroll;
-  }
-  &::-webkit-scrollbar-track
-  {
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+  font-size: 12px;
+}
 
-    &::-webkit-scrollbar
-  {
+.css-code,
+.css-code-flex,
+.html-code,
+.html-code-flex {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
     width: 12px;
-    background-color: rgba(0, 0, 0, 0.8);
   }
-
-    &::-webkit-scrollbar-thumb
-  {
-    border-radius: 10px;
-    background-color: #3d6f82;
+  &::-webkit-scrollbar-thumb {
+    background-color: white;
   }
 }
+
 .html-code-flex {
   text-align: left;
   position: absolute;
   overflow: hidden;
   width: 100%;
   height: 90%;
-  &:hover {
-    overflow-y: scroll;
-  }
-  &::-webkit-scrollbar-track
-  {
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-    &::-webkit-scrollbar
-  {
-    width: 12px;
-    background-color: transparent;
-  }
-
-    &::-webkit-scrollbar-thumb
-  {
-    border-radius: 10px;
-    background-color: #3d6f82;
-  }
+  font-size: 12px;
 }
 .css-code-flex {
   text-align: left;
@@ -106,35 +63,11 @@ pre code {
   width: 100%;
   height: 90%;
   overflow: hidden;
-  &:hover {
-    overflow-y: scroll;
-  }
-  &::-webkit-scrollbar-track
-  {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;
-    background-color: transparent;
-  }
-
-    &::-webkit-scrollbar
-  {
-    width: 12px;
-    background-color: transparent;
-  }
-
-    &::-webkit-scrollbar-thumb
-  {
-    border-radius: 10px;
-    background-color: #3d6f82;
-  }
+  font-size: 12px;
 }
 
 .disable {
   display: none;
-}
-
-.buttons-boxcode {
-  background: #3d6f82;
 }
 pre {
   overflow: initial !important;
