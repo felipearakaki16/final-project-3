@@ -1,8 +1,8 @@
 Level.destroy_all
-puts 'Creating level'
-level1 = Level.new(id: 1, name: "Level 1", description: "Display", correction: ["display: *flex;"], difficulty: "easy")
-level1.save!
-puts 'Finished'
+  # puts 'Creating level'
+  # level1 = Level.new(id: 1, name: "Level 1", description: "Display", correction: ["display: *flex;"], difficulty: "easy")
+  # level1.save!
+  # puts 'Finished'
 puts 'Creating level'
 level2 = Level.new(id: 2, name: "Level 2", description: "Flex inside flex", correction: ["display: *flex;"], difficulty: "easy")
 level1.save!
